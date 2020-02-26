@@ -1,0 +1,419 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loadingMore"
+            type="boolean" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/admob_banner_ads_key"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/shopCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                android:text="@string/shop_category"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text__primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font='@{"normal"}'
+                app:layout_constraintStart_toEndOf="@+id/shopCategoryCardView"
+                app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+            <TextView
+                android:id="@+id/newShopsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:animateLayoutChanges="true"
+                android:text="@string/shop_new_shops"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text__primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font='@{"normal"}'
+                app:layout_constraintStart_toEndOf="@+id/newShopsCardView"
+                app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+            <TextView
+                android:id="@+id/viewAllSliderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/space_20"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:text="@string/menu__home_category_view_All_un"
+                android:textAllCaps="true"
+                android:textColor="@color/global__primary"
+                android:textSize="@dimen/font_body_s_size"
+                android:visibility="visible"
+                app:font='@{"normal"}'
+                app:layout_constraintBottom_toBottomOf="@+id/shopCategoryTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shopCategoryTextView"
+                tools:text="@string/menu__home_category_view_All_un" />
+
+            <TextView
+                android:id="@+id/newShopsViewAllTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/space_20"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:text="@string/menu__home_category_view_All_un"
+                android:textAllCaps="true"
+                android:textColor="@color/global__primary"
+                android:textSize="@dimen/font_body_s_size"
+                android:visibility="visible"
+                app:font='@{"normal"}'
+                app:layout_constraintBottom_toBottomOf="@+id/newShopsTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/newShopsTextView"
+                tools:text="@string/menu__home_category_view_All_un" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shopCategoryRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_20"
+                android:paddingEnd="0dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shopCategoryTextView"
+                app:spanCount="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newShopRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_20"
+                android:paddingEnd="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newShopsTextView" />
+
+            <ProgressBar
+                android:id="@+id/load_more_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:visibleGone="@{loadingMore}" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shopCategoryCardView"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardBackgroundColor="@color/global__primary_dark"
+                app:cardCornerRadius="@dimen/space_2"
+                app:cardElevation="0sp"
+                app:layout_constraintBottom_toBottomOf="@+id/shopCategoryTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shopCategoryTextView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blogCardView"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardBackgroundColor="@color/global__primary_dark"
+                app:cardCornerRadius="@dimen/space_2"
+                app:cardElevation="0sp"
+                app:layout_constraintBottom_toBottomOf="@+id/blogTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/blogTextView" />
+
+            <TextView
+                android:id="@+id/blogTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                android:text="@string/shop_blog"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text__primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font='@{"normal"}'
+                app:layout_constraintStart_toEndOf="@+id/blogCardView"
+                app:layout_constraintTop_toBottomOf="@+id/shopCategoryRecyclerView" />
+
+            <TextView
+                android:id="@+id/blogViewAllTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/space_20"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:text="@string/menu__home_category_view_All_un"
+                android:textAllCaps="true"
+                android:textColor="@color/global__primary"
+                android:textSize="@dimen/font_body_s_size"
+                android:visibility="visible"
+                app:font='@{"normal"}'
+                app:layout_constraintBottom_toBottomOf="@+id/blogTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/blogTextView"
+                tools:text="@string/menu__home_category_view_All_un" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blogTextView" />
+
+            <LinearLayout
+                android:id="@+id/pagerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_4"
+                android:paddingTop="@dimen/space_4"
+                android:paddingEnd="@dimen/space_4"
+                android:paddingBottom="@dimen/space_4"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/newShopsCardView"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardBackgroundColor="@color/global__primary_dark"
+                app:cardCornerRadius="@dimen/space_2"
+                app:cardElevation="0sp"
+                app:layout_constraintBottom_toBottomOf="@+id/newShopsTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/newShopsTextView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/featuredShopCardViewBig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newShopRecyclerView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_orange">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/featuredShopCardView"
+                        android:layout_width="8dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:cardBackgroundColor="@color/md_white_1000"
+                        app:cardCornerRadius="@dimen/space_2"
+                        app:cardElevation="0sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/featuredShopTextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/featuredShopTextView" />
+
+                    <TextView
+                        android:id="@+id/featuredShopViewAllTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:animateLayoutChanges="true"
+                        android:gravity="center"
+                        android:text="@string/menu__home_category_view_All_un"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text__white"
+                        android:textSize="@dimen/font_body_s_size"
+                        android:visibility="visible"
+                        app:font='@{"normal"}'
+                        app:layout_constraintBottom_toBottomOf="@+id/featuredShopTextView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/featuredShopTextView"
+                        tools:text="@string/menu__home_category_view_All_un" />
+
+                    <TextView
+                        android:id="@+id/featuredShopTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:animateLayoutChanges="true"
+                        android:text="@string/shop_featured_shops"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text__white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:font='@{"normal"}'
+                        app:layout_constraintStart_toEndOf="@+id/featuredShopCardView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/featuredShopRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="45dp"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/space_20"
+                        android:paddingEnd="0dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/featuredShopTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/admob_banner_ads_key"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featuredShopCardViewBig" />
+
+            <TextView
+                android:id="@+id/popularShopsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                android:text="@string/shop_popular_shops"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text__primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font='@{"normal"}'
+                app:layout_constraintStart_toEndOf="@+id/popularShopsCardView"
+                app:layout_constraintTop_toBottomOf="@+id/adView2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/popularShopsCardView"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:cardBackgroundColor="@color/global__primary_dark"
+                app:cardCornerRadius="@dimen/space_2"
+                app:cardElevation="0sp"
+                app:layout_constraintBottom_toBottomOf="@+id/popularShopsTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/popularShopsTextView" />
+
+            <TextView
+                android:id="@+id/popularShopsViewAllTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/space_20"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:text="@string/menu__home_category_view_All_un"
+                android:textAllCaps="true"
+                android:textColor="@color/global__primary"
+                android:textSize="@dimen/font_body_s_size"
+                android:visibility="visible"
+                app:font='@{"normal"}'
+                app:layout_constraintBottom_toBottomOf="@+id/popularShopsTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/popularShopsTextView"
+                tools:text="@string/menu__home_category_view_All_un" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularShopsRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_20"
+                android:paddingEnd="0dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toTopOf="@+id/load_more_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popularShopsTextView"
+                app:spanCount="2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

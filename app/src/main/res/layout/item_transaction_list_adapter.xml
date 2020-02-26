@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="transaction"
+            type="com.panaceasoft.psmultistore.viewobject.TransactionObject" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="@dimen/space_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/historyIconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="@+id/transactionNoTitleTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/transactionNoTitleTextView"
+                    app:srcCompat="@drawable/baseline_history_grey_24" />
+
+                <TextView
+                    android:id="@+id/transactionNoTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/transaction__number"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toEndOf="@+id/historyIconImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/transaction_no_value_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@{transaction.transCode}"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/transactionNoTitleTextView"
+                    app:layout_constraintStart_toEndOf="@+id/transactionNoTitleTextView"
+                    app:layout_constraintTop_toTopOf="@+id/transactionNoTitleTextView" />
+
+                <ImageView
+                    android:id="@+id/copyImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="@+id/transaction_no_value_text_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/transaction_no_value_text_view"
+                    app:srcCompat="@drawable/baseline_copy_grey_24" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/view__primary_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/transactionNoTitleTextView" />
+
+                <TextView
+                    android:id="@+id/totalAmountTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction__total_amount"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shopTextView" />
+
+                <TextView
+                    android:id="@+id/totalAmountValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/totalAmountTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/totalAmountTitleTextView" />
+
+                <TextView
+                    android:id="@+id/statusTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction__statue"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/totalAmountTitleTextView" />
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@{`` + transaction.transStatusTitle}"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/statusTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/statusTitleTextView" />
+
+                <TextView
+                    android:id="@+id/viewDetailTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/transaction__view_details"
+                    android:textColor="@color/text_view_detail"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statusTextView" />
+
+                <TextView
+                    android:id="@+id/shopTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/shop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+                <TextView
+                    android:id="@+id/shopValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@{transaction.shop.name}"
+                    app:layout_constraintBottom_toBottomOf="@+id/shopTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/shopTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,257 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="basket"
+            type="com.panaceasoft.psmultistore.viewobject.Basket" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/basketNameTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@{basket.product.name}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_title_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toStartOf="@+id/deleteBgImageView"
+                    app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Name" />
+
+                <ImageView
+                    android:id="@+id/itemImageView"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:imageUrl="@{basket.product.defaultPhoto.imgPath}"
+                    app:layout_constraintEnd_toStartOf="@+id/basketNameTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/placeholder_image" />
+
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    android:textStyle="bold"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/priceTitleTextView"
+                    app:layout_constraintStart_toEndOf="@+id/priceTitleTextView"
+                    tools:text="0.000" />
+
+                <TextView
+                    android:id="@+id/subTotalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/subTotalTitleTextView"
+                    app:layout_constraintStart_toEndOf="@+id/subTotalTitleTextView"
+                    app:layout_constraintTop_toTopOf="@+id/subTotalTitleTextView"
+                    tools:text="0.0000" />
+
+                <ImageView
+                    android:id="@+id/minusImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/image_default__image"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baselien_minus_grey_24"
+                    app:backgroundTint="@color/md_white_1000"
+                    app:elevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/view32"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/plusImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/image_default__image"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_add_green_24"
+                    app:backgroundTint="@color/md_white_1000"
+                    app:elevation="1dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/qtyEditText"
+                    app:layout_constraintStart_toEndOf="@+id/qtyEditText"
+                    app:layout_constraintTop_toTopOf="@+id/qtyEditText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/qtyEditText"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/rounded_corner_shape_view_with_border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="@string/basket_card_view__default_count"
+                    android:inputType="number"
+                    android:text="@{``+basket.count}"
+                    android:textColor="@color/text__primary"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/minusImageView"
+                    app:layout_constraintStart_toEndOf="@+id/minusImageView"
+                    app:layout_constraintTop_toTopOf="@+id/minusImageView"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/priceTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/basket_card_view__price"
+                    android:textColor="@color/text__primary_light"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/basketNameTextView"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Price" />
+
+                <TextView
+                    android:id="@+id/subTotalTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/basket_card_view__sub_total"
+                    android:textColor="@color/text__primary_light"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/priceTitleTextView"
+                    tools:ignore="MissingConstraints"
+                    tools:text="Sub Total" />
+
+                <ImageView
+                    android:id="@+id/deleteBgImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:background="#e9e6e6"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/deleteIconImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="@+id/deleteBgImageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/deleteBgImageView"
+                    app:layout_constraintTop_toTopOf="@+id/deleteBgImageView"
+                    app:srcCompat="@android:drawable/ic_menu_delete"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/colorAttributeImageView"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="@+id/attributeTitleTextView"
+                    app:layout_constraintStart_toEndOf="@+id/attributeTitleTextView"
+                    app:layout_constraintTop_toTopOf="@+id/attributeTitleTextView"
+                    app:srcCompat="@drawable/circler_border" />
+
+                <TextView
+                    android:id="@+id/attributeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/deleteBgImageView"
+                    app:layout_constraintStart_toEndOf="@+id/colorAttributeImageView"
+                    app:layout_constraintTop_toTopOf="@+id/attributeTitleTextView"
+                    tools:text="Attributes" />
+
+                <TextView
+                    android:id="@+id/attributeTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/basket__attributes"
+                    android:textColor="@color/text__primary_light"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/subTotalTitleTextView" />
+
+                <View
+                    android:id="@+id/view32"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/deleteBgImageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/attributeTitleTextView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

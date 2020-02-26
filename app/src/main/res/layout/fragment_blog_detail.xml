@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="blog"
+            type="com.panaceasoft.psmultistore.viewobject.Blog" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/admob_banner_ads_key"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/aboutImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/menu__about_app"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{blog.defaultPhoto.imgPath}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adView"
+                tools:src="@drawable/placeholder_image" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@{blog.name}"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:font='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutImageView"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@{blog.description}"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_body_size"
+                app:font='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                tools:text="Description" />
+
+            <ImageView
+                android:id="@+id/aboutDefaultIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/image_default__image"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{blog.shop.defaultPhoto.imgPath}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+                tools:srcCompat="@drawable/placeholder_image" />
+
+            <ImageView
+                android:id="@+id/emailImage"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/image_default__image"
+                app:layout_constraintBottom_toBottomOf="@+id/aboutDefaultIcon"
+                app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+                app:srcCompat="@drawable/mail" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/space_16"
+                android:gravity="start"
+                android:text="@{blog.shop.email}"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/font_body_size"
+                app:font='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/emailImage"
+                app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+                app:textSize='@{"font_body_size"}'
+                tools:text="teamps.is.cool@gmail.com" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
+                android:text="@{blog.shop.name}"
+                android:textAlignment="gravity"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="@dimen/font_title_size"
+                android:textStyle="bold"
+                app:font='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                app:layout_constraintTop_toTopOf="@+id/aboutDefaultIcon"
+                app:textSize='@{"font_title_size"}'
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="start"
+                android:text="@{blog.shop.aboutPhone1}"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_body_size"
+                app:font='@{"normal"}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                tools:text="phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

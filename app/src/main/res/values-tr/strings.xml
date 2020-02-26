@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="terms_and_conditions__title">Şartlar ve koşullar</string>
+
+
+    <string name="history__title">Tarihçe</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">Favoriler</string>
+
+
+    <string name="fb_register__welcome">%1$s’den hoş geldiniz</string>
+    <string name="fb_register__desc">Uygulamanın tüm özelliklerini kullanmak için lütfen giriş yapın.</string>
+
+
+    <string name="gallery__title">galeri</string>
+    <string name="gallery_image__gallery">Resim Galerisi</string>
+    <string name="gallery_img__desc">Görüntü açıklaması</string>
+
+
+    <string name="image_default__image">Varsayılan Resim</string>
+
+
+    <string name="app__app_name">Çok Mağaza</string>
+    <string name="app__ok">tamam</string>
+    <string name="app__cancel">İptal etmek</string>
+    <string name="app__drawer_open">Çekmece Açık</string>
+    <string name="app__drawer_close">Çekmece Kapat</string>
+
+
+    <string name="menu__fb_login">Facebook Girişi</string>
+    <string name="menu__comment_list">Yorum Listesi</string>
+    <string name="menu__notification_list">Bildirim Listesi</string>
+
+
+    <string name="register__user_name">Kullanıcı adı</string>
+    <string name="register__email">E-posta</string>
+    <string name="register__password">Parola</string>
+    <string name="register__back_to_login">Zaten üye misiniz? Oturum aç</string>
+    <string name="register__register">Kayıt olmak</string>
+    <string name="register__new_account">Yeni Kullanıcı Hesabı Kaydı</string>
+    <string name="register__check_option">Bu gizlilik ve politikayı kabul ediyor musunuz?</string>
+
+
+    <string name="forgot_password__title">Parolanızı mı unuttunuz</string>
+    <string name="forgot_password__email">E-posta</string>
+    <string name="forgot_password__back_to_login">Zaten üye misiniz? Oturum aç</string>
+    <string name="forgot_password__password_recovery">Şifre kurtarma</string>
+    <string name="forgot_password__save">Kayıt etmek</string>
+    <string name="forgot_password__send">göndermek</string>
+
+
+    <string name="password_change__password">Parola</string>
+    <string name="password_change__save">Kayıt etmek</string>
+    <string name="password_change__confirm_password">Şifreyi Onayla</string>
+    <string name="password_change__password_change">Parola değişimi</string>
+
+
+    <string name="login__email">E-posta</string>
+    <string name="login__password">Parola</string>
+    <string name="login__not_a_member_join_now">Burada yeni? Kaydol</string>
+    <string name="login__forgot_your_password">Parolanızı mı unuttunuz ?</string>
+    <string name="login__login">Oturum aç</string>
+    <string name="login__welcome_title">PS Market Place\'e Hoş Geldiniz</string>
+    <string name="login__choice_text">VEYA</string>
+
+
+    <string name="contact_us__name">Kişi Adı</string>
+    <string name="contact_us__email">İletişim E-posta</string>
+    <string name="contact_us__message">İletişim Mesajı</string>
+    <string name="contact_us__phone">İletişim Telefonu</string>
+    <string name="contact_us__submit">Gönder</string>
+
+
+    <string name="notification_setting__on_off">Bildirim Ayarı (Açık / Kapalı)</string>
+    <string name="notification_setting__latest_message_from_system">Sistemden Son Mesaj</string>
+    <string name="notification__notification">Bildirim!</string>
+    <string name="notification__title">Bildirim</string>
+    <string name="notification_setting__title">Bildirim ayarı</string>
+    <string name="notification_detail__title">Bildirim Ayrıntısı</string>
+    <string name="notification__alert">Alarm</string>
+
+
+    <string name="language__english">ingilizce</string>
+    <string name="language__arabic">Arapça</string>
+    <string name="language__spanish">İspanyol</string>
+    <string name="language__language_change"> %1$s olarak değiştirmek istediğinize emin misiniz?</string>
+    <string name="language__title">Dil</string>
+
+
+    <string name="comment__replies">-%1$s yanıt</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">Yorum Listesi</string>
+    <string name="comment__detail_title">Yorum Cevapları</string>
+    <string name="comment__empty_comment">Yorum Boş.</string>
+    <string name="comment__comment">Yorum Yap</string>
+
+
+    <string name="basket__list">Sepet Listesi</string>
+    <string name="basket__no_item_title">Kart boş</string>
+    <string name="basket__total">Genel Toplam</string>
+    <string name="basket__items">Öğeler</string>
+    <string name="basket__checkout">Çıkış yapmak</string>
+    <string name="basket__no_item_desc">Alışveriş sepetinizde ürün yok gibi gözüküyor. Lütfen alışverişe devam edin.</string>
+    <string name="basket__attributes">Öznitellikler</string>
+
+
+    <string name="rating__list">Derecelendirme Listesi</string>
+    <string name="rating__write_review">Yorum yaz</string>
+    <string name="rating__total_count">%1$s Müşteri Yorumları</string>
+    <string name="rating__total_value">5 yıldız üzerinden%1$s</string>
+    <string name="rating__total_count_n_value">%1$s üzerinden 5 yıldız (%2$s incelemesi)</string>
+    <string name="rating__count">%1$s yıldız</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">Stokta var</string>
+    <string name="rating__title">Başlık</string>
+    <string name="rating__message">Mesaj</string>
+    <string name="rating__user_rating">Kullanıcı Oyuna Giriş!</string>
+    <string name="rating__your_rating">Sizin dereceniz</string>
+    <string name="rating__five_star">5 yıldız</string>
+    <string name="rating__four_star">4 yıldız</string>
+    <string name="rating__three_star">3 yıldız</string>
+    <string name="rating__two_star">2 yıldız</string>
+    <string name="rating__one_star">1 yıldız</string>
+    <string name="rating__rating_range">Derecelendirme Aralığı</string>
+    <string name="rating__one">1 ve üstü</string>
+    <string name="rating__two">2 ve üstü</string>
+    <string name="rating__three">3 ve üstü</string>
+    <string name="rating__four">4 ve üstü</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">""</string>
+
+
+    <string name="basket_card_view__price">Fiyat</string>
+    <string name="basket_card_view__sub_total">Ara toplam</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">sınıflandırma</string>
+    <string name="popular__m_mun">Popüler</string>
+    <string name="recent__m_mun">son</string>
+    <string name="low_price__m_mun">En düşük fiyat</string>
+    <string name="high_price__m_mun">En yüksek fiyat</string>
+
+
+    <string name="checkout__payment_method">Ödeme şekli</string>
+    <string name="checkout__cash_on_delivery">Kapıda ödeme</string>
+    <string name="checkout__bank">Paypal</string>
+    <string name="checkout__other">Şerit</string>
+    <string name="checkout__bank_transfer">Banka</string>
+    <string name="checkout__memo">not</string>
+    <string name="checkout__information__COD">Bir satın alma veya sevkiyat yapıldığında sadece nakit ödeme yapmanız gerekir.</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">Ödeme Yöntemi Yok</string>
+    <string name="checkout__choose_a_method">Bir ödeme yöntemi seçmeniz gerekiyor</string>
+    <string name="checkout__stripe">Çizgili Öde</string>
+
+
+    <string name="checkout__order_registered">Sipariş başarıyla yapıldı</string>
+    <string name="checkout__shipping_to">teslimat adresi</string>
+    <string name="checkout__view_detail">ayrıntılara bakın</string>
+    <string name="checkout__placed">Siparişiniz alındı.</string>
+    <string name="checkout__address_name">Adres :</string>
+    <string name="checkout__phone_name">Telefon :</string>
+    <string name="checkout__email_name">Email:</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">İddia</string>
+
+
+    <string name="transaction__number">İşlem numarası :</string>
+    <string name="transaction__statue">Durum:</string>
+    <string name="transaction__total_amount">Toplam tutar :</string>
+    <string name="transaction__view_details">Detayları göster</string>
+    <string name="transaction__title">İşlem listesi</string>
+    <string name="transaction_detail__title">İşlem detay</string>
+
+
+    <string name="checkout_detail__totalItem">Toplam Öğe</string>
+    <string name="checkout_detail__totalSubtotal">ara toplam</string>
+    <string name="checkout_detail__totalDiscount">İndirim tutarı</string>
+    <string name="checkout_detail__totalBalance">Denge</string>
+    <string name="checkout_detail__claimed_coupon">Sadece kuponu talep ettin</string>
+
+
+    <string name="edit_setting__notification_setting">Bildirim ayarı</string>
+    <string name="edit_setting__edit_profile">Profili Düzenle</string>
+    <string name="edit_setting__logout">Çıkış Yap</string>
+    <string name="edit_setting__logout_question">Çıkış yaptığınızdan emin misiniz?</string>
+    <string name="edit_setting__terms_and_conditions">Şartlar ve koşullar</string>
+    <string name="edit_setting__app_info">Uygulama bilgisi</string>
+    <string name="edit_setting__title">Ayar</string>
+
+
+    <string name="transaction_order__total_amount">Fiyat</string>
+    <string name="transaction_order__count">miktar</string>
+    <string name="transaction_order__balance">Denge</string>
+    <string name="transaction_order__discount_available_amount">İndirim Uygun Tutar</string>
+    <string name="transaction_order__sub_total">Ara toplam</string>
+
+
+    <string name="message__register_success">Başarıyla Kayıt Olun.</string>
+    <string name="message__loading">Yükleniyor…</string>
+    <string name="message__please_wait">Lütfen bekle…</string>
+    <string name="message__welcome">Hoş Geldiniz formu PS Market Place</string>
+    <string name="message__want_to_quit">Gerçekten çıkmak istiyor musun?</string>
+    <string name="message__ok_close">tamam</string>
+    <string name="message__cancel_close">İptal etmek</string>
+
+
+    <string name="checkout__checkout">Çıkış yapmak</string>
+    <string name="checkout__data">Bilgi</string>
+    <string name="checkout__payment">Ödeme</string>
+    <string name="checkout__order">Sipariş</string>
+    <string name="checkout__next">Sonraki</string>
+    <string name="checkout__previous">Önceki</string>
+    <string name="checkout__keep_shopping">Alışverişe devam etmek</string>
+    <string name="checkout__Address">Adres</string>
+    <string name="checkout__confirmation">Onayla</string>
+
+
+    <string name="search__notSet">Ayarlanmadı</string>
+    <string name="search__by_name">Ürün adı</string>
+    <string name="search__by_category">Kategori</string>
+    <string name="search__by_sub_category">Alt Kategori</string>
+    <string name="search__by_price">Fiyat</string>
+    <string name="search__lowest_price">En düşük fiyat</string>
+    <string name="search__highest_price">En yüksek fiyat</string>
+    <string name="search__special_check">Özel çek</string>
+    <string name="search__feature">Özel Ürünler</string>
+    <string name="search__discount_price">İndirimli fiyatlar</string>
+    <string name="search__search">Arama</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">Ayarlanmadı</string>
+    <string name="sf__notSet_zg">Ayarlanmadı</string>
+    <string name="sf__ByItemType">Öğe Adını Ayarla</string>
+    <string name="sf__ByPrice">Fiyat ayarla</string>
+    <string name="sf__LowestPrice">En düşük fiyat</string>
+    <string name="sf__HighestPrice">En yüksek fiyat</string>
+    <string name="sf__AdvanceFiltering">Gelişmiş Filtreleme</string>
+    <string name="sf__Feature">Özellik Ürünleri</string>
+    <string name="sf__Discount">İndirimli Ürünler</string>
+    <string name="sf__Filter_Button">filtre</string>
+    <string name="typefilter">Ürün tipine göre filtrelendi</string>
+
+
+    <string name="checkout__customer_information">Müşteri Bilgileri</string>
+    <string name="checkout__name">isim</string>
+    <string name="checkout__email">E-Posta</string>
+    <string name="checkout__phone">Telefon</string>
+    <string name="checkout__shipping_address">teslimat adresi</string>
+    <string name="checkout__address">Adres</string>
+    <string name="checkout__city">Kent</string>
+    <string name="checkout__country">ülke</string>
+    <string name="checkout__state">Eyalet / İl</string>
+
+
+    <string name="error_message__select_location">Lütfen yer seçiniz.</string>
+    <string name="error_message__login_first">Lütfen önce giriş yapınız!</string>
+    <string name="error_message__rating">Lütfen derecelendirme için tamamen doldurunuz.</string>
+    <string name="error_message__youtube_not_valid">YouTube geçerli değil.</string>
+    <string name="error_message__blank_email">Lütfen Email\'i giriniz.</string>
+    <string name="error_message__choose_category">Önce Kategori Seçin</string>
+    <string name="error_message__insert_value_search">Aramak için bir değer ekleyin</string>
+    <string name="error_message__order_fail">İşlem Bilinmeyen hatayla başarısız oldu! Lütfen tekrar deneyin</string>
+    <string name="error_message__blank_contact_message">Lütfen İletişim Mesajını girin.</string>
+    <string name="error_message__blank_password">Lütfen şifreyi giriniz.</string>
+    <string name="error_message__blank_name">Lütfen isim giriniz.</string>
+    <string name="error_message__blank_keyword">Lütfen arama anahtar sözcüğünü girin.</string>
+    <string name="error_message__password_not_equal">Parola eşit değil!</string>
+    <string name="error_message__no_internet">İnternet bağlantısı yok.</string>
+    <string name="error_message__email_exists">E-posta Zaten Var</string>
+    <string name="error_message__to_check_agreement">Sen gizlilik ve politika anlaşmaya kontrol etmeniz gerekir.</string>
+    <string name="error_message__choose_country">Önce Ülkeyi Seçin</string>
+    <string name="error_message__select_city">Lütfen şehir seçiniz</string>
+    <string name="shipping_address_one_error_message">Sevkıyat Adresi 1 Giriniz</string>
+    <string name="billing_address_one_error_message">Fatura Adresi 1 Giriniz</string>
+
+    <string name="transaction_detail__transaction_number">İşlem numarası :</string>
+    <string name="transaction_detail__status">Durum:</string>
+    <string name="transaction_detail__order_date">Sipariş tarihi :</string>
+    <string name="transaction_detail__total_charges">Toplam masraflar:</string>
+    <string name="transaction_detail__discount_price">İndirimli fiyat :</string>
+    <string name="transaction_detail__delivery_address">Teslim adresi :</string>
+    <string name="transaction_detail__phone">Telefon :</string>
+    <string name="transaction_detail__address">Adres :</string>
+    <string name="transaction_detail__email">Email:</string>
+    <string name="transaction_detail__shipping_cost">Nakliye maliyeti: </string>
+    <string name="transaction_detail_list__shipping_cost">Ürün Başına Nakliye Maliyeti </string>
+    <string name="transaction_detail__shipping_tax">Nakliye vergisi: </string>
+
+
+    <string name="Feature_UI_Type__Button">Kategori</string>
+    <string name="Feature_UI_Tune__Button">Arama</string>
+    <string name="Feature_UI_Sort__Button">Çeşit</string>
+    <string name="Feature_UI__product_list_no_item_title">Veri yok</string>
+    <string name="Feature_UI__product_list_no_item_desc">Sonuç yok! Lütfen filtreyi ayarlamayı deneyin.</string>
+    <string name="Feature_UI__product_list_loading_item_title">Yüklüyoruz</string>
+    <string name="Feature_UI__search_alert_cat_title">Kategori Seçin</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">Alt Kategori Seç</string>
+    <string name="Feature_UI__search_alert_country_title">Ülke seçin</string>
+    <string name="Feature_UI__search_alert_city_title">Şehir Seç</string>
+
+
+    <string name="about_us__phone">Telefon</string>
+    <string name="about_us__facebook">Facebook</string>
+    <string name="about_us__gplus">Google artı</string>
+    <string name="about_us__instagram">Instagram</string>
+    <string name="about_us__youtube">Youtube</string>
+    <string name="about_us__pinterest">pinterest</string>
+    <string name="about_us__twitter">heyecan</string>
+    <string name="about_us__visit_website">Web Sitemizi Ziyaret Edin</string>
+    <string name="about_us__email">E-posta</string>
+    <string name="about_us__contact">Temas</string>
+    <string name="about_us__source_address">Kaynak adresi</string>
+    <string name="about_us__title">Uygulama bilgisi</string>
+
+
+    <string name="profile__title">Profil</string>
+    <string name="profile__name">isim</string>
+    <string name="profile__edit">Düzenle</string>
+    <string name="profile__likes">Seviyor</string>
+    <string name="profile__history">Tarihçe</string>
+    <string name="profile__favourites">Favoriler</string>
+    <string name="profile__setting">Ayar</string>
+    <string name="profile__joined_on">Katıldı</string>
+    <string name="profile__joined_date">Katıldığı Tarih</string>
+    <string name="profile__orders">Emirler</string>
+    <string name="profile__see_all">Tümünü Gör</string>
+    <string name="profile__verified">Doğrulanmış</string>]
+    <string name="profile__status">durum</string>
+    <string name="profile__transaction">işlemler</string>
+
+
+    <string name="edit_profile__title">Profili Düzenle</string>
+    <string name="edit_profile__user_name">Kullanıcı adı</string>
+    <string name="edit_profile__about_me">Benim hakkımda</string>
+    <string name="edit_profile__email">E-posta</string>
+    <string name="edit_profile__phone">Telefon</string>
+    <string name="edit_profile__password">Parola</string>
+    <string name="edit_profile__password_change">Parola değişimi</string>
+    <string name="edit_profile__save">Kayıt etmek</string>
+    <string name="edit_profile__address">Teslim adresi</string>
+    <string name="edit_profile__town">kasaba</string>
+    <string name="edit_profile__division">Bölünme</string>
+    <string name="edit_profile__country">ülke</string>
+    <string name="verify_email">E-mail\'i doğrula</string>
+
+
+    <string name="menu__home">Ev</string>
+    <string name="menu__profile">Profil</string>
+    <string name="menu__like">Sevmek</string>
+    <string name="menu__favourite_items">Favori</string>
+    <string name="menu__transaction">işlem</string>
+    <string name="menu__user_history">Kullanıcı Geçmişi</string>
+    <string name="menu__logout">Çıkış Yap</string>
+    <string name="menu__about_app">Hakkımızda</string>
+    <string name="menu__contact_us">Bizimle iletişime geçin</string>
+    <string name="menu__notification_setting">Bildirim ayarı</string>
+    <string name="menu__language">Dil</string>
+    <string name="menu__setting">Ayar</string>
+    <string name="menu__shop_profile">Dükkân</string>
+    <string name="menu__me">Ben mi</string>
+    <string name="menu__basket">sepet</string>
+    <string name="menu__app_setting">Uygulama</string>
+    <string name="menu__user_info">Kullanıcı bilgisi</string>
+    <string name="menu__save">Kayıt etmek</string>
+    <string name="menu__search">Arama</string>
+    <string name="menu__side_bar_menu">Daha</string>
+    <string name="menu__filter">filtre</string>
+    <string name="menu__latest_product">en son ürünler</string>
+    <string name="menu__discount">İndirimli Ürünler</string>
+    <string name="menu__category">Kategori</string>
+    <string name="menu__featured_product">Özel Ürünler</string>
+    <string name="menu__subcategory">Alt Kategori</string>
+    <string name="menu__trending_products">Trend Ürünler</string>
+    <string name="menu__trending_category">Trend Kategorileri</string>
+    <string name="menu__home_category_view_All_zg">Hepsini gör</string>
+    <string name="menu__home_category_view_All_un">Hepsini gör</string>
+    <string name="menu__home_category_textView">Kategoriler</string>
+    <string name="menu__collections">Koleksiyonları</string>
+    <string name="menu__home_discount_view_all">Tüm İndirimli Ürünleri Göster</string>
+    <string name="setting__clear_cache_confirm">Görüntü önbelleğini temizlediğinizden emin misiniz?</string>
+    <string name="setting__clear_image_cache">Görüntü Önbelleğini Temizle</string>
+    <string name="setting__image_cache_size">Görüntü Önbellek Boyutu</string>
+    <string name="setting__change_gdpr">GDPR ayarını değiştir</string>
+    <string name="setting__version_no">Sürüm No:</string>
+    <string name="menu__rate">Bu uygulamayı oyla</string>
+    <string name="menu__privacy_policy">Şartlar ve koşullar</string>
+
+
+    <string name="collection__list_title">Koleksiyon Listesi</string>
+
+
+    <string name="product_detail__isFeatured">Öne Çıkanlar \</string>
+    <string name="product_detail__desc_title">Ürün Açıklaması</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">Addidas</string>
+    <string name="product_detail__detail_facts_un">Detay bilgileri</string>
+    <string name="product_detail__other_facts_un">Diğer bilgiler</string>
+    <string name="product_detail__size_un">Boyut</string>
+    <string name="product_detail__select_size_un">Beden seçiniz</string>
+    <string name="product_detail__cloth_un">Çamaşırlar</string>
+    <string name="product_detail__select_cloth_un">Kıyafet seç</string>
+    <string name="product_detail__product_name_un">Ürün adı</string>
+    <string name="product_detail__can_get_colors_un">Mevcut renkler</string>
+    <string name="product_detail__choosing_un">Ürün özellikleri</string>
+    <string name="product_detail__how_many_un">Kaç ?</string>
+    <string name="product_detail__terms_and_policy_un">Şartlar ve Politika</string>
+    <string name="product_detail__re_change_un">Değiştirme..</string>
+    <string name="product_detail__never_change_un">Giyim satın alamaz</string>
+    <string name="product_detail__terms_and_condition">ŞARTLAR VE KOŞULLAR</string>
+    <string name="product_detail__refund_policy">Geri ödeme politikası</string>
+    <string name="product_detail__users_scene_un">Kullanıcılar \ \'yorum</string>
+    <string name="product_detail__no_scene_un">Yorum yok !</string>
+    <string name="product_detail__write_scene_un">Yorum yaz</string>
+    <string name="product_detail__similar_products_un">İlgili ürünler</string>
+    <string name="product_detail__related_tags">İlgili Etiketler</string>
+    <string name="product_detail__related_product">ilgili ürünler</string>
+    <string name="product_detail__add_to_busket"> Sepete ekle</string>
+    <string name="product_detail__buy">satın almak</string>
+    <string name="product_detail__successfully_added">Sepete başarıyla eklendi</string>
+    <string name="product_detail__like">Sevmek</string>
+    <string name="product_detail__comment">Yorumlar</string>
+    <string name="product_detail__favourite">Favori</string>
+    <string name="product_detail__wish_list">Dilek Listesi</string>
+    <string name="product_detail__seen">görülme</string>
+    <string name="product_detail__see_all_comment">TÜM YORUMLARI İNCELE</string>
+    <string name="product_detail__choose_un">%1$s seç</string>
+    <string name="product_detail__choose_zg">%1$s seç</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">Değerlendirme yok.</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">Bu ürün mevcut değil. Stoklar tükendi.</string>
+    <string name="product_detail__in_stock">Stokta var</string>
+    <string name="product_detail__item_not_available">Ürün Müsait değil</string>
+    <string name="product_detail__install_messenger_app">Lütfen Messenger uygulamasını yükleyin.</string>
+    <string name="product_detail__install_whatsapp_app">Lütfen WhatsApp Uygulamasını kurun.</string>
+    <string name="product_detail__warning_select_attr">Lütfen renk seç.</string>
+    <string name="product_detail__messenger_text">haberci</string>
+    <string name="product_detail__whatsApp_text">Naber</string>
+    <string name="product_detail__phone_text">telefon etmek</string>
+    <string name="product_detail__min_order_error">"Minimum sipariş "</string>
+    <string name="product_detail__shipping_cost">Birim Başına Nakliye Maliyeti</string>
+    <string name="product_detail__product_min_order">Minimum sipariş</string>
+    <string name="product_detail__product_unit">Ürün Birimi</string>
+    <string name="product_detail__product_measurement">Ürün Ölçümü</string>
+
+    <string name="discount__rating5">%1$s reytingi (%2$s incelemesi)</string>
+
+
+
+    <string name="no_internet_error">İnternet bağlantısı yok.</string>
+
+
+
+    <string name="message_sent">Mesajınız gönderildi.</string>
+
+
+
+    <string name="update_noti">Lütfen bekle! Hala bildirim ayarını güncelliyor.</string>
+    <string name="copied_to_clipboard">Panoya kopyalandı.</string>
+    <string name="confirm_to_Buy">Lütfen bu siparişe devam etmek için onaylayın</string>
+    <string name="delete_item_from_basket">Bunu sepetten silmek istediğinize emin misiniz :(</string>
+    <string name="add_to_basket_confirm_box">Sepete ekleyeceğinizden emin misiniz :)</string>
+
+    <string name="success">BAŞARI</string>
+    <string name="confirm">ONAYLAMAK</string>
+    <string name="info">BİLGİ</string>
+    <string name="error">HATA</string>
+    <string name="warning">UYARI</string>
+    <string name="version_update">Sürüm Güncellemesi</string>
+    <string name="update">Güncelleştirme</string>
+
+
+    <string name="category__list_title">Kategori Listesi</string>
+
+
+    <string name="shop_category">Mağaza Kategorileri</string>
+    <string name="shop_new_shops">Yeni Mağazalar</string>
+    <string name="shop_featured_shops">Öne Çıkanlar</string>
+    <string name="shop_popular_shops">Popüler Mağazalar</string>
+    <string name="shop_blog">Blog</string>
+    <string name="rating_value">değerlendirme</string>
+
+
+    <string name="first_name">İsim</string>
+    <string name="last_name">Soyadı</string>
+    <string name="email">E-posta</string>
+    <string name="phone">Telefon</string>
+    <string name="company">şirket</string>
+    <string name="address_1">1. Adres</string>
+    <string name="address_2">Adres 2</string>
+    <string name="country">ülke</string>
+    <string name="state">Belirtmek, bildirmek</string>
+    <string name="city">Kent</string>
+    <string name="postal_code">posta kodu</string>
+    <string name="next">Sonraki</string>
+    <string name="shipping_address">Sonraki</string>
+    <string name="billing_address">Fatura Adresi</string>
+    <string name="same_with_shipping_address">Teslimat Adresiyle Aynı</string>
+    <string name="update_address">Gönderim / fatura adresinizi güncellemek ister misiniz?</string>
+
+
+
+    <string name="shipping_method">Nakliye Yöntemi</string>
+    <string name="coupon_discount">Kupon İndirimi</string>
+    <string name="coupon_discount_code">Kupon Kodu</string>
+    <string name="coupon_discount_code_instruction">Herhangi bir ödenebilir kodunuz varsa, lütfen burada kullanın. Böylece, bir indirim değeri alabilirsiniz</string>
+    <string name="order_summary">sipariş özeti</string>
+
+    <string name="total_item_count">Toplam Ürün Sayısı:</string>
+    <string name="total">Genel Toplam :</string>
+    <string name="discount">İndirim :</string>
+    <string name="coupon_discount_text">Kupon İndirimi:</string>
+
+    <string name="sub_total">Ara toplam :</string>
+    <string name="tax">Vergi (%1$s %%):</string>
+    <string name="shipping_cost">Nakliye maliyeti:</string>
+    <string name="shipping_tax">Nakliye vergisi (%1$s %%):</string>
+    <string name="days">günler</string>
+
+    <string name="error_coupon">Kupon Kodu geçerli değil</string>
+    <string name="check_coupon">Kupon kodunu kontrol etme</string>
+
+    <string name="confirm_checkout2">Onaylamak</string>
+    <string name="back">Geri</string>
+    <string name="checkout">Çıkış yapmak</string>
+    <string name="confirm_paypal">Lütfen paypal hesabınızı onaylayın. Ödeme düğmesine basana kadar hiçbir sipariş işlemi yapılmayacağını unutmayın.</string>
+
+
+    <string name="policy">Şartlar ve koşulları, Gizlilik politikasını ve geri ödeme politikasını okudum ve kabul ediyorum.</string>
+    <string name="get_token">Belirteç Almak</string>
+    <string name="transaction_number">işlem numarası :</string>
+    <string name="not_checked">Lütfen ödeme yapmadan önce şartlar ve koşulları kabul edin</string>
+
+
+    <string name="status_billing_address">Fatura Adresi</string>
+    <string name="shop__list">Mağaza Listesi</string>
+    <string name="checkout_status__thank_you">Teşekkür ederim,</string>
+
+
+    <string name="blog_list__title">Blog Listesi</string>
+
+
+    <string name="blog_detail__error_message">Bu kimliğe sahip blog yok</string>
+    <string name="blog_detail__title">Blog Ayrıntısı</string>
+
+
+    <string name="shop_category__title">Mağaza Etiketi Listesi</string>
+
+
+    <string name="shop_menu__title">Mağaza Menüsü</string>
+    <string name="shop">Dükkân</string>
+    <string name="copy_clipboard">Panoya kopyalandı</string>
+
+
+    <string name="shop__sure_to_exit">Bu mağazadan çıkmak ister misiniz?</string>
+
+
+    <string name="product_list_title">Ürün listesi</string>
+
+
+    <string name="force_update_true">Güncelleme mevcut</string>
+    <string name="force_update__button_update"> Güncelleştirme</string>
+
+
+    <string name="hello">Merhaba</string>
+    <string name="send_email">Posta göndermek…</string>
+    <string name="invalid_url">Geçersiz URL</string>
+
+
+    <string name="verify_email__informateion">Tarihinde doğrulama kodunu içeren bir e-posta aldınız</string>
+    <string name="verify_email__enter_code">dogrulama kodunu giriniz</string>
+    <string name="verify_email__change_email">Değişim e-posta</string>
+    <string name="verify_email__resent_code">Tekrar Gönderme Kodu</string>
+    <string name="verify_email__submit">Gönder</string>
+
+</resources>

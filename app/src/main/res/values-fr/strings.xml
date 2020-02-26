@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="terms_and_conditions__title">Termes et conditions</string>
+
+
+    <string name="history__title">L\'histoire</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">Favoris</string>
+
+
+    <string name="fb_register__welcome">Bienvenue de%1$s</string>
+    <string name="fb_register__desc">Veuillez vous connecter pour utiliser toutes les fonctionnalités de l\'application.</string>
+
+
+    <string name="gallery__title">Galerie</string>
+    <string name="gallery_image__gallery">Galerie d\'images</string>
+    <string name="gallery_img__desc">Description de l\'image</string>
+
+
+    <string name="image_default__image">Image par défaut</string>
+
+
+    <string name="app__app_name">Multi-magasins</string>
+    <string name="app__ok">D\'accord</string>
+    <string name="app__cancel">Annuler</string>
+    <string name="app__drawer_open">Tiroir ouvert</string>
+    <string name="app__drawer_close">Fermeture du tiroir</string>
+
+
+    <string name="menu__fb_login">Identifiant Facebook</string>
+    <string name="menu__comment_list">Liste de commentaires</string>
+    <string name="menu__notification_list">Liste de notification</string>
+
+
+    <string name="register__user_name">Nom d\'utilisateur</string>
+    <string name="register__email">Email</string>
+    <string name="register__password">Mot de passe</string>
+    <string name="register__back_to_login">Déjà membre? S\'identifier</string>
+    <string name="register__register">registre</string>
+    <string name="register__new_account">Enregistrer un nouveau compte d\'utilisateur</string>
+    <string name="register__check_option">Êtes-vous d\'accord avec cette politique de confidentialité?</string>
+
+
+    <string name="forgot_password__title">Mot de passe oublié</string>
+    <string name="forgot_password__email">Email</string>
+    <string name="forgot_password__back_to_login">Déjà membre? S\'identifier</string>
+    <string name="forgot_password__password_recovery">Récupération de mot de passe</string>
+    <string name="forgot_password__save">sauvegarder</string>
+    <string name="forgot_password__send">Envoyer</string>
+
+
+    <string name="password_change__password">Mot de passe</string>
+    <string name="password_change__save">sauvegarder</string>
+    <string name="password_change__confirm_password">Confirmez le mot de passe</string>
+    <string name="password_change__password_change">Changement de mot de passe</string>
+
+
+    <string name="login__email">Email</string>
+    <string name="login__password">Mot de passe</string>
+    <string name="login__not_a_member_join_now">Nouveau ici? S\'inscrire</string>
+    <string name="login__forgot_your_password">Mot de passe oublié ?</string>
+    <string name="login__login">Se connecter</string>
+    <string name="login__welcome_title">Bienvenue sur PS Market Place</string>
+    <string name="login__choice_text">OU</string>
+
+
+    <string name="contact_us__name">Nom du contact</string>
+    <string name="contact_us__email">Email du contact</string>
+    <string name="contact_us__message">Message de contact</string>
+    <string name="contact_us__phone">Numéro du contact</string>
+    <string name="contact_us__submit">Soumettre</string>
+
+
+    <string name="notification_setting__on_off">Réglage de la notification (activé / désactivé)</string>
+    <string name="notification_setting__latest_message_from_system">Dernier message du système</string>
+    <string name="notification__notification">Notification!</string>
+    <string name="notification__title">Notification</string>
+    <string name="notification_setting__title">Paramètre de notification</string>
+    <string name="notification_detail__title">Détail de la notification</string>
+    <string name="notification__alert">Alerte</string>
+
+
+    <string name="language__english">Anglais</string>
+    <string name="language__arabic">arabe</string>
+    <string name="language__spanish">Espanol</string>
+    <string name="language__language_change">Êtes-vous sûr de vouloir passer à %1$s?</string>
+    <string name="language__title">La langue</string>
+
+
+    <string name="comment__replies">-%1$s réponses</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">Liste de commentaires</string>
+    <string name="comment__detail_title">Réponses aux commentaires</string>
+    <string name="comment__empty_comment">Le commentaire est vide.</string>
+    <string name="comment__comment">Commentaire</string>
+
+
+    <string name="basket__list">Liste de panier</string>
+    <string name="basket__no_item_title">Le panier est vide</string>
+    <string name="basket__total">Total</string>
+    <string name="basket__items">Articles</string>
+    <string name="basket__checkout">Check-out</string>
+    <string name="basket__no_item_desc">On dirait que vous n\'avez aucun article dans votre panier. S\'il vous plaît continuer vos achats.</string>
+    <string name="basket__attributes">Les attributs</string>
+
+
+    <string name="rating__list">Liste de notation</string>
+    <string name="rating__write_review">Ecrire une critique</string>
+    <string name="rating__total_count">%1$s Commentaires des clients</string>
+    <string name="rating__total_value">%1$s sur 5 étoiles</string>
+    <string name="rating__total_count_n_value">%1$s sur 5 étoiles (%2$s Commentaires)</string>
+    <string name="rating__count">Étoile%1$s</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">En stock</string>
+    <string name="rating__title">Titre</string>
+    <string name="rating__message">Message</string>
+    <string name="rating__user_rating">Entrée de note d\'utilisateur!</string>
+    <string name="rating__your_rating">Votre note</string>
+    <string name="rating__five_star">5 étoiles</string>
+    <string name="rating__four_star">4 étoiles</string>
+    <string name="rating__three_star">3 étoiles</string>
+    <string name="rating__two_star">2 étoiles</string>
+    <string name="rating__one_star">1 étoile</string>
+    <string name="rating__rating_range">Plage de notation</string>
+    <string name="rating__one">1 et plus</string>
+    <string name="rating__two">2 et plus</string>
+    <string name="rating__three">3 et plus</string>
+    <string name="rating__four">4 et plus</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">","</string>
+
+
+    <string name="basket_card_view__price">Prix</string>
+    <string name="basket_card_view__sub_total">Total partiel</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">Tri</string>
+    <string name="popular__m_mun">Populaire</string>
+    <string name="recent__m_mun">Dernier</string>
+    <string name="low_price__m_mun">Prix le plus bas</string>
+    <string name="high_price__m_mun">Le prix le plus élevé</string>
+
+
+    <string name="checkout__payment_method">Mode de paiement</string>
+    <string name="checkout__cash_on_delivery">Paiement à la livraison</string>
+    <string name="checkout__bank">Pay Pal</string>
+    <string name="checkout__other">Bande</string>
+    <string name="checkout__bank_transfer">Banque</string>
+    <string name="checkout__memo">Note</string>
+    <string name="checkout__information__COD">Vous avez juste besoin de faire un paiement en espèces lorsqu\'un achat ou un envoi est livré.</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">Aucun mode de paiement disponible</string>
+    <string name="checkout__choose_a_method">Vous devez choisir un mode de paiement</string>
+    <string name="checkout__stripe">Payer avec Stripe</string>
+
+
+    <string name="checkout__order_registered">Commande effectuée avec succès</string>
+    <string name="checkout__shipping_to">Adresse de livraison</string>
+    <string name="checkout__view_detail">Voir les détails</string>
+    <string name="checkout__placed">Votre commande a bien été reçue.</string>
+    <string name="checkout__address_name">Adresse :</string>
+    <string name="checkout__phone_name">Téléphone :</string>
+    <string name="checkout__email_name">Email :</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">Prétendre</string>
+
+
+    <string name="transaction__number">Numéro de transaction:</string>
+    <string name="transaction__statue">Statut:</string>
+    <string name="transaction__total_amount">Montant total :</string>
+    <string name="transaction__view_details">Voir les détails</string>
+    <string name="transaction__title">Liste de transaction</string>
+    <string name="transaction_detail__title">Détail de la transaction</string>
+
+
+    <string name="checkout_detail__totalItem">Total d\'article</string>
+    <string name="checkout_detail__totalSubtotal">Total</string>
+    <string name="checkout_detail__totalDiscount">Montant de la remise</string>
+    <string name="checkout_detail__totalBalance">Équilibre</string>
+    <string name="checkout_detail__claimed_coupon">Vous venez de réclamer le coupon</string>
+
+
+    <string name="edit_setting__notification_setting">Paramètre de notification</string>
+    <string name="edit_setting__edit_profile">Editer le profil</string>
+    <string name="edit_setting__logout">Connectez - Out</string>
+    <string name="edit_setting__logout_question">Êtes-vous sûr de vous déconnecter?</string>
+    <string name="edit_setting__terms_and_conditions">Termes et conditions</string>
+    <string name="edit_setting__app_info">Informations sur l\'application</string>
+    <string name="edit_setting__title">Réglage</string>
+
+
+    <string name="transaction_order__total_amount">Prix</string>
+    <string name="transaction_order__count">Quantité</string>
+    <string name="transaction_order__balance">Équilibre</string>
+    <string name="transaction_order__discount_available_amount">Montant de la remise disponible</string>
+    <string name="transaction_order__sub_total">Total partiel</string>
+
+
+    <string name="message__register_success">Inscrivez-vous avec succès.</string>
+    <string name="message__loading">Chargement…</string>
+    <string name="message__please_wait">S\'il vous plaît, attendez…</string>
+    <string name="message__welcome">Formulaire de bienvenue PS Market Place</string>
+    <string name="message__want_to_quit">Veux-tu vraiment arrêter de fumer?</string>
+    <string name="message__ok_close">D\'accord</string>
+    <string name="message__cancel_close">Annuler</string>
+
+
+    <string name="checkout__checkout">Check-out</string>
+    <string name="checkout__data">Information</string>
+    <string name="checkout__payment">Paiement</string>
+    <string name="checkout__order">Ordre</string>
+    <string name="checkout__next">Prochain</string>
+    <string name="checkout__previous">précédent</string>
+    <string name="checkout__keep_shopping">Continuer vos achats</string>
+    <string name="checkout__Address">Adresse</string>
+    <string name="checkout__confirmation">Confirmation</string>
+
+
+    <string name="search__notSet">Pas encore défini</string>
+    <string name="search__by_name">Nom du produit</string>
+    <string name="search__by_category">Catégorie</string>
+    <string name="search__by_sub_category">Sous catégorie</string>
+    <string name="search__by_price">Prix</string>
+    <string name="search__lowest_price">Prix le plus bas</string>
+    <string name="search__highest_price">Le prix le plus élevé</string>
+    <string name="search__special_check">Contrôle spécial</string>
+    <string name="search__feature">produits présentés</string>
+    <string name="search__discount_price">Prix Discount</string>
+    <string name="search__search">Chercher</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">Pas encore défini</string>
+    <string name="sf__notSet_zg">Pas encore défini</string>
+    <string name="sf__ByItemType">Définir le nom de l\'article</string>
+    <string name="sf__ByPrice">Fixer le prix</string>
+    <string name="sf__LowestPrice">Prix le plus bas</string>
+    <string name="sf__HighestPrice">Le prix le plus élevé</string>
+    <string name="sf__AdvanceFiltering">Filtrage avancé</string>
+    <string name="sf__Feature">Produits vedettes</string>
+    <string name="sf__Discount">Produits à prix réduits</string>
+    <string name="sf__Filter_Button">Filtre</string>
+    <string name="typefilter">Filtré par Type de produit</string>
+
+
+    <string name="checkout__customer_information">Informations client</string>
+    <string name="checkout__name">prénom</string>
+    <string name="checkout__email">Email</string>
+    <string name="checkout__phone">Téléphone</string>
+    <string name="checkout__shipping_address">Adresse de livraison</string>
+    <string name="checkout__address">Adresse</string>
+    <string name="checkout__city">Ville</string>
+    <string name="checkout__country">Pays</string>
+    <string name="checkout__state">Etat / Province</string>
+
+
+    <string name="error_message__select_location">Veuillez sélectionner un lieu.!</string>
+    <string name="error_message__login_first">S\'il vous plait Connectez-vous d\'abord!</string>
+    <string name="error_message__rating">S\'il vous plaît remplir complètement pour l\'évaluation.</string>
+    <string name="error_message__youtube_not_valid">YouTube n\'est pas valide.</string>
+    <string name="error_message__blank_email">S\'il vous plaît entrer Email.</string>
+    <string name="error_message__choose_category">Choisissez la catégorie d\'abord</string>
+    <string name="error_message__insert_value_search">Insérer une valeur à rechercher</string>
+    <string name="error_message__order_fail">Échec du processus avec une erreur inconnue! Veuillez réessayer</string>
+    <string name="error_message__blank_contact_message">Veuillez saisir un message de contact.</string>
+    <string name="error_message__blank_password">S\'il vous plaît entrer le mot de passe.</string>
+    <string name="error_message__blank_name">S\'il vous plaît entrer le nom.</string>
+    <string name="error_message__blank_keyword">Veuillez saisir le mot clé de recherche.</string>
+    <string name="error_message__password_not_equal">Mot de passe ne sont pas égaux!</string>
+    <string name="error_message__no_internet">Pas de connexion Internet.</string>
+    <string name="error_message__email_exists">Email existe déjà</string>
+    <string name="error_message__to_check_agreement">Vous devez vérifier un accord de confidentialité et de la politique.</string>
+    <string name="error_message__choose_country">Choisissez le pays d\'abord</string>
+    <string name="error_message__select_city">Veuillez choisir une ville</string>
+    <string name="shipping_address_one_error_message">Entrez s\'il vous plaît Adresse d\'expédition 1</string>
+    <string name="billing_address_one_error_message">Entrez s\'il vous plaît Adresse de facturation 1</string>
+
+    <string name="transaction_detail__transaction_number">Numéro de transaction:</string>
+    <string name="transaction_detail__status">Statut:</string>
+    <string name="transaction_detail__order_date">Date de commande :</string>
+    <string name="transaction_detail__total_charges">Charges totales :</string>
+    <string name="transaction_detail__discount_price">Prix bas :</string>
+    <string name="transaction_detail__delivery_address">Adresse de livraison :</string>
+    <string name="transaction_detail__phone">Téléphone :</string>
+    <string name="transaction_detail__address">Adresse :</string>
+    <string name="transaction_detail__email">Email :</string>
+    <string name="transaction_detail__shipping_cost">Frais de port: </string>
+    <string name="transaction_detail_list__shipping_cost">Frais d\'expédition par article </string>
+    <string name="transaction_detail__shipping_tax">Taxe de livraison: </string>
+
+
+    <string name="Feature_UI_Type__Button">Catégorie</string>
+    <string name="Feature_UI_Tune__Button">Chercher</string>
+    <string name="Feature_UI_Sort__Button">Trier</string>
+    <string name="Feature_UI__product_list_no_item_title">Pas de données</string>
+    <string name="Feature_UI__product_list_no_item_desc">Il n\'y a pas de résultat! S\'il vous plaît essayez de régler le filtre.</string>
+    <string name="Feature_UI__product_list_loading_item_title">Nous chargeons</string>
+    <string name="Feature_UI__search_alert_cat_title">Choisissez une catégorie</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">Choisissez une sous catégorie</string>
+    <string name="Feature_UI__search_alert_country_title">Choisissez un pays</string>
+    <string name="Feature_UI__search_alert_city_title">Choisissez une ville</string>
+
+
+    <string name="about_us__phone">Téléphone</string>
+    <string name="about_us__facebook">Facebook</string>
+    <string name="about_us__gplus">Google Plus</string>
+    <string name="about_us__instagram">Instagram</string>
+    <string name="about_us__youtube">Youtube</string>
+    <string name="about_us__pinterest">Pinterest</string>
+    <string name="about_us__twitter">Gazouillement</string>
+    <string name="about_us__visit_website">Visitez notre site Web</string>
+    <string name="about_us__email">Email</string>
+    <string name="about_us__contact">Contact</string>
+    <string name="about_us__source_address">Adresse source</string>
+    <string name="about_us__title">Informations sur l\'application</string>
+
+
+    <string name="profile__title">Profil</string>
+    <string name="profile__name">prénom</string>
+    <string name="profile__edit">modifier</string>
+    <string name="profile__likes">Aime</string>
+    <string name="profile__history">L\'histoire</string>
+    <string name="profile__favourites">Favoris</string>
+    <string name="profile__setting">Réglage</string>
+    <string name="profile__joined_on">Rejoint le</string>
+    <string name="profile__joined_date">Date jointe</string>
+    <string name="profile__orders">Ordres</string>
+    <string name="profile__see_all">Voir tout</string>
+    <string name="profile__verified">Vérifié</string>]
+    <string name="profile__status">Statut</string>
+    <string name="profile__transaction">Transactions</string>
+
+
+    <string name="edit_profile__title">Editer le profil</string>
+    <string name="edit_profile__user_name">Nom d\'utilisateur</string>
+    <string name="edit_profile__about_me">À propos de moi</string>
+    <string name="edit_profile__email">Email</string>
+    <string name="edit_profile__phone">Téléphone</string>
+    <string name="edit_profile__password">Mot de passe</string>
+    <string name="edit_profile__password_change">Changement de mot de passe</string>
+    <string name="edit_profile__save">sauvegarder</string>
+    <string name="edit_profile__address">Adresse de livraison</string>
+    <string name="edit_profile__town">Ville</string>
+    <string name="edit_profile__division">Division</string>
+    <string name="edit_profile__country">Pays</string>
+    <string name="verify_email">Vérifier les courriels</string>
+
+
+    <string name="menu__home">Accueil</string>
+    <string name="menu__profile">Profil</string>
+    <string name="menu__like">Comme</string>
+    <string name="menu__favourite_items">Préféré</string>
+    <string name="menu__transaction">Transaction</string>
+    <string name="menu__user_history">Historique utilisateur</string>
+    <string name="menu__logout">Connectez - Out</string>
+    <string name="menu__about_app">À propos de nous</string>
+    <string name="menu__contact_us">Contactez nous</string>
+    <string name="menu__notification_setting">Paramètre de notification</string>
+    <string name="menu__language">La langue</string>
+    <string name="menu__setting">Réglage</string>
+    <string name="menu__shop_profile">Boutique</string>
+    <string name="menu__me">Moi</string>
+    <string name="menu__basket">Panier</string>
+    <string name="menu__app_setting">App</string>
+    <string name="menu__user_info">informations utilisateur</string>
+    <string name="menu__save">sauvegarder</string>
+    <string name="menu__search">Chercher</string>
+    <string name="menu__side_bar_menu">Plus</string>
+    <string name="menu__filter">Filtre</string>
+    <string name="menu__latest_product">derniers produits</string>
+    <string name="menu__discount">Produits à prix réduits</string>
+    <string name="menu__category">Catégorie</string>
+    <string name="menu__featured_product">produits présentés</string>
+    <string name="menu__subcategory">Sous catégorie</string>
+    <string name="menu__trending_products">Produits tendance</string>
+    <string name="menu__trending_category">Catégories de tendances</string>
+    <string name="menu__home_category_view_All_zg">Voir tout</string>
+    <string name="menu__home_category_view_All_un">Voir tout</string>
+    <string name="menu__home_category_textView">Les catégories</string>
+    <string name="menu__collections">Des collections</string>
+    <string name="menu__home_discount_view_all">Voir tous les produits en promotion</string>
+    <string name="setting__clear_cache_confirm">Êtes-vous sûr de vider le cache des images?</string>
+    <string name="setting__clear_image_cache">Effacer le cache de l\'image</string>
+    <string name="setting__image_cache_size">Taille du cache de l\'image</string>
+    <string name="setting__change_gdpr">Changer le réglage GDPR</string>
+    <string name="setting__version_no">Numéro de version:</string>
+    <string name="menu__rate">Évaluer l\'application</string>
+    <string name="menu__privacy_policy">Termes et conditions</string>
+
+
+    <string name="collection__list_title">Liste de collection</string>
+
+
+    <string name="product_detail__isFeatured">Produit vedette \ n.</string>
+    <string name="product_detail__desc_title">Description du produit</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">Addidas</string>
+    <string name="product_detail__detail_facts_un">Informations détaillées</string>
+    <string name="product_detail__other_facts_un">les autres informations</string>
+    <string name="product_detail__size_un">Taille</string>
+    <string name="product_detail__select_size_un">Choisir la taille</string>
+    <string name="product_detail__cloth_un">vêtements</string>
+    <string name="product_detail__select_cloth_un">Choisir des vêtements</string>
+    <string name="product_detail__product_name_un">Nom du produit</string>
+    <string name="product_detail__can_get_colors_un">Couleurs disponibles</string>
+    <string name="product_detail__choosing_un">Attributs du produit</string>
+    <string name="product_detail__how_many_un">Combien ?</string>
+    <string name="product_detail__terms_and_policy_un">Termes et politique</string>
+    <string name="product_detail__re_change_un">En changeant..</string>
+    <string name="product_detail__never_change_un">Impossible de changer de vêtements</string>
+    <string name="product_detail__terms_and_condition">TERMES ET CONDITIONS</string>
+    <string name="product_detail__refund_policy">Politique de remboursement</string>
+    <string name="product_detail__users_scene_un">Commentaires des utilisateurs</string>
+    <string name="product_detail__no_scene_un">Sans commentaires !</string>
+    <string name="product_detail__write_scene_un">Écrire un commentaire</string>
+    <string name="product_detail__similar_products_un">Produits connexes</string>
+    <string name="product_detail__related_tags">Tags associés</string>
+    <string name="product_detail__related_product">Produits connexes</string>
+    <string name="product_detail__add_to_busket"> Ajouter au panier</string>
+    <string name="product_detail__buy">Acheter</string>
+    <string name="product_detail__successfully_added">Ajouté avec succès au panier</string>
+    <string name="product_detail__like">Comme</string>
+    <string name="product_detail__comment">commentaires</string>
+    <string name="product_detail__favourite">Préféré</string>
+    <string name="product_detail__wish_list">Liste de souhaits</string>
+    <string name="product_detail__seen">Vu</string>
+    <string name="product_detail__see_all_comment">VOIR TOUS LES COMMENTAIRES</string>
+    <string name="product_detail__choose_un">Choisissez%1$s</string>
+    <string name="product_detail__choose_zg">Choisissez%1$s</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">Pas de notation.</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">Ce produit n\'est pas disponible. En rupture de stock.</string>
+    <string name="product_detail__in_stock">En stock</string>
+    <string name="product_detail__item_not_available">L\'article n\'est pas disponible</string>
+    <string name="product_detail__install_messenger_app">S\'il vous plaît installer Messenger App.</string>
+    <string name="product_detail__install_whatsapp_app">S\'il vous plaît installer WhatsApp App.</string>
+    <string name="product_detail__warning_select_attr">S\'il vous plaît sélectionner la couleur.</string>
+    <string name="product_detail__messenger_text">Messager</string>
+    <string name="product_detail__whatsApp_text">WhatsApp</string>
+    <string name="product_detail__phone_text">appel</string>
+    <string name="product_detail__min_order_error">Commande minimum est</string>
+    <string name="product_detail__shipping_cost">Frais d\'expédition à l\'unité</string>
+    <string name="product_detail__product_min_order">Commande minimum</string>
+    <string name="product_detail__product_unit">Unité de produit</string>
+    <string name="product_detail__product_measurement">mesure du produit</string>
+
+    <string name="discount__rating5">%1$s rating (%2$s Reviews)</string>
+
+
+
+    <string name="no_internet_error">Pas de connexion Internet.</string>
+
+
+
+    <string name="message_sent">Votre message a été envoyé.</string>
+
+
+
+    <string name="update_noti">S\'il vous plaît, attendez! Toujours en train de mettre à jour les paramètres de notification.</string>
+    <string name="copied_to_clipboard">Copié dans le presse-papier.</string>
+    <string name="confirm_to_Buy">S\'il vous plaît confirmer pour procéder cette commande</string>
+    <string name="delete_item_from_basket">Etes-vous sûr de vouloir supprimer ceci du panier :(</string>
+    <string name="add_to_basket_confirm_box">Etes-vous sûr d\'ajouter dans le panier :)</string>
+
+    <string name="success">SUCCÈS</string>
+    <string name="confirm">CONFIRMER</string>
+    <string name="info">INFO</string>
+    <string name="error">ERREUR</string>
+    <string name="warning">ATTENTION</string>
+    <string name="version_update">Mise à jour de la version</string>
+    <string name="update">Mettre à jour</string>
+
+
+    <string name="category__list_title">Liste de catégories</string>
+
+
+    <string name="shop_category">Catégories de magasin</string>
+    <string name="shop_new_shops">Nouveaux magasins</string>
+    <string name="shop_featured_shops">Boutiques en vedette</string>
+    <string name="shop_popular_shops">Boutiques Populaires</string>
+    <string name="shop_blog">Blog</string>
+    <string name="rating_value">évaluation</string>
+
+
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="email">Email</string>
+    <string name="phone">Téléphone</string>
+    <string name="company">Entreprise</string>
+    <string name="address_1">Adresse 1</string>
+    <string name="address_2">Adresse 2</string>
+    <string name="country">Pays</string>
+    <string name="state">Etat</string>
+    <string name="city">Ville</string>
+    <string name="postal_code">code postal</string>
+    <string name="next">Prochain</string>
+    <string name="shipping_address">Prochain</string>
+    <string name="billing_address">Adresse de facturation</string>
+    <string name="same_with_shipping_address">Même avec l\'adresse de livraison</string>
+    <string name="update_address">Voulez-vous mettre à jour votre adresse de livraison / de facturation?</string>
+
+
+
+    <string name="shipping_method">Méthode d\'envoi</string>
+    <string name="coupon_discount">Coupon Réduction</string>
+    <string name="coupon_discount_code">Code de coupon</string>
+    <string name="coupon_discount_code_instruction">Si vous avez un code échangeable, veuillez l’utiliser ici. Donc, vous pouvez obtenir une valeur de réduction</string>
+    <string name="order_summary">Récapitulatif de la commande</string>
+
+    <string name="total_item_count">Nombre total d\'articles:</string>
+    <string name="total">Total :</string>
+    <string name="discount">Remise :</string>
+    <string name="coupon_discount_text">Réduction du coupon:</string>
+
+    <string name="sub_total">Sous total:</string>
+    <string name="tax">Taxe (%1$s %%):</string>
+    <string name="shipping_cost">Frais de port:</string>
+    <string name="shipping_tax">Taxe de livraison (%1$s %%):</string>
+    <string name="days">Journées</string>
+
+    <string name="error_coupon">Le code de coupon n\'est pas valide</string>
+    <string name="check_coupon">Vérification du code de coupon</string>
+
+    <string name="confirm_checkout2">Confirmer</string>
+    <string name="back">Retour</string>
+    <string name="checkout">Check-out</string>
+    <string name="confirm_paypal">S\'il vous plaît confirmer votre compte paypal. Notez qu\'aucune transaction de commande ne sera effectuée jusqu\'à ce que vous appuyiez sur le bouton de commande</string>
+
+
+    <string name="policy">J\'ai lu et j\'accepte les conditions générales, la politique de confidentialité et la politique de remboursement.</string>
+    <string name="get_token">Obtenir un jeton</string>
+    <string name="transaction_number">numéro de transaction:</string>
+    <string name="not_checked">Veuillez accepter les conditions générales avant de passer à la caisse.</string>
+
+
+    <string name="status_billing_address">Adresse de facturation</string>
+    <string name="shop__list">Liste de magasin</string>
+    <string name="checkout_status__thank_you">Merci,</string>
+
+
+    <string name="blog_list__title">Liste de blogs</string>
+
+
+    <string name="blog_detail__error_message">Le blog avec cet identifiant n\'existe pas</string>
+    <string name="blog_detail__title">Détail du blog</string>
+
+
+    <string name="shop_category__title">Liste des étiquettes de la boutique</string>
+
+
+    <string name="shop_menu__title">Menu de la boutique</string>
+    <string name="shop">Boutique</string>
+    <string name="copy_clipboard">Copié dans le presse-papier</string>
+
+
+    <string name="shop__sure_to_exit">Voulez-vous quitter ce magasin?</string>
+
+
+    <string name="product_list_title">Liste de produits</string>
+
+
+    <string name="force_update_true">La mise à jour est disponible</string>
+    <string name="force_update__button_update"> Mettre à jour</string>
+
+
+    <string name="hello">Bonjour</string>
+    <string name="send_email">Envoyer un mail…</string>
+    <string name="invalid_url">URL invalide</string>
+
+
+    <string name="verify_email__informateion">Vous venez de recevoir un email contenant le code de vérification sur</string>
+    <string name="verify_email__enter_code">Entrez le code de vérification</string>
+    <string name="verify_email__change_email">Changer l\'e-mail</string>
+    <string name="verify_email__resent_code">Code renvoyé</string>
+    <string name="verify_email__submit">Soumettre</string>
+
+
+</resources>

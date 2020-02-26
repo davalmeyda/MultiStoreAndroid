@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="transactionDetail"
+            type="com.panaceasoft.psmultistore.viewobject.TransactionDetail" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="@dimen/space_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/historyIconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    android:tint="@color/md_grey_800"
+                    app:layout_constraintBottom_toBottomOf="@+id/transactionOrderProductNameTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/transactionOrderProductNameTextView"
+                    app:srcCompat="@drawable/baseline_tag_black_24" />
+
+                <TextView
+                    android:id="@+id/transactionOrderProductNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@{transactionDetail.productName}"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toEndOf="@+id/historyIconImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/view__primary_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/transactionOrderProductNameTextView" />
+
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/transaction_order__total_amount"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/attributesView"
+                    tools:text="Price" />
+
+                <TextView
+                    android:id="@+id/priceValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/attributesView"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/countTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction_order__count"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/balanceTextView"
+                    tools:text="Qty" />
+
+                <TextView
+                    android:id="@+id/shippingCostTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction_detail_list__shipping_cost"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/subTotalTextView" />
+
+                <View
+                    android:id="@+id/bottomView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shippingCostTextView" />
+
+                <TextView
+                    android:id="@+id/shippingCostValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="@dimen/space_16"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/subTotalValueTextView"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/countValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@{``+ transactionDetail.qty+` `+ transactionDetail.productUnit}"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/balanceValueTextView"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/discountAvailableAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction_order__discount_available_amount"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/priceTextView"
+                    tools:text="Avai Amount" />
+
+                <TextView
+                    android:id="@+id/discountAvailableAmountValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/priceValueTextView"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/balanceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction_order__balance"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/discountAvailableAmountTextView"
+                    tools:text="Balance" />
+
+                <TextView
+                    android:id="@+id/balanceValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/discountAvailableAmountValueTextView"
+                    tools:text="0.00" />
+
+                <TextView
+                    android:id="@+id/subTotalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/transaction_order__sub_total"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/countTextView"
+                    tools:text="Sub Total" />
+
+                <TextView
+                    android:id="@+id/subTotalValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/countValueText"
+                    tools:text="0.00" />
+
+                <ImageView
+                    android:id="@+id/color1BgImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view10"
+                    app:srcCompat="@drawable/circler_border" />
+
+                <TextView
+                    android:id="@+id/attributesTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="Attributes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/color1BgImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+                <View
+                    android:id="@+id/attributesView"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

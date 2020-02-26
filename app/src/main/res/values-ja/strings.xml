@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="terms_and_conditions__title">規約と条件</string>
+
+
+    <string name="history__title">歴史</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">お気に入り</string>
+
+
+    <string name="fb_register__welcome">%1$sからようこそ</string>
+    <string name="fb_register__desc">アプリケーションのすべての機能を使用するにはログインしてください。</string>
+
+
+    <string name="gallery__title">ギャラリー</string>
+    <string name="gallery_image__gallery">イメージギャラリー</string>
+    <string name="gallery_img__desc">画像の説明</string>
+
+
+    <string name="image_default__image">デフォルト画像</string>
+
+
+    <string name="app__app_name">マルチストア</string>
+    <string name="app__ok">OK</string>
+    <string name="app__cancel">キャンセル</string>
+    <string name="app__drawer_open">引き出しを開く</string>
+    <string name="app__drawer_close">引き出しを閉じる</string>
+
+
+    <string name="menu__fb_login">フェイスブックログイン</string>
+    <string name="menu__comment_list">コメントリスト</string>
+    <string name="menu__notification_list">通知リスト</string>
+
+
+    <string name="register__user_name">ユーザー名</string>
+    <string name="register__email">Eメール</string>
+    <string name="register__password">パスワード</string>
+    <string name="register__back_to_login">すでにメンバーですか？ログイン</string>
+    <string name="register__register">登録</string>
+    <string name="register__new_account">新しいユーザーアカウントを登録する</string>
+    <string name="register__check_option">このプライバシーとポリシーに同意しますか？</string>
+
+
+    <string name="forgot_password__title">パスワードをお忘れですか</string>
+    <string name="forgot_password__email">Eメール</string>
+    <string name="forgot_password__back_to_login">すでにメンバーですか？ログイン</string>
+    <string name="forgot_password__password_recovery">パスワードの復元</string>
+    <string name="forgot_password__save">保存する</string>
+    <string name="forgot_password__send">送る</string>
+
+
+    <string name="password_change__password">パスワード</string>
+    <string name="password_change__save">保存する</string>
+    <string name="password_change__confirm_password">パスワードを認証する</string>
+    <string name="password_change__password_change">パスワードの変更</string>
+
+
+    <string name="login__email">Eメール</string>
+    <string name="login__password">パスワード</string>
+    <string name="login__not_a_member_join_now">ここで新しいですか？サインアップ</string>
+    <string name="login__forgot_your_password">パスワードをお忘れですか ？</string>
+    <string name="login__login">サインイン</string>
+    <string name="login__welcome_title">PSマーケットプレイスへようこそ</string>
+    <string name="login__choice_text">または</string>
+
+
+    <string name="contact_us__name">連絡先</string>
+    <string name="contact_us__email">連絡先メールアドレス</string>
+    <string name="contact_us__message">連絡先</string>
+    <string name="contact_us__phone">電話番号</string>
+    <string name="contact_us__submit">提出する</string>
+
+
+    <string name="notification_setting__on_off">通知設定（オン/オフ）</string>
+    <string name="notification_setting__latest_message_from_system">システムからの最新のメッセージ</string>
+    <string name="notification__notification">お知らせ！</string>
+    <string name="notification__title">お知らせ</string>
+    <string name="notification_setting__title">通知設定</string>
+    <string name="notification_detail__title">通知の詳細</string>
+    <string name="notification__alert">アラート</string>
+
+
+    <string name="language__english">英語</string>
+    <string name="language__arabic">アラビア語</string>
+    <string name="language__spanish">スペイン語</string>
+    <string name="language__language_change">%1$s に変更してもよろしいですか？</string>
+    <string name="language__title">言語</string>
+
+
+    <string name="comment__replies">-%1$sの返信</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">コメントリスト</string>
+    <string name="comment__detail_title">コメントの返信</string>
+    <string name="comment__empty_comment">コメントは空です。</string>
+    <string name="comment__comment">コメント</string>
+
+
+    <string name="basket__list">バスケットリスト</string>
+    <string name="basket__no_item_title">カートは空です</string>
+    <string name="basket__total">合計</string>
+    <string name="basket__items">アイテム</string>
+    <string name="basket__checkout">チェックアウト</string>
+    <string name="basket__no_item_desc">ショッピングカートに商品が入っていないようです。買い物を続けてください。</string>
+    <string name="basket__attributes">属性</string>
+
+
+    <string name="rating__list">評価リスト</string>
+    <string name="rating__write_review">レビューを書く</string>
+    <string name="rating__total_count">%1$s カスタマーレビュー</string>
+    <string name="rating__total_value">5つ星中%1$s</string>
+    <string name="rating__total_count_n_value">5つ星中%1$s（%2$sレビュー）</string>
+    <string name="rating__count">%1$sスター</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">在庫あり</string>
+    <string name="rating__title">タイトル</string>
+    <string name="rating__message">メッセージ</string>
+    <string name="rating__user_rating">ユーザー評価エントリ！</string>
+    <string name="rating__your_rating">あなたの評価</string>
+    <string name="rating__five_star">5つ星</string>
+    <string name="rating__four_star">4つ星</string>
+    <string name="rating__three_star">3つ星</string>
+    <string name="rating__two_star">2つ星</string>
+    <string name="rating__one_star">1つ星</string>
+    <string name="rating__rating_range">定格範囲</string>
+    <string name="rating__one">1以上</string>
+    <string name="rating__two">2以上</string>
+    <string name="rating__three">3以上</string>
+    <string name="rating__four">4以上</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">「、」</string>
+
+
+    <string name="basket_card_view__price">価格</string>
+    <string name="basket_card_view__sub_total">小計</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">仕分け</string>
+    <string name="popular__m_mun">人気</string>
+    <string name="recent__m_mun">最新</string>
+    <string name="low_price__m_mun">最低価格</string>
+    <string name="high_price__m_mun">最高価格</string>
+
+
+    <string name="checkout__payment_method">支払方法</string>
+    <string name="checkout__cash_on_delivery">代金引換</string>
+    <string name="checkout__bank">ペイパル</string>
+    <string name="checkout__other">ストライプ</string>
+    <string name="checkout__bank_transfer">バンク</string>
+    <string name="checkout__memo">メモ</string>
+    <string name="checkout__information__COD">購入または出荷の配送時に現金で支払うだけです。</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">利用可能な支払い方法はありません</string>
+    <string name="checkout__choose_a_method">お支払い方法を選択する必要があります</string>
+    <string name="checkout__stripe">ストライプで支払う</string>
+
+
+    <string name="checkout__order_registered">注文は正常に完了しました</string>
+    <string name="checkout__shipping_to">お届け先の住所</string>
+    <string name="checkout__view_detail">詳細を表示</string>
+    <string name="checkout__placed">ご注文は確定されました。</string>
+    <string name="checkout__address_name">住所 ：</string>
+    <string name="checkout__phone_name">電話番号</string>
+    <string name="checkout__email_name">Eメール ：</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">請求</string>
+
+
+    <string name="transaction__number">取引番号：</string>
+    <string name="transaction__statue">状態 ：</string>
+    <string name="transaction__total_amount">合計金額 ：</string>
+    <string name="transaction__view_details">詳細を見る</string>
+    <string name="transaction__title">取引リスト</string>
+    <string name="transaction_detail__title">取引詳細</string>
+
+
+    <string name="checkout_detail__totalItem">トータルアイテム</string>
+    <string name="checkout_detail__totalSubtotal">小計</string>
+    <string name="checkout_detail__totalDiscount">割引額</string>
+    <string name="checkout_detail__totalBalance">バランス</string>
+    <string name="checkout_detail__claimed_coupon">クーポンを請求しました</string>
+
+
+    <string name="edit_setting__notification_setting">通知設定</string>
+    <string name="edit_setting__edit_profile">プロファイル編集</string>
+    <string name="edit_setting__logout">ログアウト</string>
+    <string name="edit_setting__logout_question">ログアウトしますか？</string>
+    <string name="edit_setting__terms_and_conditions">規約と条件</string>
+    <string name="edit_setting__app_info">アプリ情報</string>
+    <string name="edit_setting__title">設定</string>
+
+
+    <string name="transaction_order__total_amount">価格</string>
+    <string name="transaction_order__count">量</string>
+    <string name="transaction_order__balance">バランス</string>
+    <string name="transaction_order__discount_available_amount">割引可能額</string>
+    <string name="transaction_order__sub_total">小計</string>
+
+
+    <string name="message__register_success">登録に成功しました。</string>
+    <string name="message__loading">読み込み中…</string>
+    <string name="message__please_wait">お待ちください…</string>
+    <string name="message__welcome">PSマーケットプレイスへようこそ</string>
+    <string name="message__want_to_quit">本当に辞めますか？</string>
+    <string name="message__ok_close">OK</string>
+    <string name="message__cancel_close">キャンセル</string>
+
+
+    <string name="checkout__checkout">チェックアウト</string>
+    <string name="checkout__data">情報</string>
+    <string name="checkout__payment">支払い</string>
+    <string name="checkout__order">注文</string>
+    <string name="checkout__next">次</string>
+    <string name="checkout__previous">前</string>
+    <string name="checkout__keep_shopping">ショッピングを続ける</string>
+    <string name="checkout__Address">住所</string>
+    <string name="checkout__confirmation">確認</string>
+
+
+    <string name="search__notSet">設定されていません</string>
+    <string name="search__by_name">商品名</string>
+    <string name="search__by_category">カテゴリー</string>
+    <string name="search__by_sub_category">サブカテゴリー</string>
+    <string name="search__by_price">価格</string>
+    <string name="search__lowest_price">最低価格</string>
+    <string name="search__highest_price">最高価格</string>
+    <string name="search__special_check">特別なチェック</string>
+    <string name="search__feature">おすすめ商品</string>
+    <string name="search__discount_price">割引価格</string>
+    <string name="search__search">サーチ</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">設定されていません</string>
+    <string name="sf__notSet_zg">設定されていません</string>
+    <string name="sf__ByItemType">セットアイテム名</string>
+    <string name="sf__ByPrice">セット価格</string>
+    <string name="sf__LowestPrice">最低価格</string>
+    <string name="sf__HighestPrice">最高価格</string>
+    <string name="sf__AdvanceFiltering">高度なフィルタリング</string>
+    <string name="sf__Feature">機能製品</string>
+    <string name="sf__Discount">割引商品</string>
+    <string name="sf__Filter_Button">フィルタ</string>
+    <string name="typefilter">製品タイプでフィルタリング</string>
+
+
+    <string name="checkout__customer_information">顧客情報</string>
+    <string name="checkout__name">名</string>
+    <string name="checkout__email">Eメール</string>
+    <string name="checkout__phone">電話</string>
+    <string name="checkout__shipping_address">お届け先の住所</string>
+    <string name="checkout__address">住所</string>
+    <string name="checkout__city">シティ</string>
+    <string name="checkout__country">国</string>
+    <string name="checkout__state">都道府県</string>
+
+
+    <string name="error_message__select_location">場所を選択してください。</string>
+    <string name="error_message__login_first">最初にログインしてください！</string>
+    <string name="error_message__rating">評価のために完全に記入してください。</string>
+    <string name="error_message__youtube_not_valid">YouTubeは無効です。</string>
+    <string name="error_message__blank_email">メールアドレスを入力してください。</string>
+    <string name="error_message__choose_category">最初にカテゴリを選択してください</string>
+    <string name="error_message__insert_value_search">検索する値を挿入</string>
+    <string name="error_message__order_fail">不明なエラーでプロセスが失敗しました！もう一度やり直してください</string>
+    <string name="error_message__blank_contact_message">連絡先メッセージを入力してください。</string>
+    <string name="error_message__blank_password">パスワードを入力してください。</string>
+    <string name="error_message__blank_name">名前を入力してください。</string>
+    <string name="error_message__blank_keyword">検索キーワードを入力してください。</string>
+    <string name="error_message__password_not_equal">パスワードが等しくありません！</string>
+    <string name="error_message__no_internet">インターネットに接続していません。</string>
+    <string name="error_message__email_exists">メールは既に存在します</string>
+    <string name="error_message__to_check_agreement">あなたはプライバシーとポリシーの同意を確認する必要があります。</string>
+
+    <string name="transaction_detail__transaction_number">取引番号：</string>
+    <string name="transaction_detail__status">状態 ：</string>
+    <string name="transaction_detail__order_date">注文日 ：</string>
+    <string name="transaction_detail__total_charges">総料金 ：</string>
+    <string name="transaction_detail__discount_price">割引価格：</string>
+    <string name="transaction_detail__delivery_address">配送先住所：</string>
+    <string name="transaction_detail__phone">電話番号</string>
+    <string name="transaction_detail__address">住所 ：</string>
+    <string name="transaction_detail__email">Eメール ：</string>
+    <string name="transaction_detail__shipping_cost">輸送費： </string>
+    <string name="transaction_detail_list__shipping_cost">アイテムごとの送料 </string>
+    <string name="transaction_detail__shipping_tax">配送税： </string>
+
+
+    <string name="Feature_UI_Type__Button">カテゴリー</string>
+    <string name="Feature_UI_Tune__Button">サーチ</string>
+    <string name="Feature_UI_Sort__Button">ソート</string>
+    <string name="Feature_UI__product_list_no_item_title">データなし</string>
+    <string name="Feature_UI__product_list_no_item_desc">結果はありません！フィルターを調整してみてください。</string>
+    <string name="Feature_UI__product_list_loading_item_title">読み込んでいます</string>
+    <string name="Feature_UI__search_alert_cat_title">カテゴリーを選択</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">サブカテゴリを選択</string>
+    <string name="Feature_UI__search_alert_country_title">国を選択します</string>
+    <string name="Feature_UI__search_alert_city_title">都市を選択</string>
+    <string name="error_message__choose_country">国を最初に選択</string>
+    <string name="error_message__select_city">都市を選択してください</string>
+    <string name="shipping_address_one_error_message">配送先住所1を入力してください。</string>
+    <string name="billing_address_one_error_message">請求先住所1を入力してください。</string>
+
+
+    <string name="about_us__phone">電話</string>
+    <string name="about_us__facebook">フェイスブック</string>
+    <string name="about_us__gplus">グーグルプラス</string>
+    <string name="about_us__instagram">インスタグラム</string>
+    <string name="about_us__youtube">Youtube</string>
+    <string name="about_us__pinterest">Pinterest</string>
+    <string name="about_us__twitter">Twitter</string>
+    <string name="about_us__visit_website">当社のウェブサイトをご覧ください</string>
+    <string name="about_us__email">Eメール</string>
+    <string name="about_us__contact">接触</string>
+    <string name="about_us__source_address">送信元アドレス</string>
+    <string name="about_us__title">アプリ情報</string>
+
+
+    <string name="profile__title">プロフィール</string>
+    <string name="profile__name">名</string>
+    <string name="profile__edit">編集</string>
+    <string name="profile__likes">いいね</string>
+    <string name="profile__history">歴史</string>
+    <string name="profile__favourites">お気に入り</string>
+    <string name="profile__setting">設定</string>
+    <string name="profile__joined_on">参加しました</string>
+    <string name="profile__joined_date">入会日</string>
+    <string name="profile__orders">ご注文</string>
+    <string name="profile__see_all">すべてを見る</string>
+    <string name="profile__verified">検証済み</string>]
+    <string name="profile__status">状態</string>
+    <string name="profile__transaction">取引</string>
+
+
+    <string name="edit_profile__title">プロファイル編集</string>
+    <string name="edit_profile__user_name">ユーザー名</string>
+    <string name="edit_profile__about_me">私について</string>
+    <string name="edit_profile__email">Eメール</string>
+    <string name="edit_profile__phone">電話</string>
+    <string name="edit_profile__password">パスワード</string>
+    <string name="edit_profile__password_change">パスワードの変更</string>
+    <string name="edit_profile__save">保存する</string>
+    <string name="edit_profile__address">配送先住所</string>
+    <string name="edit_profile__town">タウン</string>
+    <string name="edit_profile__division">分割</string>
+    <string name="edit_profile__country">国</string>
+    <string name="verify_email">Eメールを確認します</string>
+
+
+    <string name="menu__home">ホーム</string>
+    <string name="menu__profile">プロフィール</string>
+    <string name="menu__like">いいね</string>
+    <string name="menu__favourite_items">お気に入り</string>
+    <string name="menu__transaction">トランザクション</string>
+    <string name="menu__user_history">ユーザー履歴</string>
+    <string name="menu__logout">ログアウト</string>
+    <string name="menu__about_app">私たちに関しては</string>
+    <string name="menu__contact_us">お問い合わせ</string>
+    <string name="menu__notification_setting">通知設定</string>
+    <string name="menu__language">言語</string>
+    <string name="menu__setting">設定</string>
+    <string name="menu__shop_profile">ショップ</string>
+    <string name="menu__me">私</string>
+    <string name="menu__basket">バスケット</string>
+    <string name="menu__app_setting">アプリ</string>
+    <string name="menu__user_info">ユーザー情報</string>
+    <string name="menu__save">保存する</string>
+    <string name="menu__search">サーチ</string>
+    <string name="menu__side_bar_menu">もっと</string>
+    <string name="menu__filter">フィルタ</string>
+    <string name="menu__latest_product">最新の製品</string>
+    <string name="menu__discount">割引商品</string>
+    <string name="menu__category">カテゴリー</string>
+    <string name="menu__featured_product">おすすめ商品</string>
+    <string name="menu__subcategory">サブカテゴリー</string>
+    <string name="menu__trending_products">トレンド製品</string>
+    <string name="menu__trending_category">トレンドカテゴリ</string>
+    <string name="menu__home_category_view_All_zg">すべて見る</string>
+    <string name="menu__home_category_view_All_un">すべて見る</string>
+    <string name="menu__home_category_textView">カテゴリー</string>
+    <string name="menu__collections">コレクション</string>
+    <string name="menu__home_discount_view_all">すべての割引商品を見る</string>
+    <string name="setting__clear_cache_confirm">画像キャッシュをクリアしてもよろしいですか？</string>
+    <string name="setting__clear_image_cache">画像キャッシュをクリア</string>
+    <string name="setting__image_cache_size">画像キャッシュサイズ</string>
+    <string name="setting__change_gdpr">GDPR設定の変更</string>
+    <string name="setting__version_no">バージョン番号：</string>
+    <string name="menu__rate">このアプリを評価する</string>
+    <string name="menu__privacy_policy">規約と条件</string>
+
+
+    <string name="collection__list_title">コレクションリスト</string>
+
+
+    <string name="product_detail__isFeatured">注目の\ n製品。</string>
+    <string name="product_detail__desc_title">製品説明</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">アディダス</string>
+    <string name="product_detail__detail_facts_un">詳細情報</string>
+    <string name="product_detail__other_facts_un">その他の情報</string>
+    <string name="product_detail__size_un">サイズ</string>
+    <string name="product_detail__select_size_un">サイズを選ぶ</string>
+    <string name="product_detail__cloth_un">服</string>
+    <string name="product_detail__select_cloth_un">服を選ぶ</string>
+    <string name="product_detail__product_name_un">商品名</string>
+    <string name="product_detail__can_get_colors_un">利用可能な色</string>
+    <string name="product_detail__choosing_un">製品の属性</string>
+    <string name="product_detail__how_many_un">幾つ ？</string>
+    <string name="product_detail__terms_and_policy_un">利用規約</string>
+    <string name="product_detail__re_change_un">変化..</string>
+    <string name="product_detail__never_change_un">買い替えはできません</string>
+    <string name="product_detail__terms_and_condition">規約と条件</string>
+    <string name="product_detail__refund_policy">代金返却方針</string>
+    <string name="product_detail__users_scene_un">ユーザーのコメント</string>
+    <string name="product_detail__no_scene_un">コメントはありません ！</string>
+    <string name="product_detail__write_scene_un">コメントを書く</string>
+    <string name="product_detail__similar_products_un">関連製品</string>
+    <string name="product_detail__related_tags">関連タグ</string>
+    <string name="product_detail__related_product">関連製品</string>
+    <string name="product_detail__add_to_busket"> バスケットに追加</string>
+    <string name="product_detail__buy">購入</string>
+    <string name="product_detail__successfully_added">バスケットに追加されました</string>
+    <string name="product_detail__like">いいね</string>
+    <string name="product_detail__comment">コメント</string>
+    <string name="product_detail__favourite">お気に入り</string>
+    <string name="product_detail__wish_list">ウィッシュリスト</string>
+    <string name="product_detail__seen">見た</string>
+    <string name="product_detail__see_all_comment">すべてのコメントを見る</string>
+    <string name="product_detail__choose_un">%1$sを選択</string>
+    <string name="product_detail__choose_zg">%1$sを選択</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">評価なし。</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">この製品は利用できません。在庫切れ。</string>
+    <string name="product_detail__in_stock">在庫あり</string>
+    <string name="product_detail__item_not_available">アイテムは利用できません</string>
+    <string name="product_detail__install_messenger_app">Messengerアプリをインストールしてください。</string>
+    <string name="product_detail__install_whatsapp_app">WhatsAppアプリをインストールしてください。</string>
+    <string name="product_detail__warning_select_attr">色を選択してください。</string>
+    <string name="product_detail__messenger_text">メッセンジャー</string>
+    <string name="product_detail__whatsApp_text">WhatsApp</string>
+    <string name="product_detail__phone_text">コール</string>
+    <string name="product_detail__min_order_error">最小注文は</string>
+    <string name="product_detail__shipping_cost">ユニットあたりの送料</string>
+    <string name="product_detail__product_min_order">最小注文</string>
+    <string name="product_detail__product_unit">製品単位</string>
+    <string name="product_detail__product_measurement">製品の測定</string>
+
+    <string name="discount__rating5">%1$s評価（%2$sレビュー）</string>
+
+
+
+    <string name="no_internet_error">インターネットに接続していません。</string>
+
+
+
+    <string name="message_sent">メッセージが送信されました。</string>
+
+
+
+    <string name="update_noti">お待ちください！まだ通知設定を更新しています。</string>
+    <string name="copied_to_clipboard">クリップボードにコピーしました。</string>
+    <string name="confirm_to_Buy">この注文を続行するには確認してください</string>
+    <string name="delete_item_from_basket">これをバスケットから削除してもよろしいですか:(</string>
+    <string name="add_to_basket_confirm_box">バスケットに追加してもよろしいですか:)</string>
+
+    <string name="success">成功</string>
+    <string name="confirm">確認する</string>
+    <string name="info">情報</string>
+    <string name="error">エラー</string>
+    <string name="warning">警告</string>
+    <string name="version_update">バージョンアップ</string>
+    <string name="update">更新</string>
+
+
+    <string name="category__list_title">カテゴリーリスト</string>
+
+
+    <string name="shop_category">ショップカテゴリー</string>
+    <string name="shop_new_shops">新しいお店</string>
+    <string name="shop_featured_shops">注目のショップ</string>
+    <string name="shop_popular_shops">人気のお店</string>
+    <string name="shop_blog">ブログ</string>
+    <string name="rating_value">格付け</string>
+
+
+    <string name="first_name">ファーストネーム</string>
+    <string name="last_name">苗字</string>
+    <string name="email">Eメール</string>
+    <string name="phone">電話</string>
+    <string name="company">会社</string>
+    <string name="address_1">住所（1</string>
+    <string name="address_2">アドレス2</string>
+    <string name="country">国</string>
+    <string name="state">状態</string>
+    <string name="city">シティ</string>
+    <string name="postal_code">郵便番号</string>
+    <string name="next">次</string>
+    <string name="shipping_address">次</string>
+    <string name="billing_address">請求先住所</string>
+    <string name="same_with_shipping_address">配送先住所と同じ</string>
+    <string name="update_address">配送先/請求先住所を更新しますか？</string>
+
+
+
+    <string name="shipping_method">配送方法</string>
+    <string name="coupon_discount">クーポン割引</string>
+    <string name="coupon_discount_code">クーポンコード</string>
+    <string name="coupon_discount_code_instruction">引き換え可能なコードがある場合は、ここで使用してください。だから、あなたはいくつかの割引値を得ることができます</string>
+    <string name="order_summary">注文の概要</string>
+
+    <string name="total_item_count">総アイテム数：</string>
+    <string name="total">合計：</string>
+    <string name="discount">割引：</string>
+    <string name="coupon_discount_text">クーポン割引：</string>
+
+    <string name="sub_total">小計：</string>
+    <string name="tax">税金（%1$s %%）：</string>
+    <string name="shipping_cost">輸送費：</string>
+    <string name="shipping_tax">配送税（%1$s %%）：</string>
+    <string name="days">日々</string>
+
+    <string name="error_coupon">クーポンコードが無効です</string>
+    <string name="check_coupon">クーポンコードを確認する</string>
+
+    <string name="confirm_checkout2">確認する</string>
+    <string name="back">バック</string>
+    <string name="checkout">チェックアウト</string>
+    <string name="confirm_paypal">PayPalアカウントを確認してください。チェックアウトボタンを押すまで注文トランザクションは行われないことに注意してください</string>
+
+
+    <string name="policy">利用規約、プライバシーポリシー、返金ポリシーを読み、同意します。</string>
+    <string name="get_token">トークンを取得する</string>
+    <string name="transaction_number">取引番号：</string>
+    <string name="not_checked">チェックアウト前に利用規約に同意してください</string>
+
+
+    <string name="status_billing_address">請求先住所</string>
+    <string name="shop__list">ショップリスト</string>
+    <string name="checkout_status__thank_you">ありがとうございました、</string>
+
+
+    <string name="blog_list__title">ブログリスト</string>
+
+
+    <string name="blog_detail__error_message">このIDのブログは存在しません</string>
+    <string name="blog_detail__title">ブログの詳細</string>
+
+
+    <string name="shop_category__title">ショップタグリスト</string>
+
+
+    <string name="shop_menu__title">ショップメニュー</string>
+    <string name="shop">ショップ</string>
+    <string name="copy_clipboard">クリップボードにコピーしました</string>
+
+
+    <string name="shop__sure_to_exit">このストアを終了しますか？</string>
+
+
+    <string name="product_list_title">製品リスト</string>
+
+
+    <string name="force_update_true">アップデートが利用可能です</string>
+    <string name="force_update__button_update"> 更新</string>
+
+
+    <string name="hello">こんにちは</string>
+    <string name="send_email">メールを送信…</string>
+    <string name="invalid_url">無効なURL</string>
+
+
+    <string name="verify_email__informateion">確認コードを含むメールを受信しました</string>
+    <string name="verify_email__enter_code">認証コードを入力してください</string>
+    <string name="verify_email__change_email">メールを変更</string>
+    <string name="verify_email__resent_code">再送コード</string>
+    <string name="verify_email__submit">提出する</string>
+
+
+</resources>

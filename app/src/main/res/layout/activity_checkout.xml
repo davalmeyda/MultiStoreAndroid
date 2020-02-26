@@ -1,0 +1,210 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_100">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/md_grey_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/step2View"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="@+id/shippingImageView"
+                    app:layout_constraintEnd_toEndOf="@+id/paymentImageView"
+                    app:layout_constraintStart_toStartOf="@+id/shippingImageView"
+                    app:layout_constraintTop_toTopOf="@+id/shippingImageView" />
+
+                <View
+                    android:id="@+id/step3View"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="@+id/shippingImageView"
+                    app:layout_constraintEnd_toEndOf="@+id/successImageView"
+                    app:layout_constraintStart_toStartOf="@+id/paymentImageView"
+                    app:layout_constraintTop_toTopOf="@+id/shippingImageView" />
+
+                <ImageButton
+                    android:id="@+id/closeImageButton"
+                    style="@style/PSButton.Primary.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_close_24" />
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/checkout__checkout"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="@dimen/font_h6_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/checkout__confirmation"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/paymentImageView"
+                    app:layout_constraintStart_toStartOf="@+id/paymentImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentImageView" />
+
+                <TextView
+                    android:id="@+id/textView115"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/checkout__payment"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintEnd_toEndOf="@+id/successImageView"
+                    app:layout_constraintStart_toStartOf="@+id/successImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/successImageView" />
+
+                <TextView
+                    android:id="@+id/textView116"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/checkout__address"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintEnd_toEndOf="@+id/shippingImageView"
+                    app:layout_constraintStart_toStartOf="@+id/shippingImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/shippingImageView" />
+
+                <ImageView
+                    android:id="@+id/shippingImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/image_default__image"
+                    android:layout_marginEnd="100dp"
+                    app:layout_constraintEnd_toStartOf="@+id/paymentImageView"
+                    app:layout_constraintTop_toTopOf="@+id/paymentImageView"
+                    app:srcCompat="@drawable/baseline_circle_line_uncheck_24" />
+
+                <ImageView
+                    android:id="@+id/successImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="100dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toEndOf="@+id/paymentImageView"
+                    app:layout_constraintTop_toTopOf="@+id/paymentImageView"
+                    app:srcCompat="@drawable/baseline_circle_black_uncheck_24" />
+
+                <ImageView
+                    android:id="@+id/paymentImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintEnd_toEndOf="@+id/textView112"
+                    app:layout_constraintStart_toStartOf="@+id/textView112"
+                    app:layout_constraintTop_toBottomOf="@+id/textView112"
+                    app:srcCompat="@drawable/baseline_circle_black_uncheck_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout25" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout40"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/global__primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/nextButton"
+                    style="@style/PSButton.Primary.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/baseline_arrow_to_end_white_24"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/keepShoppingButton"
+                    style="@style/PSButton.Primary.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/checkout__keep_shopping"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/prevButton"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/prevButton"
+                    style="@style/PSButton.Default.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_arrow_to_start_white_24"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="terms_and_conditions__title">Syarat dan ketentuan</string>
+
+
+    <string name="history__title">Sejarah</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">Favorit</string>
+
+
+    <string name="fb_register__welcome">Selamat datang dari%1$s</string>
+    <string name="fb_register__desc">Silakan masuk untuk menggunakan semua fitur aplikasi.</string>
+
+
+    <string name="gallery__title">Galeri</string>
+    <string name="gallery_image__gallery">Galeri Gambar</string>
+    <string name="gallery_img__desc">Uraian gambar; kesan</string>
+
+
+    <string name="image_default__image">Gambar Default</string>
+
+
+    <string name="app__app_name">Multi-Toko</string>
+    <string name="app__ok">baik</string>
+    <string name="app__cancel">Membatalkan</string>
+    <string name="app__drawer_open">Laci Terbuka</string>
+    <string name="app__drawer_close">Laci Tutup</string>
+
+
+    <string name="menu__fb_login">Login Facebook</string>
+    <string name="menu__comment_list">Daftar Komentar</string>
+    <string name="menu__notification_list">Daftar Pemberitahuan</string>
+
+
+    <string name="register__user_name">Nama pengguna</string>
+    <string name="register__email">E-mail</string>
+    <string name="register__password">Kata sandi</string>
+    <string name="register__back_to_login">Sudah menjadi anggota? Masuk</string>
+    <string name="register__register">Daftar</string>
+    <string name="register__new_account">Daftarkan Akun Pengguna Baru</string>
+    <string name="register__check_option">Apakah Anda menyetujui privasi dan kebijakan ini?</string>
+
+
+    <string name="forgot_password__title">Lupa kata sandi</string>
+    <string name="forgot_password__email">E-mail</string>
+    <string name="forgot_password__back_to_login">Sudah menjadi anggota? Masuk</string>
+    <string name="forgot_password__password_recovery">Pemulihan Kata Sandi</string>
+    <string name="forgot_password__save">Menyimpan</string>
+    <string name="forgot_password__send">Kirim</string>
+
+
+    <string name="password_change__password">Kata sandi</string>
+    <string name="password_change__save">Menyimpan</string>
+    <string name="password_change__confirm_password">konfirmasi sandi</string>
+    <string name="password_change__password_change">Perubahan Kata Sandi</string>
+
+
+    <string name="login__email">E-mail</string>
+    <string name="login__password">Kata sandi</string>
+    <string name="login__not_a_member_join_now">Baru disini? Daftar</string>
+    <string name="login__forgot_your_password">Lupa kata sandi ?</string>
+    <string name="login__login">Masuk</string>
+    <string name="login__welcome_title">Selamat Datang di PS Market Place</string>
+    <string name="login__choice_text">ATAU</string>
+
+
+    <string name="contact_us__name">Nama Kontak</string>
+    <string name="contact_us__email">Kontak Email</string>
+    <string name="contact_us__message">Pesan Kontak</string>
+    <string name="contact_us__phone">Hubungi Telepon</string>
+    <string name="contact_us__submit">Menyerahkan</string>
+
+
+    <string name="notification_setting__on_off">Pengaturan Notifikasi (Aktif / Nonaktif)</string>
+    <string name="notification_setting__latest_message_from_system">Pesan Terbaru Dari Sistem</string>
+    <string name="notification__notification">Pemberitahuan!</string>
+    <string name="notification__title">Pemberitahuan</string>
+    <string name="notification_setting__title">Pengaturan Notifikasi</string>
+    <string name="notification_detail__title">Detail Pemberitahuan</string>
+    <string name="notification__alert">Waspada</string>
+
+
+    <string name="language__english">Inggris</string>
+    <string name="language__arabic">Arab</string>
+    <string name="language__spanish">Spanyol</string>
+    <string name="language__language_change">Apakah Anda yakin ingin mengubah ke %1$s?</string>
+    <string name="language__title">Bahasa</string>
+
+
+    <string name="comment__replies">-%1$s balasan</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">Daftar Komentar</string>
+    <string name="comment__detail_title">Komentar Balasan</string>
+    <string name="comment__empty_comment">Komentar itu kosong.</string>
+    <string name="comment__comment">Komentar</string>
+
+
+    <string name="basket__list">Daftar Keranjang</string>
+    <string name="basket__no_item_title">Troli Kosong</string>
+    <string name="basket__total">Total</string>
+    <string name="basket__items">Item</string>
+    <string name="basket__checkout">Periksa</string>
+    <string name="basket__no_item_desc">Sepertinya Anda tidak memiliki barang di keranjang belanja. Silakan lanjutkan berbelanja.</string>
+    <string name="basket__attributes">atribut</string>
+
+
+    <string name="rating__list">Daftar Peringkat</string>
+    <string name="rating__write_review">Menulis ulasan</string>
+    <string name="rating__total_count">%1$s Ulasan Pelanggan</string>
+    <string name="rating__total_value">%1$s dari 5 bintang</string>
+    <string name="rating__total_count_n_value">%1$s dari bintang 5 (%2$s Ulasan)</string>
+    <string name="rating__count">%1$s bintang</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">Persediaan</string>
+    <string name="rating__title">Judul</string>
+    <string name="rating__message">Pesan</string>
+    <string name="rating__user_rating">Entri Penilaian Pengguna!</string>
+    <string name="rating__your_rating">Penilaianmu</string>
+    <string name="rating__five_star">5 bintang</string>
+    <string name="rating__four_star">4 bintang</string>
+    <string name="rating__three_star">3 bintang</string>
+    <string name="rating__two_star">2 bintang</string>
+    <string name="rating__one_star">1 bintang</string>
+    <string name="rating__rating_range">Rentang peringkat</string>
+    <string name="rating__one">1 dan lebih tinggi</string>
+    <string name="rating__two">2 dan lebih tinggi</string>
+    <string name="rating__three">3 dan lebih tinggi</string>
+    <string name="rating__four">4 dan lebih tinggi</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">","</string>
+
+
+    <string name="basket_card_view__price">Harga</string>
+    <string name="basket_card_view__sub_total">Sub Total</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">Penyortiran</string>
+    <string name="popular__m_mun">Populer</string>
+    <string name="recent__m_mun">Terbaru</string>
+    <string name="low_price__m_mun">Harga Terendah</string>
+    <string name="high_price__m_mun">Harga tertinggi</string>
+
+
+    <string name="checkout__payment_method">Metode pembayaran</string>
+    <string name="checkout__cash_on_delivery">Pengiriman Tunai</string>
+    <string name="checkout__bank">Paypal</string>
+    <string name="checkout__other">Garis</string>
+    <string name="checkout__bank_transfer">Bank</string>
+    <string name="checkout__memo">Memo</string>
+    <string name="checkout__information__COD">Anda hanya perlu melakukan pembayaran tunai saat pembelian atau pengiriman dikirimkan.</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">Tidak Ada Metode Pembayaran</string>
+    <string name="checkout__choose_a_method">Anda harus memilih metode pembayaran</string>
+    <string name="checkout__stripe">Bayar dengan Stripe</string>
+
+
+    <string name="checkout__order_registered">Pesanan Berhasil Dilakukan</string>
+    <string name="checkout__shipping_to">Alamat Pengiriman</string>
+    <string name="checkout__view_detail">Lihat Detail</string>
+    <string name="checkout__placed">Pesanan Anda telah dilakukan.</string>
+    <string name="checkout__address_name">Alamat:</string>
+    <string name="checkout__phone_name">Telepon:</string>
+    <string name="checkout__email_name">Email:</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">Klaim</string>
+
+
+    <string name="transaction__number">No Transaksi:</string>
+    <string name="transaction__statue">Status:</string>
+    <string name="transaction__total_amount">Jumlah total :</string>
+    <string name="transaction__view_details">Melihat rincian</string>
+    <string name="transaction__title">Daftar Transaksi</string>
+    <string name="transaction_detail__title">Detail Transaksi</string>
+
+
+    <string name="checkout_detail__totalItem">Barang Total</string>
+    <string name="checkout_detail__totalSubtotal">Subtotal</string>
+    <string name="checkout_detail__totalDiscount">Jumlah diskon</string>
+    <string name="checkout_detail__totalBalance">Keseimbangan</string>
+    <string name="checkout_detail__claimed_coupon">Anda baru saja mengklaim kupon</string>
+
+
+    <string name="edit_setting__notification_setting">Pengaturan Notifikasi</string>
+    <string name="edit_setting__edit_profile">Edit Profil</string>
+    <string name="edit_setting__logout">Keluar</string>
+    <string name="edit_setting__logout_question">Apakah Anda yakin untuk keluar?</string>
+    <string name="edit_setting__terms_and_conditions">Syarat dan ketentuan</string>
+    <string name="edit_setting__app_info">Info Aplikasi</string>
+    <string name="edit_setting__title">Pengaturan</string>
+
+
+    <string name="transaction_order__total_amount">Harga</string>
+    <string name="transaction_order__count">Kuantitas</string>
+    <string name="transaction_order__balance">Keseimbangan</string>
+    <string name="transaction_order__discount_available_amount">Jumlah Diskon yang Tersedia</string>
+    <string name="transaction_order__sub_total">Sub Total</string>
+
+
+    <string name="message__register_success">Berhasil Mendaftar.</string>
+    <string name="message__loading">Pemuatan…</string>
+    <string name="message__please_wait">Tunggu sebentar…</string>
+    <string name="message__welcome">Selamat datang di PS Market Place</string>
+    <string name="message__want_to_quit">Apakah Anda benar-benar ingin berhenti?</string>
+    <string name="message__ok_close">baik</string>
+    <string name="message__cancel_close">Membatalkan</string>
+
+
+    <string name="checkout__checkout">Periksa</string>
+    <string name="checkout__data">Informasi</string>
+    <string name="checkout__payment">Pembayaran</string>
+    <string name="checkout__order">Memesan</string>
+    <string name="checkout__next">Berikutnya</string>
+    <string name="checkout__previous">Sebelumnya</string>
+    <string name="checkout__keep_shopping">Tetap berbelanja</string>
+    <string name="checkout__Address">Alamat</string>
+    <string name="checkout__confirmation">Konfirmasi</string>
+
+
+    <string name="search__notSet">Tidak diatur</string>
+    <string name="search__by_name">nama Produk</string>
+    <string name="search__by_category">Kategori</string>
+    <string name="search__by_sub_category">Sub Kategori</string>
+    <string name="search__by_price">Harga</string>
+    <string name="search__lowest_price">Harga Terendah</string>
+    <string name="search__highest_price">Harga tertinggi</string>
+    <string name="search__special_check">Pemeriksaan Khusus</string>
+    <string name="search__feature">Produk Unggulan</string>
+    <string name="search__discount_price">Harga Diskon</string>
+    <string name="search__search">Pencarian</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">Tidak diatur</string>
+    <string name="sf__notSet_zg">Tidak diatur</string>
+    <string name="sf__ByItemType">Tetapkan Nama Item</string>
+    <string name="sf__ByPrice">Tetapkan Harga</string>
+    <string name="sf__LowestPrice">Harga Terendah</string>
+    <string name="sf__HighestPrice">Harga tertinggi</string>
+    <string name="sf__AdvanceFiltering">Penyaringan Tingkat Lanjut</string>
+    <string name="sf__Feature">Produk fitur</string>
+    <string name="sf__Discount">Produk Diskon</string>
+    <string name="sf__Filter_Button">Filter</string>
+    <string name="typefilter">Difilter Menurut jenis Produk</string>
+
+
+    <string name="checkout__customer_information">Informasi pengguna</string>
+    <string name="checkout__name">Nama</string>
+    <string name="checkout__email">E-mail</string>
+    <string name="checkout__phone">Telepon</string>
+    <string name="checkout__shipping_address">Alamat Pengiriman</string>
+    <string name="checkout__address">Alamat</string>
+    <string name="checkout__city">Kota</string>
+    <string name="checkout__country">Negara</string>
+    <string name="checkout__state">Negara bagian / Provinsi</string>
+
+
+    <string name="error_message__select_location">Silakan pilih lokasi.!</string>
+    <string name="error_message__login_first">Silahkan masuk terlebih dahulu!</string>
+    <string name="error_message__rating">Silakan isi sepenuhnya untuk peringkat.</string>
+    <string name="error_message__youtube_not_valid">YouTube tidak valid.</string>
+    <string name="error_message__blank_email">Silakan masukkan Email.</string>
+    <string name="error_message__choose_category">Pilih Kategori Pertama</string>
+    <string name="error_message__insert_value_search">Masukkan nilai untuk pencarian</string>
+    <string name="error_message__order_fail">Proses Gagal dengan kesalahan yang tidak diketahui! Silakan coba lagi</string>
+    <string name="error_message__blank_contact_message">Silakan masukan Pesan Kontak.</string>
+    <string name="error_message__blank_password">Silakan masukkan kata sandi.</string>
+    <string name="error_message__blank_name">Silakan masukkan nama.</string>
+    <string name="error_message__blank_keyword">Silakan masukkan kata kunci pencarian.</string>
+    <string name="error_message__password_not_equal">Kata sandi tidak sama!</string>
+    <string name="error_message__no_internet">Tidak ada koneksi internet.</string>
+    <string name="error_message__email_exists">Email sudah ada</string>
+    <string name="error_message__to_check_agreement">Anda perlu memeriksa perjanjian privasi dan kebijakan.</string>
+    <string name="error_message__choose_country">Pilih Negara Pertama</string>
+    <string name="error_message__select_city">Silakan pilih kota</string>
+    <string name="shipping_address_one_error_message">Silahkan Masukkan Alamat Pengiriman 1</string>
+    <string name="billing_address_one_error_message">Silahkan Masukkan Alamat Penagihan 1</string>
+
+    <string name="transaction_detail__transaction_number">No Transaksi:</string>
+    <string name="transaction_detail__status">Status:</string>
+    <string name="transaction_detail__order_date">Tanggal pemesanan :</string>
+    <string name="transaction_detail__total_charges">Total biaya:</string>
+    <string name="transaction_detail__discount_price">Harga Diskon :</string>
+    <string name="transaction_detail__delivery_address">Alamat pengiriman :</string>
+    <string name="transaction_detail__phone">Telepon:</string>
+    <string name="transaction_detail__address">Alamat:</string>
+    <string name="transaction_detail__email">Email:</string>
+    <string name="transaction_detail__shipping_cost">Biaya pengiriman: </string>
+    <string name="transaction_detail_list__shipping_cost">Biaya Pengiriman Per Barang </string>
+    <string name="transaction_detail__shipping_tax">Pajak Pengiriman: </string>
+
+
+    <string name="Feature_UI_Type__Button">Kategori</string>
+    <string name="Feature_UI_Tune__Button">Pencarian</string>
+    <string name="Feature_UI_Sort__Button">Menyortir</string>
+    <string name="Feature_UI__product_list_no_item_title">Tidak ada data</string>
+    <string name="Feature_UI__product_list_no_item_desc">Tidak ada hasil! Silakan coba sesuaikan filter.</string>
+    <string name="Feature_UI__product_list_loading_item_title">Kami sedang memuat</string>
+    <string name="Feature_UI__search_alert_cat_title">Pilih Kategori</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">Pilih Sub Kategori</string>
+    <string name="Feature_UI__search_alert_country_title">Pilih negara</string>
+    <string name="Feature_UI__search_alert_city_title">Pilih Kota</string>
+
+
+    <string name="about_us__phone">Telepon</string>
+    <string name="about_us__facebook">Facebook</string>
+    <string name="about_us__gplus">Google Plus</string>
+    <string name="about_us__instagram">Instagram</string>
+    <string name="about_us__youtube">Youtube</string>
+    <string name="about_us__pinterest">Pinterest</string>
+    <string name="about_us__twitter">Kericau</string>
+    <string name="about_us__visit_website">Kunjungi Situs Web Kami</string>
+    <string name="about_us__email">E-mail</string>
+    <string name="about_us__contact">Kontak</string>
+    <string name="about_us__source_address">Alamat sumber</string>
+    <string name="about_us__title">Info Aplikasi</string>
+
+
+    <string name="profile__title">Profil</string>
+    <string name="profile__name">Nama</string>
+    <string name="profile__edit">Edit</string>
+    <string name="profile__likes">Suka</string>
+    <string name="profile__history">Sejarah</string>
+    <string name="profile__favourites">Favorit</string>
+    <string name="profile__setting">Pengaturan</string>
+    <string name="profile__joined_on">Bergabung Pada</string>
+    <string name="profile__joined_date">Tanggal Bergabung</string>
+    <string name="profile__orders">Pesanan</string>
+    <string name="profile__see_all">Lihat semua</string>
+    <string name="profile__verified">Diverifikasi</string>]
+    <string name="profile__status">Status</string>
+    <string name="profile__transaction">Transaksi</string>
+
+
+    <string name="edit_profile__title">Edit Profil</string>
+    <string name="edit_profile__user_name">Nama pengguna</string>
+    <string name="edit_profile__about_me">Tentang saya</string>
+    <string name="edit_profile__email">E-mail</string>
+    <string name="edit_profile__phone">Telepon</string>
+    <string name="edit_profile__password">Kata sandi</string>
+    <string name="edit_profile__password_change">Perubahan Kata Sandi</string>
+    <string name="edit_profile__save">Menyimpan</string>
+    <string name="edit_profile__address">Alamat pengiriman</string>
+    <string name="edit_profile__town">Kota</string>
+    <string name="edit_profile__division">Divisi</string>
+    <string name="edit_profile__country">Negara</string>
+    <string name="verify_email">verifikasi email</string>
+
+
+    <string name="menu__home">Rumah</string>
+    <string name="menu__profile">Profil</string>
+    <string name="menu__like">Seperti</string>
+    <string name="menu__favourite_items">Favorit</string>
+    <string name="menu__transaction">Transaksi</string>
+    <string name="menu__user_history">Riwayat Pengguna</string>
+    <string name="menu__logout">Keluar</string>
+    <string name="menu__about_app">Tentang kami</string>
+    <string name="menu__contact_us">Hubungi kami</string>
+    <string name="menu__notification_setting">Pengaturan Notifikasi</string>
+    <string name="menu__language">Bahasa</string>
+    <string name="menu__setting">Pengaturan</string>
+    <string name="menu__shop_profile">Toko</string>
+    <string name="menu__me">Saya</string>
+    <string name="menu__basket">Keranjang</string>
+    <string name="menu__app_setting">Aplikasi</string>
+    <string name="menu__user_info">Info Pengguna</string>
+    <string name="menu__save">Menyimpan</string>
+    <string name="menu__search">Pencarian</string>
+    <string name="menu__side_bar_menu">Lebih</string>
+    <string name="menu__filter">Filter</string>
+    <string name="menu__latest_product">Produk Terbaru</string>
+    <string name="menu__discount">Produk Diskon</string>
+    <string name="menu__category">Kategori</string>
+    <string name="menu__featured_product">Produk Unggulan</string>
+    <string name="menu__subcategory">Sub Kategori</string>
+    <string name="menu__trending_products">Produk yang Sedang Populer</string>
+    <string name="menu__trending_category">Kategori yang Sedang Populer</string>
+    <string name="menu__home_category_view_All_zg">Lihat semua</string>
+    <string name="menu__home_category_view_All_un">Lihat semua</string>
+    <string name="menu__home_category_textView">Kategori</string>
+    <string name="menu__collections">Koleksi</string>
+    <string name="menu__home_discount_view_all">Lihat Semua Produk Diskon</string>
+    <string name="setting__clear_cache_confirm">Apakah Anda yakin untuk menghapus cache gambar?</string>
+    <string name="setting__clear_image_cache">Hapus Cache Gambar</string>
+    <string name="setting__image_cache_size">Ukuran Tembolok Gambar</string>
+    <string name="setting__change_gdpr">Ubah pengaturan GDPR</string>
+    <string name="setting__version_no">Versi Tidak Ada:</string>
+    <string name="menu__rate">Nilai aplikasi ini</string>
+    <string name="menu__privacy_policy">Syarat dan ketentuan</string>
+
+
+    <string name="collection__list_title">Daftar Koleksi</string>
+
+
+    <string name="product_detail__isFeatured">Produk yang ditampilkan.</string>
+    <string name="product_detail__desc_title">Deskripsi Produk</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">Addidas</string>
+    <string name="product_detail__detail_facts_un">Informasi detil</string>
+    <string name="product_detail__other_facts_un">Informasi lainnya</string>
+    <string name="product_detail__size_un">Ukuran</string>
+    <string name="product_detail__select_size_un">Pilih ukuran</string>
+    <string name="product_detail__cloth_un">Pakaian</string>
+    <string name="product_detail__select_cloth_un">Pilih pakaian</string>
+    <string name="product_detail__product_name_un">Nama Produk</string>
+    <string name="product_detail__can_get_colors_un">Warna yang tersedia</string>
+    <string name="product_detail__choosing_un">Atribut Produk</string>
+    <string name="product_detail__how_many_un">Berapa banyak ?</string>
+    <string name="product_detail__terms_and_policy_un">Ketentuan dan Kebijakan</string>
+    <string name="product_detail__re_change_un">Berubah ..</string>
+    <string name="product_detail__never_change_un">Tidak bisa berganti membeli pakaian</string>
+    <string name="product_detail__terms_and_condition">SYARAT DAN KETENTUAN</string>
+    <string name="product_detail__refund_policy">Kebijakan pengembalian</string>
+    <string name="product_detail__users_scene_un">Komentar pengguna</string>
+    <string name="product_detail__no_scene_un">Tidak ada komentar !</string>
+    <string name="product_detail__write_scene_un">Tulis komentar</string>
+    <string name="product_detail__similar_products_un">Produk-produk terkait</string>
+    <string name="product_detail__related_tags">Tag terkait</string>
+    <string name="product_detail__related_product">Produk-produk terkait</string>
+    <string name="product_detail__add_to_busket"> Tambahkan ke Keranjang</string>
+    <string name="product_detail__buy">Membeli</string>
+    <string name="product_detail__successfully_added">Berhasil ditambahkan ke keranjang</string>
+    <string name="product_detail__like">Seperti</string>
+    <string name="product_detail__comment">Komentar</string>
+    <string name="product_detail__favourite">Favorit</string>
+    <string name="product_detail__wish_list">Daftar Keinginan</string>
+    <string name="product_detail__seen">Terlihat</string>
+    <string name="product_detail__see_all_comment">LIHAT SEMUA KOMENTAR</string>
+    <string name="product_detail__choose_un">Pilih%1$s</string>
+    <string name="product_detail__choose_zg">Pilih%1$s</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">Tidak ada peringkat.</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">Produk ini tidak tersedia Kehabisan persediaan.</string>
+    <string name="product_detail__in_stock">Persediaan</string>
+    <string name="product_detail__item_not_available">Barang tidak Tersedia</string>
+    <string name="product_detail__install_messenger_app">Silakan instal Aplikasi Messenger.</string>
+    <string name="product_detail__install_whatsapp_app">Silakan instal Aplikasi WhatsApp.</string>
+    <string name="product_detail__warning_select_attr">Silakan pilih warna.</string>
+    <string name="product_detail__messenger_text">Kurir</string>
+    <string name="product_detail__whatsApp_text">Ada apa</string>
+    <string name="product_detail__phone_text">panggilan</string>
+    <string name="product_detail__min_order_error">Minimum order adalah</string>
+    <string name="product_detail__shipping_cost">Biaya Pengiriman Per Unit</string>
+    <string name="product_detail__product_min_order">Pemesanan minimum</string>
+    <string name="product_detail__product_unit">Unit Produk</string>
+    <string name="product_detail__product_measurement">Pengukuran produk</string>
+
+    <string name="discount__rating5">%1$s peringkat (%2$s Ulasan)</string>
+
+
+
+    <string name="no_internet_error">Tidak ada koneksi internet.</string>
+
+
+
+    <string name="message_sent">Pesan Anda telah dikirim.</string>
+
+
+
+    <string name="update_noti">Tunggu sebentar! Masih memperbarui pengaturan notifikasi.</string>
+    <string name="copied_to_clipboard">Disalin ke papan klip.</string>
+    <string name="confirm_to_Buy">Harap konfirmasi untuk melanjutkan pesanan ini</string>
+    <string name="delete_item_from_basket">Apakah Anda yakin untuk menghapus ini dari keranjang :(</string>
+    <string name="add_to_basket_confirm_box">Anda yakin menambahkan ke keranjang :)</string>
+
+    <string name="success">KEBERHASILAN</string>
+    <string name="confirm">MEMASTIKAN</string>
+    <string name="info">INFO</string>
+    <string name="error">KESALAHAN</string>
+    <string name="warning">PERINGATAN</string>
+    <string name="version_update">Pembaruan Versi</string>
+    <string name="update">Memperbarui</string>
+
+
+    <string name="category__list_title">Daftar Kategori</string>
+
+
+    <string name="shop_category">Kategori Toko</string>
+    <string name="shop_new_shops">Toko Baru</string>
+    <string name="shop_featured_shops">Toko Unggulan</string>
+    <string name="shop_popular_shops">Toko Populer</string>
+    <string name="shop_blog">Blog</string>
+    <string name="rating_value">peringkat</string>
+
+
+    <string name="first_name">Nama depan</string>
+    <string name="last_name">Nama keluarga</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Telepon</string>
+    <string name="company">Perusahaan</string>
+    <string name="address_1">Alamat 1</string>
+    <string name="address_2">alamat 2</string>
+    <string name="country">Negara</string>
+    <string name="state">Negara</string>
+    <string name="city">Kota</string>
+    <string name="postal_code">Kode Pos</string>
+    <string name="next">Berikutnya</string>
+    <string name="shipping_address">Berikutnya</string>
+    <string name="billing_address">alamat tagihan</string>
+    <string name="same_with_shipping_address">Sama dengan Alamat Pengiriman</string>
+    <string name="update_address">Apakah Anda ingin memperbarui alamat pengiriman / penagihan Anda?</string>
+
+
+
+    <string name="shipping_method">metode pengiriman</string>
+    <string name="coupon_discount">Diskon Kupon</string>
+    <string name="coupon_discount_code">Kode Kupon</string>
+    <string name="coupon_discount_code_instruction">Jika Anda memiliki kode yang dapat ditebus, silakan gunakan di sini. Jadi, Anda bisa mendapatkan nilai diskon</string>
+    <string name="order_summary">Ringkasan Pesanan</string>
+
+    <string name="total_item_count">Total Jumlah Barang:</string>
+    <string name="total">Total:</string>
+    <string name="discount">Diskon:</string>
+    <string name="coupon_discount_text">Diskon Kupon:</string>
+
+    <string name="sub_total">Sub Total:</string>
+    <string name="tax">Pajak (%1$s %%):</string>
+    <string name="shipping_cost">Biaya pengiriman:</string>
+    <string name="shipping_tax">Pajak Pengiriman (%1$s %%):</string>
+    <string name="days">Berhari-hari</string>
+
+    <string name="error_coupon">Kode Kupon tidak valid</string>
+    <string name="check_coupon">Memeriksa kode kupon</string>
+
+    <string name="confirm_checkout2">Memastikan</string>
+    <string name="back">Kembali</string>
+    <string name="checkout">Periksa</string>
+    <string name="confirm_paypal">Harap Konfirmasikan akun paypal Anda. Perhatikan bahwa tidak ada transaksi pesanan yang akan dilakukan sampai Anda menekan tombol checkout</string>
+
+
+    <string name="policy">Saya telah membaca dan menyetujui syarat dan ketentuan, kebijakan Privasi dan kebijakan pengembalian uang.</string>
+    <string name="get_token">Mendapatkan Token</string>
+    <string name="transaction_number">No transaksi:</string>
+    <string name="not_checked">Harap Setujui syarat dan ketentuan sebelum checkout</string>
+
+
+    <string name="status_billing_address">alamat tagihan</string>
+    <string name="shop__list">Daftar Toko</string>
+    <string name="checkout_status__thank_you">Terima kasih,</string>
+
+
+    <string name="blog_list__title">Daftar Blog</string>
+
+
+    <string name="blog_detail__error_message">Blog dengan id ini tidak ada</string>
+    <string name="blog_detail__title">Detail Blog</string>
+
+
+    <string name="shop_category__title">Daftar Tag Toko</string>
+
+
+    <string name="shop_menu__title">Menu Toko</string>
+    <string name="shop">Toko</string>
+    <string name="copy_clipboard">Disalin ke Clipboard</string>
+
+
+    <string name="shop__sure_to_exit">Apakah Anda ingin keluar dari toko ini?</string>
+
+
+    <string name="product_list_title">Daftar Produk</string>
+
+
+    <string name="force_update_true">Pembaruan tersedia</string>
+    <string name="force_update__button_update"> Memperbarui</string>
+
+
+    <string name="hello">Halo</string>
+    <string name="send_email">Kirim surat …</string>
+    <string name="invalid_url">Url Tidak Valid</string>
+
+
+    <string name="verify_email__informateion">Anda baru saja menerima email yang berisi kode verifikasi</string>
+    <string name="verify_email__enter_code">Masukkan kode verifikasi</string>
+    <string name="verify_email__change_email">Ganti e-mail</string>
+    <string name="verify_email__resent_code">Kode Ulang</string>
+    <string name="verify_email__submit">Menyerahkan</string>
+
+
+</resources>

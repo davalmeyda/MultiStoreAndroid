@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="productColor"
+            type="com.panaceasoft.psmultistore.viewobject.ProductColor" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/color1BgImageVieww"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="@dimen/space_8"
+            android:background="@drawable/circler_border"
+            android:contentDescription="@string/image_default__image"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52" />
+
+        <ImageView
+            android:id="@+id/color1BgImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/image_default__image"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/color1ImageView"
+            app:layout_constraintEnd_toEndOf="@+id/color1BgImageVieww"
+            app:layout_constraintStart_toStartOf="@+id/color1BgImageVieww"
+            app:layout_constraintTop_toTopOf="@+id/color1ImageView" />
+
+        <ImageView
+            android:id="@+id/color1ImageView"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/baseline_select_with_check_transparent_24"
+            android:contentDescription="@string/image_default__image"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/color1BgImageVieww"
+            app:layout_constraintEnd_toEndOf="@+id/color1BgImageVieww"
+            app:layout_constraintStart_toStartOf="@+id/color1BgImageVieww"
+            app:layout_constraintTop_toTopOf="@+id/color1BgImageVieww" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="terms_and_conditions__title">नियम और शर्तें</string>
+
+
+    <string name="history__title">इतिहास</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">पसंदीदा</string>
+
+
+    <string name="fb_register__welcome">%1$s से स्वागत है</string>
+    <string name="fb_register__desc">कृपया एप्लिकेशन की सभी सुविधाओं का उपयोग करने के लिए लॉगिन करें।</string>
+
+
+    <string name="gallery__title">गेलरी</string>
+    <string name="gallery_image__gallery">छवि गैलरी</string>
+    <string name="gallery_img__desc">चित्र का वर्णन</string>
+
+
+    <string name="image_default__image">डिफ़ॉल्ट छवि</string>
+
+
+    <string name="app__app_name">मल्टी स्टोर</string>
+    <string name="app__ok">ठीक</string>
+    <string name="app__cancel">रद्द करना</string>
+    <string name="app__drawer_open">दराज खुला</string>
+    <string name="app__drawer_close">दराज बंद</string>
+
+
+    <string name="menu__fb_login">फेसबुक लोगिन</string>
+    <string name="menu__comment_list">टिप्पणी सूची</string>
+    <string name="menu__notification_list">अधिसूचना सूची</string>
+
+
+    <string name="register__user_name">उपयोगकर्ता नाम</string>
+    <string name="register__email">ईमेल</string>
+    <string name="register__password">पारण शब्द</string>
+    <string name="register__back_to_login">पहले से ही सदस्य हैं? लॉग इन करें</string>
+    <string name="register__register">रजिस्टर</string>
+    <string name="register__new_account">नया उपयोगकर्ता खाता पंजीकृत करें</string>
+    <string name="register__check_option">क्या आप इस गोपनीयता और नीति से समझौता कर रहे हैं?</string>
+
+
+    <string name="forgot_password__title">पासवर्ड भूल गए</string>
+    <string name="forgot_password__email">ईमेल</string>
+    <string name="forgot_password__back_to_login">पहले से ही सदस्य हैं? लॉग इन करें</string>
+    <string name="forgot_password__password_recovery">पासवर्ड की दोबारा प्राप्ति</string>
+    <string name="forgot_password__save">बचाना</string>
+    <string name="forgot_password__send">भेजना</string>
+
+
+    <string name="password_change__password">पारण शब्द</string>
+    <string name="password_change__save">बचाना</string>
+    <string name="password_change__confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="password_change__password_change">पासवर्ड परिवर्तन</string>
+
+
+    <string name="login__email">ईमेल</string>
+    <string name="login__password">पारण शब्द</string>
+    <string name="login__not_a_member_join_now">यहाँ नये? साइन अप करें</string>
+    <string name="login__forgot_your_password">पासवर्ड भूल गए ?</string>
+    <string name="login__login">दाखिल करना</string>
+    <string name="login__welcome_title">पीएस मार्केट प्लेस में आपका स्वागत है</string>
+    <string name="login__choice_text">या</string>
+
+
+    <string name="contact_us__name">संपर्क नाम</string>
+    <string name="contact_us__email">ई - मेल से संपर्क करे</string>
+    <string name="contact_us__message">संपर्क संदेश</string>
+    <string name="contact_us__phone">संपर्क दूरभाष</string>
+    <string name="contact_us__submit">जमा करें</string>
+
+
+    <string name="notification_setting__on_off">अधिसूचना सेटिंग (चालू / बंद)</string>
+    <string name="notification_setting__latest_message_from_system">सिस्टम से नवीनतम संदेश</string>
+    <string name="notification__notification">अधिसूचना!</string>
+    <string name="notification__title">अधिसूचना</string>
+    <string name="notification_setting__title">अधिसूचना सेटिंग</string>
+    <string name="notification_detail__title">अधिसूचना विस्तार से</string>
+    <string name="notification__alert">चेतावनी</string>
+
+
+    <string name="language__english">अंग्रेज़ी</string>
+    <string name="language__arabic">अरबी</string>
+    <string name="language__spanish">स्पेनिश</string>
+    <string name="language__language_change">क्या आप वाकई %1$s में बदलना चाहते हैं?</string>
+    <string name="language__title">भाषा</string>
+
+
+    <string name="comment__replies">-%1$s जवाब दें</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">टिप्पणी सूची</string>
+    <string name="comment__detail_title">टिप्पणी जवाब दें</string>
+    <string name="comment__empty_comment">टिप्पणी खाली है।</string>
+    <string name="comment__comment">टिप्पणी</string>
+
+
+    <string name="basket__list">टोकरी सूची</string>
+    <string name="basket__no_item_title">कार्ट खाली है</string>
+    <string name="basket__total">संपूर्ण</string>
+    <string name="basket__items">आइटम</string>
+    <string name="basket__checkout">चेक आउट</string>
+    <string name="basket__no_item_desc">ऐसे देखें जैसे आपकी शॉपिंग कार्ट में कोई आइटम नहीं है। कृपया खरीदारी जारी रखें।</string>
+    <string name="basket__attributes">गुण</string>
+
+
+    <string name="rating__list">रेटिंग सूची</string>
+    <string name="rating__write_review">समीक्षा लिखें</string>
+    <string name="rating__total_count">%1$s ग्राहक समीक्षा</string>
+    <string name="rating__total_value">5 सितारों में से%1$s</string>
+    <string name="rating__total_count_n_value">5 सितारों में से%1$s (%2$s समीक्षाएँ)</string>
+    <string name="rating__count">%1$s स्टार</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">स्टॉक में</string>
+    <string name="rating__title">शीर्षक</string>
+    <string name="rating__message">संदेश</string>
+    <string name="rating__user_rating">उपयोगकर्ता रेटिंग प्रविष्टि!</string>
+    <string name="rating__your_rating">तुम्हारी रेटिंग</string>
+    <string name="rating__five_star">5 सितारा</string>
+    <string name="rating__four_star">4 स्टार</string>
+    <string name="rating__three_star">3 स्टार</string>
+    <string name="rating__two_star">2 स्टार</string>
+    <string name="rating__one_star">१ तारा</string>
+    <string name="rating__rating_range">रेटिंग रेंज</string>
+    <string name="rating__one">1 और उच्चतर</string>
+    <string name="rating__two">2 और उच्चतर</string>
+    <string name="rating__three">3 और उच्चतर</string>
+    <string name="rating__four">4 और उच्चतर</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">""</string>
+
+
+    <string name="basket_card_view__price">मूल्य</string>
+    <string name="basket_card_view__sub_total">उप कुल</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">छंटाई</string>
+    <string name="popular__m_mun">लोकप्रिय</string>
+    <string name="recent__m_mun">नवीनतम</string>
+    <string name="low_price__m_mun">सबसे कम दाम</string>
+    <string name="high_price__m_mun">सबसे ज़्यादा कीमत</string>
+
+
+    <string name="checkout__payment_method">भुगतान का तरीका</string>
+    <string name="checkout__cash_on_delivery">डिलवरी पर नकदी</string>
+    <string name="checkout__bank">Paypal</string>
+    <string name="checkout__other">पट्टी</string>
+    <string name="checkout__bank_transfer">बैंक</string>
+    <string name="checkout__memo">मेमो</string>
+    <string name="checkout__information__COD">खरीदारी या शिपमेंट वितरित होने पर आपको बस नकद भुगतान करने की आवश्यकता होती है।</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">कोई भुगतान विधि उपलब्ध नहीं है</string>
+    <string name="checkout__choose_a_method">आपको भुगतान विधि चुनने की आवश्यकता है</string>
+    <string name="checkout__stripe">धारी के साथ भुगतान करें</string>
+
+
+    <string name="checkout__order_registered">सफलतापूर्वक आदेश दिया</string>
+    <string name="checkout__shipping_to">शिपिंग पता</string>
+    <string name="checkout__view_detail">विस्तार से देखें</string>
+    <string name="checkout__placed">आपका आदेश दे दिया गया है।</string>
+    <string name="checkout__address_name">पता:</string>
+    <string name="checkout__phone_name">फ़ोन :</string>
+    <string name="checkout__email_name">ईमेल :</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">दावा</string>
+
+
+    <string name="transaction__number">लेनदेन संख्या:</string>
+    <string name="transaction__statue">स्थिति :</string>
+    <string name="transaction__total_amount">कुल रकम :</string>
+    <string name="transaction__view_details">विवरण देखें</string>
+    <string name="transaction__title">लेन-देन सूची</string>
+    <string name="transaction_detail__title">लेन-देन का विवरण</string>
+
+
+    <string name="checkout_detail__totalItem">कुल आइटम</string>
+    <string name="checkout_detail__totalSubtotal">उप-योग</string>
+    <string name="checkout_detail__totalDiscount">छूट राशि</string>
+    <string name="checkout_detail__totalBalance">संतुलन</string>
+    <string name="checkout_detail__claimed_coupon">आपने अभी-अभी कूपन का दावा किया है</string>
+
+
+    <string name="edit_setting__notification_setting">अधिसूचना सेटिंग</string>
+    <string name="edit_setting__edit_profile">प्रोफाइल एडिट करें</string>
+    <string name="edit_setting__logout">लोग आउट</string>
+    <string name="edit_setting__logout_question">क्या आप लॉगआउट करना सुनिश्चित कर रहे हैं?</string>
+    <string name="edit_setting__terms_and_conditions">नियम और शर्तें</string>
+    <string name="edit_setting__app_info">अनुप्रयोग की जानकारी</string>
+    <string name="edit_setting__title">सेटिंग</string>
+
+
+    <string name="transaction_order__total_amount">मूल्य</string>
+    <string name="transaction_order__count">मात्रा</string>
+    <string name="transaction_order__balance">संतुलन</string>
+    <string name="transaction_order__discount_available_amount">छूट उपलब्ध राशि</string>
+    <string name="transaction_order__sub_total">उप कुल</string>
+
+
+    <string name="message__register_success">सफलतापूर्वक पंजीकरण करें।</string>
+    <string name="message__loading">लोड हो रहा है…</string>
+    <string name="message__please_wait">कृपया प्रतीक्षा करें…</string>
+    <string name="message__welcome">पीएस मार्केट प्लेस में आपका स्वागत है</string>
+    <string name="message__want_to_quit">क्या आप वास्तव में छोड़ना चाहते हैं?</string>
+    <string name="message__ok_close">ठीक</string>
+    <string name="message__cancel_close">रद्द करना</string>
+
+
+    <string name="checkout__checkout">चेक आउट</string>
+    <string name="checkout__data">जानकारी</string>
+    <string name="checkout__payment">भुगतान</string>
+    <string name="checkout__order">क्रम</string>
+    <string name="checkout__next">आगामी</string>
+    <string name="checkout__previous">पिछला</string>
+    <string name="checkout__keep_shopping">खरीददारी करते रहें</string>
+    <string name="checkout__Address">पता</string>
+    <string name="checkout__confirmation">पुष्टीकरण</string>
+
+
+    <string name="search__notSet">सेट नहीं</string>
+    <string name="search__by_name">उत्पाद का नाम</string>
+    <string name="search__by_category">वर्ग</string>
+    <string name="search__by_sub_category">उप श्रेणी</string>
+    <string name="search__by_price">मूल्य</string>
+    <string name="search__lowest_price">सबसे कम दाम</string>
+    <string name="search__highest_price">सबसे ज़्यादा कीमत</string>
+    <string name="search__special_check">विशेष जाँच</string>
+    <string name="search__feature">विशेष रुप से प्रदर्शित प्रोडक्टस</string>
+    <string name="search__discount_price">डिस्काउंट कीमतों</string>
+    <string name="search__search">खोज</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">सेट नहीं</string>
+    <string name="sf__notSet_zg">सेट नहीं</string>
+    <string name="sf__ByItemType">आइटम का नाम सेट करें</string>
+    <string name="sf__ByPrice">कीमत निर्धारित करें</string>
+    <string name="sf__LowestPrice">सबसे कम दाम</string>
+    <string name="sf__HighestPrice">सबसे ज़्यादा कीमत</string>
+    <string name="sf__AdvanceFiltering">उन्नत फ़िल्टरिंग</string>
+    <string name="sf__Feature">फ़ीचर उत्पाद</string>
+    <string name="sf__Discount">डिस्काउंट उत्पाद</string>
+    <string name="sf__Filter_Button">फ़िल्टर</string>
+    <string name="typefilter">उत्पाद प्रकार द्वारा फ़िल्टर किया गया</string>
+
+
+    <string name="checkout__customer_information">ग्राहक सूचना</string>
+    <string name="checkout__name">नाम</string>
+    <string name="checkout__email">ईमेल</string>
+    <string name="checkout__phone">फ़ोन</string>
+    <string name="checkout__shipping_address">शिपिंग पता</string>
+    <string name="checkout__address">पता</string>
+    <string name="checkout__city">शहर</string>
+    <string name="checkout__country">देश</string>
+    <string name="checkout__state">राज्य / प्रांत</string>
+
+
+    <string name="error_message__select_location">कृपया स्थान का चयन करें।</string>
+    <string name="error_message__login_first">पहले प्रवेश करें!</string>
+    <string name="error_message__rating">कृपया रेटिंग के लिए पूरी तरह से भरें।</string>
+    <string name="error_message__youtube_not_valid">YouTube मान्य नहीं है।</string>
+    <string name="error_message__blank_email">कृपया इमेल को इनपुट करें।</string>
+    <string name="error_message__choose_category">श्रेणी पहले चुनें</string>
+    <string name="error_message__insert_value_search">खोजने के लिए एक मान डालें</string>
+    <string name="error_message__order_fail">अज्ञात त्रुटि के साथ प्रक्रिया विफल! कृपया पुन: प्रयास करें</string>
+    <string name="error_message__blank_contact_message">कृपया संपर्क संदेश इनपुट करें।</string>
+    <string name="error_message__blank_password">कृपया पासवर्ड दर्ज करें।</string>
+    <string name="error_message__blank_name">कृपया इनपुट नाम</string>
+    <string name="error_message__blank_keyword">कृपया खोज कीवर्ड इनपुट करें।</string>
+    <string name="error_message__password_not_equal">पासवर्ड नहीं के बराबर हैं!</string>
+    <string name="error_message__no_internet">कोई इंटरनेट कनेक्शन नहीं।</string>
+    <string name="error_message__email_exists">ईमेल पहले से मौजूद है</string>
+    <string name="error_message__to_check_agreement">आप गोपनीयता और नीति के लिए एक समझौते पर जाँच करने के लिए की जरूरत है।</string>
+    <string name="error_message__choose_country">देश पहले चुनें</string>
+    <string name="error_message__select_city">कृपया शहर चुनें</string>
+    <string name="shipping_address_one_error_message">कृपया शिपिंग पता 1 दर्ज करें</string>
+    <string name="billing_address_one_error_message">कृपया बिलिंग पता 1 दर्ज करें</string>
+
+    <string name="transaction_detail__transaction_number">लेनदेन संख्या:</string>
+    <string name="transaction_detail__status">स्थिति :</string>
+    <string name="transaction_detail__order_date">आदेश की तारीख :</string>
+    <string name="transaction_detail__total_charges">कुल शुल्क :</string>
+    <string name="transaction_detail__discount_price">डिस्काउंट मूल्य :</string>
+    <string name="transaction_detail__delivery_address">डिलिवरी का पता :</string>
+    <string name="transaction_detail__phone">फ़ोन :</string>
+    <string name="transaction_detail__address">पता:</string>
+    <string name="transaction_detail__email">ईमेल :</string>
+    <string name="transaction_detail__shipping_cost">शिपिंग लागत: </string>
+    <string name="transaction_detail_list__shipping_cost">प्रति आइटम शिपिंग लागत </string>
+    <string name="transaction_detail__shipping_tax">शिपिंग टैक्स: </string>
+
+
+    <string name="Feature_UI_Type__Button">वर्ग</string>
+    <string name="Feature_UI_Tune__Button">खोज</string>
+    <string name="Feature_UI_Sort__Button">तरह</string>
+    <string name="Feature_UI__product_list_no_item_title">कोई आकड़ा उपलब्ध नहीं है</string>
+    <string name="Feature_UI__product_list_no_item_desc">कोई परिणाम नहीं है! कृपया फ़िल्टर को समायोजित करने का प्रयास करें।</string>
+    <string name="Feature_UI__product_list_loading_item_title">हम लोड कर रहे हैं</string>
+    <string name="Feature_UI__search_alert_cat_title">वर्ग चुने</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">उप श्रेणी चुनें</string>
+    <string name="Feature_UI__search_alert_city_title">शहर चुनें</string>
+    <string name="Feature_UI__search_alert_country_title">शहर चुनें</string>
+
+
+    <string name="about_us__phone">फ़ोन</string>
+    <string name="about_us__facebook">फेसबुक</string>
+    <string name="about_us__gplus">गूगल प्लस</string>
+    <string name="about_us__instagram">इंस्टाग्राम</string>
+    <string name="about_us__youtube">यूट्यूब</string>
+    <string name="about_us__pinterest">Pinterest</string>
+    <string name="about_us__twitter">ट्विटर</string>
+    <string name="about_us__visit_website">हमारी वेबसाइट पर जाएँ</string>
+    <string name="about_us__email">ईमेल</string>
+    <string name="about_us__contact">संपर्क करें</string>
+    <string name="about_us__source_address">स्रोत पता</string>
+    <string name="about_us__title">अनुप्रयोग की जानकारी</string>
+
+
+    <string name="profile__title">प्रोफाइल</string>
+    <string name="profile__name">नाम</string>
+    <string name="profile__edit">संपादित करें</string>
+    <string name="profile__likes">को यह पसंद है</string>
+    <string name="profile__history">इतिहास</string>
+    <string name="profile__favourites">पसंदीदा</string>
+    <string name="profile__setting">सेटिंग</string>
+    <string name="profile__joined_on">पर शामिल हुए</string>
+    <string name="profile__joined_date">दिनांक शामिल हुई</string>
+    <string name="profile__orders">आदेश</string>
+    <string name="profile__see_all">सभी देखें</string>
+    <string name="profile__verified">सत्यापित</string>]
+    <string name="profile__status">स्थिति</string>
+    <string name="profile__transaction">लेन-देन</string>
+
+
+    <string name="edit_profile__title">प्रोफाइल एडिट करें</string>
+    <string name="edit_profile__user_name">उपयोगकर्ता नाम</string>
+    <string name="edit_profile__about_me">मेरे बारे में</string>
+    <string name="edit_profile__email">ईमेल</string>
+    <string name="edit_profile__phone">फ़ोन</string>
+    <string name="edit_profile__password">पारण शब्द</string>
+    <string name="edit_profile__password_change">पासवर्ड परिवर्तन</string>
+    <string name="edit_profile__save">बचाना</string>
+    <string name="edit_profile__address">डिलिवरी का पता</string>
+    <string name="edit_profile__town">नगर</string>
+    <string name="edit_profile__division">विभाजन</string>
+    <string name="edit_profile__country">देश</string>
+    <string name="verify_email">ईमेल सत्यापित करें</string>
+
+
+    <string name="menu__home">होम</string>
+    <string name="menu__profile">प्रोफाइल</string>
+    <string name="menu__like">पसंद</string>
+    <string name="menu__favourite_items">पसंदीदा</string>
+    <string name="menu__transaction">लेन-देन</string>
+    <string name="menu__user_history">उपयोगकर्ता इतिहास</string>
+    <string name="menu__logout">लोग आउट</string>
+    <string name="menu__about_app">हमारे बारे में</string>
+    <string name="menu__contact_us">हमसे संपर्क करें</string>
+    <string name="menu__notification_setting">अधिसूचना सेटिंग</string>
+    <string name="menu__language">भाषा</string>
+    <string name="menu__setting">सेटिंग</string>
+    <string name="menu__shop_profile">दुकान</string>
+    <string name="menu__me">मुझे</string>
+    <string name="menu__basket">टोकरी</string>
+    <string name="menu__app_setting">ऐप</string>
+    <string name="menu__user_info">उपयोगकर्ता जानकारी</string>
+    <string name="menu__save">बचाना</string>
+    <string name="menu__search">खोज</string>
+    <string name="menu__side_bar_menu">अधिक</string>
+    <string name="menu__filter">फ़िल्टर</string>
+    <string name="menu__latest_product">नवीनतम उत्पाद</string>
+    <string name="menu__discount">डिस्काउंट उत्पाद</string>
+    <string name="menu__category">वर्ग</string>
+    <string name="menu__featured_product">विशेष रुप से प्रदर्शित प्रोडक्टस</string>
+    <string name="menu__subcategory">उप श्रेणी</string>
+    <string name="menu__trending_products">ट्रेंडिंग प्रोडक्ट्स</string>
+    <string name="menu__trending_category">ट्रेंडिंग श्रेणियां</string>
+    <string name="menu__home_category_view_All_zg">सभी को देखें</string>
+    <string name="menu__home_category_view_All_un">सभी को देखें</string>
+    <string name="menu__home_category_textView">श्रेणियाँ</string>
+    <string name="menu__collections">संग्रह</string>
+    <string name="menu__home_discount_view_all">सभी डिस्काउंट उत्पाद देखें</string>
+    <string name="setting__clear_cache_confirm">क्या आप छवि कैश साफ़ करना सुनिश्चित कर रहे हैं?</string>
+    <string name="setting__clear_image_cache">साफ छवि कैश</string>
+    <string name="setting__image_cache_size">चित्र कैश आकार</string>
+    <string name="setting__change_gdpr">GDPR सेटिंग बदलें</string>
+    <string name="setting__version_no">संस्करण संख्या:</string>
+    <string name="menu__rate">इस ऐप्लिकेशन को रेट करे</string>
+    <string name="menu__privacy_policy">नियम और शर्तें</string>
+
+
+    <string name="collection__list_title">संग्रह सूची</string>
+
+
+    <string name="product_detail__isFeatured">फीचर्ड \ nproduct।</string>
+    <string name="product_detail__desc_title">उत्पाद वर्णन</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">Addidas</string>
+    <string name="product_detail__detail_facts_un">विस्तार से जानकारी</string>
+    <string name="product_detail__other_facts_un">अन्य सूचना</string>
+    <string name="product_detail__size_un">आकार</string>
+    <string name="product_detail__select_size_un">नाप चुनें</string>
+    <string name="product_detail__cloth_un">वस्त्र</string>
+    <string name="product_detail__select_cloth_un">कपड़े चुनें</string>
+    <string name="product_detail__product_name_un">उत्पाद का नाम</string>
+    <string name="product_detail__can_get_colors_un">उपलब्ध रंग</string>
+    <string name="product_detail__choosing_un">उत्पाद विशेषताएं</string>
+    <string name="product_detail__how_many_un">कितने ?</string>
+    <string name="product_detail__terms_and_policy_un">शर्तें और नीति</string>
+    <string name="product_detail__re_change_un">बदल रहा है ..</string>
+    <string name="product_detail__never_change_un">कपड़े खरीद नहीं सकते</string>
+    <string name="product_detail__terms_and_condition">नियम और शर्तें</string>
+    <string name="product_detail__refund_policy">धन वापसी नीति</string>
+    <string name="product_detail__users_scene_un">उपयोगकर्ता की टिप्पणियां</string>
+    <string name="product_detail__no_scene_un">कोई टिप्पणी नहीं !</string>
+    <string name="product_detail__write_scene_un">टिप्पणी लिखिए</string>
+    <string name="product_detail__similar_products_un">संबंधित उत्पाद</string>
+    <string name="product_detail__related_tags">संबंधित टैग</string>
+    <string name="product_detail__related_product">संबंधित उत्पाद</string>
+    <string name="product_detail__add_to_busket"> टोकरी में जोड़ें</string>
+    <string name="product_detail__buy">खरीदें</string>
+    <string name="product_detail__successfully_added">सफलतापूर्वक टोकरी में जोड़ा गया</string>
+    <string name="product_detail__like">पसंद</string>
+    <string name="product_detail__comment">टिप्पणियाँ</string>
+    <string name="product_detail__favourite">पसंदीदा</string>
+    <string name="product_detail__wish_list">काश सूची</string>
+    <string name="product_detail__seen">देखा</string>
+    <string name="product_detail__see_all_comment">सभी टिप्पणियाँ देखें</string>
+    <string name="product_detail__choose_un">%1$s चुनें</string>
+    <string name="product_detail__choose_zg">%1$s चुनें</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">कोई रेटिंग नहीं।</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">यह प्रोडक्ट उपलब्ध नहीं है। स्टॉक ख़त्म।</string>
+    <string name="product_detail__in_stock">स्टॉक में</string>
+    <string name="product_detail__item_not_available">आइटम उपलब्ध नहीं है</string>
+    <string name="product_detail__install_messenger_app">कृपया मैसेंजर ऐप इंस्टॉल करें।</string>
+    <string name="product_detail__install_whatsapp_app">कृपया व्हाट्स एप इंस्टॉल करें।</string>
+    <string name="product_detail__warning_select_attr">कृपया रंग चुनें।</string>
+    <string name="product_detail__messenger_text">मैसेंजर</string>
+    <string name="product_detail__whatsApp_text">WhatsApp</string>
+    <string name="product_detail__phone_text">कॉल</string>
+    <string name="product_detail__min_order_error">"न्यूनतम आदेश है "</string>
+    <string name="product_detail__shipping_cost">प्रति यूनिट शिपिंग लागत</string>
+    <string name="product_detail__product_min_order">न्यूनतम आदेश</string>
+    <string name="product_detail__product_unit">उत्पाद इकाई</string>
+    <string name="product_detail__product_measurement">उत्पाद मापन</string>
+
+    <string name="discount__rating5">%1$s रेटिंग (%2$s समीक्षाएं)</string>
+
+
+
+    <string name="no_internet_error">कोई इंटरनेट कनेक्शन नहीं।</string>
+
+
+
+    <string name="message_sent">आपका सन्देश भेज दिया गया है।</string>
+
+
+
+    <string name="update_noti">कृपया प्रतीक्षा करें! फिर भी अधिसूचना सेटिंग अपडेट की जा रही है।</string>
+    <string name="copied_to_clipboard">क्लिपबोर्ड पर नकल।</string>
+    <string name="confirm_to_Buy">कृपया इस आदेश को आगे बढ़ाने के लिए पुष्टि करें</string>
+    <string name="delete_item_from_basket">क्या आप इसे टोकरी से हटाना सुनिश्चित करते हैं :(</string>
+    <string name="add_to_basket_confirm_box">क्या आप टोकरी में जोड़ना सुनिश्चित कर रहे हैं :)</string>
+
+    <string name="success">सफलता</string>
+    <string name="confirm">की पुष्टि करें</string>
+    <string name="info">जानकारी</string>
+    <string name="error">त्रुटि</string>
+    <string name="warning">चेतावनी</string>
+    <string name="version_update">संस्करण अद्यतन</string>
+    <string name="update">अद्यतन करें</string>
+
+
+    <string name="category__list_title">श्रेणी सूची</string>
+
+
+    <string name="shop_category">दुकान श्रेणियाँ</string>
+    <string name="shop_new_shops">नई दुकानें</string>
+    <string name="shop_featured_shops">दुकानें</string>
+    <string name="shop_popular_shops">लोकप्रिय दुकानें</string>
+    <string name="shop_blog">ब्लॉग</string>
+    <string name="rating_value">रेटिंग</string>
+
+
+    <string name="first_name">पहला नाम</string>
+    <string name="last_name">अंतिम नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="phone">फ़ोन</string>
+    <string name="company">कंपनी</string>
+    <string name="address_1">पता 1</string>
+    <string name="address_2">पता द्वितीय</string>
+    <string name="country">देश</string>
+    <string name="state">राज्य</string>
+    <string name="city">शहर</string>
+    <string name="postal_code">डाक कोड</string>
+    <string name="next">आगामी</string>
+    <string name="shipping_address">आगामी</string>
+    <string name="billing_address">बिल भेजने का पता</string>
+    <string name="same_with_shipping_address">शिपिंग पते के साथ भी</string>
+    <string name="update_address">क्या आप अपना शिपिंग / बिलिंग पता अपडेट करना चाहते हैं?</string>
+
+
+
+    <string name="shipping_method">शिपिंग का तरीका</string>
+    <string name="coupon_discount">कूपन छूट</string>
+    <string name="coupon_discount_code">कूपन कोड</string>
+    <string name="coupon_discount_code_instruction">यदि आपके पास कोई रिडीमेबल कोड है, तो कृपया इसे यहाँ उपयोग करें। तो, आप कुछ छूट मूल्य प्राप्त कर सकते हैं</string>
+    <string name="order_summary">आदेश सारांश</string>
+
+    <string name="total_item_count">कुल आइटम गणना:</string>
+    <string name="total">संपूर्ण :</string>
+    <string name="discount">छूट :</string>
+    <string name="coupon_discount_text">कूपन छूट:</string>
+
+    <string name="sub_total">उप कुल:</string>
+    <string name="tax">कर (%1$s %%):</string>
+    <string name="shipping_cost">शिपिंग लागत:</string>
+    <string name="shipping_tax">शिपिंग टैक्स (%1$s %%):</string>
+    <string name="days">दिन</string>
+
+    <string name="error_coupon">कूपन कोड मान्य नहीं है</string>
+    <string name="check_coupon">कूपन कोड की जाँच करना</string>
+
+    <string name="confirm_checkout2">की पुष्टि करें</string>
+    <string name="back">वापस</string>
+    <string name="checkout">चेक आउट</string>
+    <string name="confirm_paypal">कृपया अपने पेपैल खाते की पुष्टि करें। ध्यान दें कि जब तक आप चेकआउट बटन नहीं दबाते हैं, तब तक कोई ऑर्डर लेनदेन नहीं किया जाएगा</string>
+
+
+    <string name="policy">मैंने नियम और शर्तों, गोपनीयता नीति और धनवापसी नीति को पढ़ा और उनसे सहमत हूं।</string>
+    <string name="get_token">टोकन लेना</string>
+    <string name="transaction_number">लेनदेन संख्या:</string>
+    <string name="not_checked">कृपया चेकआउट से पहले नियम और शर्तों से सहमत हों</string>
+
+
+    <string name="status_billing_address">बिल भेजने का पता</string>
+    <string name="shop__list">दुकान की सूची</string>
+    <string name="checkout_status__thank_you">धन्यवाद,</string>
+
+
+    <string name="blog_list__title">ब्लॉग सूची</string>
+
+
+    <string name="blog_detail__error_message">इस आईडी के साथ ब्लॉग मौजूद नहीं है</string>
+    <string name="blog_detail__title">ब्लॉग विस्तार</string>
+
+
+    <string name="shop_category__title">दुकान टैग सूची</string>
+
+
+    <string name="shop_menu__title">दुकान मेनू</string>
+    <string name="shop">दुकान</string>
+    <string name="copy_clipboard">क्लिपबोर्ड पर नकल</string>
+
+
+    <string name="shop__sure_to_exit">क्या आप इस स्टोर से बाहर निकलना चाहते हैं?</string>
+
+
+    <string name="product_list_title">उत्पाद सूची</string>
+
+
+    <string name="force_update_true">अद्यतन उपलब्ध है</string>
+    <string name="force_update__button_update"> अद्यतन करें</string>
+
+
+    <string name="hello">नमस्ते</string>
+    <string name="send_email">मेल भेजे…</string>
+    <string name="invalid_url">अवैध यूआरएल</string>
+
+
+    <string name="verify_email__informateion">आपको अभी एक ईमेल प्राप्त हुआ है जिसमें सत्यापन कोड है</string>
+    <string name="verify_email__enter_code">सत्यापन कोड दर्ज करें</string>
+    <string name="verify_email__change_email">ई - मेल बदलें</string>
+    <string name="verify_email__resent_code">आचार संहिता</string>
+    <string name="verify_email__submit">जमा करें</string>
+
+
+</resources>

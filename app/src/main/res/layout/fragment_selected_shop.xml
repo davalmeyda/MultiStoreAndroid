@@ -1,0 +1,415 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loadingMore"
+            type="boolean" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout__primary_background"
+        android:visibility="visible">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <TextView
+                    android:id="@+id/sliderHeaderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:animateLayoutChanges="true"
+                    android:text="@string/menu__featured_product"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/viewAllSliderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/sliderHeaderTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/sliderHeaderTextView"
+                    tools:text="ViewAll" />
+
+                <TextView
+                    android:id="@+id/latestTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_20"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/menu__latest_product"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/trending_Category_List" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sliderHeaderTextView" />
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_corner_grey_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/space_4"
+                    android:paddingTop="@dimen/space_4"
+                    android:paddingEnd="@dimen/space_4"
+                    android:paddingBottom="@dimen/space_4"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryIconList"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.631"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryTextView"
+                    app:spanCount="5" />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="@string/admob_banner_ads_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/discount_list"/>
+
+                <TextView
+                    android:id="@+id/trendingTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingStart="@dimen/space_20"
+                    android:text="@string/menu__trending_products"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/discount_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/space_20"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/space_16"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/discountTitleTextView"
+                    app:spanCount="1">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/discountTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/menu__discount"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryIconList" />
+
+                <TextView
+                    android:id="@+id/trendingCategoriesTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_20"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/menu__trending_category"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/trending_list" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/product_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/space_20"
+                    android:paddingBottom="@dimen/space_16"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latestTitleTextView">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trending_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/space_20"
+                    android:paddingBottom="@dimen/space_16"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/trendingTitleTextView"
+                    app:spanCount="1" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trending_Category_List"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/space_20"
+                    android:paddingBottom="@dimen/space_16"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/trendingCategoriesTitleTextView"
+                    app:spanCount="2">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/viewAllDiscountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/discountTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/discountTitleTextView" />
+
+                <TextView
+                    android:id="@+id/viewAllTrendingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/trendingTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/trendingTitleTextView" />
+
+                <TextView
+                    android:id="@+id/viewAllTrendingCategoriesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/trendingCategoriesTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/trendingCategoriesTitleTextView" />
+
+                <TextView
+                    android:id="@+id/viewALlLatestTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/latestTitleTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/latestTitleTextView" />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="@string/admob_banner_ads_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_list" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/collections"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/adView2" />
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/menu__home_category_textView"
+                    android:textColor="@color/text__primary_dark"
+                    android:textSize="@dimen/font_h7_size"
+                    android:visibility="visible"
+                    app:font='@{"normal"}'
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewPagerCountDots" />
+
+                <TextView
+                    android:id="@+id/categoryViewAllTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:text="@string/menu__home_category_view_All_un"
+                    android:textAllCaps="true"
+                    android:textColor="@color/global__primary"
+                    android:textSize="@dimen/font_body_s_size"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/categoryTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/categoryTextView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <ProgressBar
+            android:id="@+id/load_more_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:visibleGone="@{loadingMore}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/loadHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/loadingView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="250dp"
+                android:contentDescription="@string/image_default__image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_empty_item_grey_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

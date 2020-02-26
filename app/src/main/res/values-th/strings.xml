@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="terms_and_conditions__title">ข้อกำหนดและเงื่อนไข</string>
+
+
+    <string name="history__title">ประวัติศาสตร์</string>
+    <string name="title__activity_user_history_list">UserHistoryListActivity</string>
+
+
+    <string name="favourite__title">รายการโปรด</string>
+
+
+    <string name="fb_register__welcome">ยินดีต้อนรับจาก%1$s</string>
+    <string name="fb_register__desc">กรุณาเข้าสู่ระบบเพื่อใช้คุณสมบัติทั้งหมดของแอปพลิเคชัน</string>
+
+
+    <string name="gallery__title">เฉลียง</string>
+    <string name="gallery_image__gallery">คลังภาพ</string>
+    <string name="gallery_img__desc">คำอธิบายรูปภาพ</string>
+
+
+    <string name="image_default__image">รูปภาพเริ่มต้น</string>
+
+
+    <string name="app__app_name">หลายร้าน</string>
+    <string name="app__ok">ตกลง</string>
+    <string name="app__cancel">ยกเลิก</string>
+    <string name="app__drawer_open">เปิดลิ้นชัก</string>
+    <string name="app__drawer_close">ปิดลิ้นชัก</string>
+
+
+    <string name="menu__fb_login">เข้าสู่ระบบ Facebook</string>
+    <string name="menu__comment_list">รายการความคิดเห็น</string>
+    <string name="menu__notification_list">รายการการแจ้งเตือน</string>
+
+
+    <string name="register__user_name">ชื่อผู้ใช้</string>
+    <string name="register__email">อีเมล์</string>
+    <string name="register__password">รหัสผ่าน</string>
+    <string name="register__back_to_login">เป็นสมาชิกอยู่แล้ว? เข้าสู่ระบบ</string>
+    <string name="register__register">สมัครสมาชิก</string>
+    <string name="register__new_account">ลงทะเบียนบัญชีผู้ใช้ใหม่</string>
+    <string name="register__check_option">คุณตกลงความเป็นส่วนตัวและนโยบายนี้หรือไม่?</string>
+
+
+    <string name="forgot_password__title">ลืมรหัสผ่าน</string>
+    <string name="forgot_password__email">อีเมล์</string>
+    <string name="forgot_password__back_to_login">เป็นสมาชิกอยู่แล้ว? เข้าสู่ระบบ</string>
+    <string name="forgot_password__password_recovery">รหัสผ่าน</string>
+    <string name="forgot_password__save">บันทึก</string>
+    <string name="forgot_password__send">ส่ง</string>
+
+
+    <string name="password_change__password">รหัสผ่าน</string>
+    <string name="password_change__save">บันทึก</string>
+    <string name="password_change__confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="password_change__password_change">เปลี่ยนรหัสผ่าน</string>
+
+
+    <string name="login__email">อีเมล์</string>
+    <string name="login__password">รหัสผ่าน</string>
+    <string name="login__not_a_member_join_now">ใหม่ที่นี่? ลงชื่อ</string>
+    <string name="login__forgot_your_password">ลืมรหัสผ่าน ?</string>
+    <string name="login__login">ลงชื่อเข้าใช้</string>
+    <string name="login__welcome_title">ยินดีต้อนรับสู่ PS Market Place</string>
+    <string name="login__choice_text">หรือ</string>
+
+
+    <string name="contact_us__name">ชื่อผู้ติดต่อ</string>
+    <string name="contact_us__email">อีเมลติดต่อ</string>
+    <string name="contact_us__message">ข้อความติดต่อ</string>
+    <string name="contact_us__phone">เบอร์โทรติดต่อ</string>
+    <string name="contact_us__submit">เสนอ</string>
+
+
+    <string name="notification_setting__on_off">การตั้งค่าการแจ้งเตือน (เปิด / ปิด)</string>
+    <string name="notification_setting__latest_message_from_system">ข้อความล่าสุดจากระบบ</string>
+    <string name="notification__notification">การแจ้งเตือน!</string>
+    <string name="notification__title">การแจ้งเตือน</string>
+    <string name="notification_setting__title">การตั้งค่าการแจ้งเตือน</string>
+    <string name="notification_detail__title">รายละเอียดการแจ้งเตือน</string>
+    <string name="notification__alert">เตือนภัย</string>
+
+
+    <string name="language__english">อังกฤษ</string>
+    <string name="language__arabic">ภาษาอาหรับ</string>
+    <string name="language__spanish">สเปน</string>
+    <string name="language__language_change">คุณแน่ใจหรือว่าต้องการเปลี่ยนเป็น %1$s</string>
+    <string name="language__title">ภาษา</string>
+
+
+    <string name="comment__replies">- ตอบกลับ%1$s</string>
+    <string name="comment__dates">-%1$s</string>
+    <string name="comment__title">รายการความคิดเห็น</string>
+    <string name="comment__detail_title">ตอบกลับความคิดเห็น</string>
+    <string name="comment__empty_comment">ความคิดเห็นว่างเปล่า</string>
+    <string name="comment__comment">คิดเห็น</string>
+
+
+    <string name="basket__list">รายการตะกร้า</string>
+    <string name="basket__no_item_title">รถเข็นว่างเปล่า</string>
+    <string name="basket__total">ทั้งหมด</string>
+    <string name="basket__items">รายการ</string>
+    <string name="basket__checkout">เช็คเอาท์</string>
+    <string name="basket__no_item_desc">ดูเหมือนว่าคุณไม่มีรายการสินค้าในรถเข็นของคุณ โปรดช้อปปิ้งต่อ</string>
+    <string name="basket__attributes">คุณลักษณะ</string>
+
+
+    <string name="rating__list">รายการอันดับ</string>
+    <string name="rating__write_review">เขียนรีวิว</string>
+    <string name="rating__total_count">รีวิวจากลูกค้า %1$s</string>
+    <string name="rating__total_value">%1$s จาก 5 ดาว</string>
+    <string name="rating__total_count_n_value">%1$s จาก 5 ดาว (%2$s บทวิจารณ์)</string>
+    <string name="rating__count">ดาว%1$s</string>
+    <string name="rating__percent">%1$s %%</string>
+    <string name="rating__in_stock">มีสินค้าในสต๊อก</string>
+    <string name="rating__title">หัวข้อ</string>
+    <string name="rating__message">ข่าวสาร</string>
+    <string name="rating__user_rating">รายการคะแนนจากผู้ใช้!</string>
+    <string name="rating__your_rating">คะแนนของคุณ</string>
+    <string name="rating__five_star">5 ดาว</string>
+    <string name="rating__four_star">4 ดาว</string>
+    <string name="rating__three_star">3 ดาว</string>
+    <string name="rating__two_star">2 ดาว</string>
+    <string name="rating__one_star">1 ดาว</string>
+    <string name="rating__rating_range">ช่วงคะแนน</string>
+    <string name="rating__one">1 และสูงกว่า</string>
+    <string name="rating__two">2 และสูงกว่า</string>
+    <string name="rating__three">3 และสูงกว่า</string>
+    <string name="rating__four">4 และสูงกว่า</string>
+    <string name="rating__five">5 \ n</string>
+    <string name="rating__comar">""</string>
+
+
+    <string name="basket_card_view__price">ราคา</string>
+    <string name="basket_card_view__sub_total">รวมย่อย</string>
+    <string name="basket_card_view__default_count">0</string>
+
+
+    <string name="dialog__title_m_mun">การเรียงลำดับ</string>
+    <string name="popular__m_mun">เป็นที่นิยม</string>
+    <string name="recent__m_mun">ล่าสุด</string>
+    <string name="low_price__m_mun">ราคาต่ำสุด</string>
+    <string name="high_price__m_mun">ราคาสูงสุด</string>
+
+
+    <string name="checkout__payment_method">วิธีการชำระเงิน</string>
+    <string name="checkout__cash_on_delivery">เงินสดในการจัดส่ง</string>
+    <string name="checkout__bank">Paypal</string>
+    <string name="checkout__other">ริ้ว</string>
+    <string name="checkout__bank_transfer">ธนาคาร</string>
+    <string name="checkout__memo">บันทึก</string>
+    <string name="checkout__information__COD">คุณเพียงแค่ต้องชำระเงินสดเมื่อมีการซื้อหรือจัดส่ง</string>
+    <string name="checkout__information__PAYPAL">-</string>
+    <string name="checkout__information__STRIPE">-</string>
+    <string name="checkout__no_payment_method">ไม่มีวิธีการชำระเงิน</string>
+    <string name="checkout__choose_a_method">คุณต้องเลือกวิธีการชำระเงิน</string>
+    <string name="checkout__stripe">ชำระด้วย Stripe</string>
+
+
+    <string name="checkout__order_registered">สั่งซื้อเสร็จเรียบร้อยแล้ว</string>
+    <string name="checkout__shipping_to">ที่อยู่สำหรับจัดส่ง</string>
+    <string name="checkout__view_detail">ดูรายละเอียด</string>
+    <string name="checkout__placed">ส่งคำสั่งซื้อของคุณแล้ว</string>
+    <string name="checkout__address_name">ที่อยู่:</string>
+    <string name="checkout__phone_name">เบอร์โทรศัพท์:</string>
+    <string name="checkout__email_name">อีเมล์:</string>
+    <string name="checkout__dash">-</string>
+    <string name="checkout__claim">ข้อเรียกร้อง</string>
+
+
+    <string name="transaction__number">ไม่มีการทำธุรกรรม:</string>
+    <string name="transaction__statue">สถานะ:</string>
+    <string name="transaction__total_amount">ยอดรวม:</string>
+    <string name="transaction__view_details">ดูรายละเอียด</string>
+    <string name="transaction__title">รายการธุรกรรม</string>
+    <string name="transaction_detail__title">รายละเอียดการทำธุรกรรม</string>
+
+
+    <string name="checkout_detail__totalItem">รวมรายการ</string>
+    <string name="checkout_detail__totalSubtotal">ไม่ทั้งหมด</string>
+    <string name="checkout_detail__totalDiscount">จำนวนส่วนลด</string>
+    <string name="checkout_detail__totalBalance">สมดุล</string>
+    <string name="checkout_detail__claimed_coupon">คุณเพิ่งอ้างสิทธิ์คูปอง</string>
+
+
+    <string name="edit_setting__notification_setting">การตั้งค่าการแจ้งเตือน</string>
+    <string name="edit_setting__edit_profile">แก้ไขโปรไฟล์</string>
+    <string name="edit_setting__logout">ออกจากระบบ</string>
+    <string name="edit_setting__logout_question">คุณแน่ใจว่าจะออกจากระบบ?</string>
+    <string name="edit_setting__terms_and_conditions">ข้อกำหนดและเงื่อนไข</string>
+    <string name="edit_setting__app_info">ข้อมูลแอพ</string>
+    <string name="edit_setting__title">การตั้งค่า</string>
+
+
+    <string name="transaction_order__total_amount">ราคา</string>
+    <string name="transaction_order__count">ปริมาณ</string>
+    <string name="transaction_order__balance">สมดุล</string>
+    <string name="transaction_order__discount_available_amount">จำนวนเงินที่มีส่วนลด</string>
+    <string name="transaction_order__sub_total">รวมย่อย</string>
+
+
+    <string name="message__register_success">ลงทะเบียนสำเร็จ</string>
+    <string name="message__loading">กำลังโหลด …</string>
+    <string name="message__please_wait">โปรดรอ…</string>
+    <string name="message__welcome">ยินดีต้อนรับแบบฟอร์ม PS Market Place</string>
+    <string name="message__want_to_quit">คุณต้องการเลิกจริงๆหรือ</string>
+    <string name="message__ok_close">ตกลง</string>
+    <string name="message__cancel_close">ยกเลิก</string>
+
+
+    <string name="checkout__checkout">เช็คเอาท์</string>
+    <string name="checkout__data">ข้อมูล</string>
+    <string name="checkout__payment">การชำระเงิน</string>
+    <string name="checkout__order">ใบสั่ง</string>
+    <string name="checkout__next">ต่อไป</string>
+    <string name="checkout__previous">ก่อน</string>
+    <string name="checkout__keep_shopping">ช็อปปิ้งต่อไป</string>
+    <string name="checkout__Address">ที่อยู่</string>
+    <string name="checkout__confirmation">การยืนยัน</string>
+
+
+    <string name="search__notSet">ไม่ได้ตั้งค่า</string>
+    <string name="search__by_name">ชื่อผลิตภัณฑ์</string>
+    <string name="search__by_category">ประเภท</string>
+    <string name="search__by_sub_category">หมวดหมู่ย่อย</string>
+    <string name="search__by_price">ราคา</string>
+    <string name="search__lowest_price">ราคาต่ำสุด</string>
+    <string name="search__highest_price">ราคาสูงสุด</string>
+    <string name="search__special_check">ตรวจสอบพิเศษ</string>
+    <string name="search__feature">ผลิตภัณฑ์เด่น</string>
+    <string name="search__discount_price">ราคาส่วนลด</string>
+    <string name="search__search">ค้นหา</string>
+    <string name="search__title_activity_font_select">FontSelectActivity</string>
+
+
+    <string name="sf__notSet">ไม่ได้ตั้งค่า</string>
+    <string name="sf__notSet_zg">ไม่ได้ตั้งค่า</string>
+    <string name="sf__ByItemType">ตั้งชื่อรายการ</string>
+    <string name="sf__ByPrice">ตั้งราคา</string>
+    <string name="sf__LowestPrice">ราคาต่ำสุด</string>
+    <string name="sf__HighestPrice">ราคาสูงสุด</string>
+    <string name="sf__AdvanceFiltering">การกรองขั้นสูง</string>
+    <string name="sf__Feature">คุณสมบัติของผลิตภัณฑ์</string>
+    <string name="sf__Discount">ผลิตภัณฑ์ลดราคา</string>
+    <string name="sf__Filter_Button">กรอง</string>
+    <string name="typefilter">กรองตามประเภทผลิตภัณฑ์</string>
+
+
+    <string name="checkout__customer_information">ข้อมูลลูกค้า</string>
+    <string name="checkout__name">ชื่อ</string>
+    <string name="checkout__email">E-Mail</string>
+    <string name="checkout__phone">โทรศัพท์</string>
+    <string name="checkout__shipping_address">ที่อยู่สำหรับจัดส่ง</string>
+    <string name="checkout__address">ที่อยู่</string>
+    <string name="checkout__city">เมือง</string>
+    <string name="checkout__country">ประเทศ</string>
+    <string name="checkout__state">รัฐ / จังหวัด</string>
+
+
+    <string name="error_message__select_location">กรุณาเลือกสถานที่ตั้ง!</string>
+    <string name="error_message__login_first">กรุณาเข้าสู่ระบบก่อน!</string>
+    <string name="error_message__rating">กรุณากรอกอย่างสมบูรณ์สำหรับการให้คะแนน</string>
+    <string name="error_message__youtube_not_valid">YouTube ไม่ถูกต้อง</string>
+    <string name="error_message__blank_email">กรุณาใส่อีเมล์</string>
+    <string name="error_message__choose_category">เลือกหมวดหมู่ก่อน</string>
+    <string name="error_message__insert_value_search">ใส่ค่าที่ต้องการค้นหา</string>
+    <string name="error_message__order_fail">กระบวนการล้มเหลวโดยมีข้อผิดพลาดที่ไม่รู้จัก! กรุณาลองอีกครั้ง</string>
+    <string name="error_message__blank_contact_message">กรุณาใส่ข้อความติดต่อ</string>
+    <string name="error_message__blank_password">กรุณาใส่รหัสผ่าน</string>
+    <string name="error_message__blank_name">กรุณาใส่ชื่อ</string>
+    <string name="error_message__blank_keyword">กรุณาใส่คำค้นหา</string>
+    <string name="error_message__password_not_equal">รหัสผ่านไม่เท่ากัน!</string>
+    <string name="error_message__no_internet">ไม่มีการเชื่อมต่ออินเทอร์เน็ต.</string>
+    <string name="error_message__email_exists">อีเมล์มีอยู่แล้ว</string>
+    <string name="error_message__to_check_agreement">คุณต้องตรวจสอบข้อตกลงความเป็นส่วนตัวและนโยบาย</string>
+    <string name="error_message__choose_country">เลือกประเทศก่อน</string>
+    <string name="error_message__select_city">กรุณาเลือกเมือง</string>
+    <string name="shipping_address_one_error_message">กรุณากรอกที่อยู่สำหรับส่ง 1</string>
+    <string name="billing_address_one_error_message">โปรดป้อนที่อยู่การเรียกเก็บเงิน 1</string>
+
+    <string name="transaction_detail__transaction_number">ไม่มีการทำธุรกรรม:</string>
+    <string name="transaction_detail__status">สถานะ:</string>
+    <string name="transaction_detail__order_date">วันสั่ง :</string>
+    <string name="transaction_detail__total_charges">ค่าใช้จ่ายทั้งหมด:</string>
+    <string name="transaction_detail__discount_price">ลดราคา :</string>
+    <string name="transaction_detail__delivery_address">ที่อยู่สำหรับการจัดส่ง :</string>
+    <string name="transaction_detail__phone">เบอร์โทรศัพท์:</string>
+    <string name="transaction_detail__address">ที่อยู่:</string>
+    <string name="transaction_detail__email">อีเมล์:</string>
+    <string name="transaction_detail__shipping_cost">ค่าใช้จ่ายในการจัดส่งสินค้า: </string>
+    <string name="transaction_detail_list__shipping_cost">ค่าขนส่งต่อรายการ </string>
+    <string name="transaction_detail__shipping_tax">ภาษีการจัดส่งสินค้า: </string>
+
+
+    <string name="Feature_UI_Type__Button">ประเภท</string>
+    <string name="Feature_UI_Tune__Button">ค้นหา</string>
+    <string name="Feature_UI_Sort__Button">ประเภท</string>
+    <string name="Feature_UI__product_list_no_item_title">ไม่มีข้อมูล</string>
+    <string name="Feature_UI__product_list_no_item_desc">ไม่มีผลลัพธ์! โปรดลองปรับตัวกรอง</string>
+    <string name="Feature_UI__product_list_loading_item_title">เรากำลังโหลด</string>
+    <string name="Feature_UI__search_alert_cat_title">เลือกหมวดหมู่</string>
+    <string name="Feature_UI__search_alert_sub_cat_title">เลือกหมวดหมู่ย่อย</string>
+    <string name="Feature_UI__search_alert_city_title">เลือกเมือง</string>
+    <string name="Feature_UI__search_alert_country_title">เลือกประเทศ</string>
+
+
+    <string name="about_us__phone">โทรศัพท์</string>
+    <string name="about_us__facebook">Facebook</string>
+    <string name="about_us__gplus">Google Plus</string>
+    <string name="about_us__instagram">Instagram</string>
+    <string name="about_us__youtube">Youtube</string>
+    <string name="about_us__pinterest">Pinterest</string>
+    <string name="about_us__twitter">พูดเบาและรวดเร็ว</string>
+    <string name="about_us__visit_website">เยี่ยมชมเว็บไซต์ของเรา</string>
+    <string name="about_us__email">อีเมล์</string>
+    <string name="about_us__contact">ติดต่อ</string>
+    <string name="about_us__source_address">ที่อยู่แหล่งที่มา</string>
+    <string name="about_us__title">ข้อมูลแอพ</string>
+
+
+    <string name="profile__title">ข้อมูลส่วนตัว</string>
+    <string name="profile__name">ชื่อ</string>
+    <string name="profile__edit">แก้ไข</string>
+    <string name="profile__likes">ชอบ</string>
+    <string name="profile__history">ประวัติศาสตร์</string>
+    <string name="profile__favourites">รายการโปรด</string>
+    <string name="profile__setting">การตั้งค่า</string>
+    <string name="profile__joined_on">เข้าร่วมเมื่อ</string>
+    <string name="profile__joined_date">วันที่เข้าร่วม</string>
+    <string name="profile__orders">สั่งซื้อ</string>
+    <string name="profile__see_all">ดูทั้งหมด</string>
+    <string name="profile__verified">ได้รับการยืนยัน</string>]
+    <string name="profile__status">สถานะ</string>
+    <string name="profile__transaction">การทำธุรกรรม</string>
+
+
+    <string name="edit_profile__title">แก้ไขโปรไฟล์</string>
+    <string name="edit_profile__user_name">ชื่อผู้ใช้</string>
+    <string name="edit_profile__about_me">เกี่ยวกับฉัน</string>
+    <string name="edit_profile__email">อีเมล์</string>
+    <string name="edit_profile__phone">โทรศัพท์</string>
+    <string name="edit_profile__password">รหัสผ่าน</string>
+    <string name="edit_profile__password_change">เปลี่ยนรหัสผ่าน</string>
+    <string name="edit_profile__save">บันทึก</string>
+    <string name="edit_profile__address">ที่อยู่สำหรับการจัดส่ง</string>
+    <string name="edit_profile__town">ตัวเมือง</string>
+    <string name="edit_profile__division">แผนก</string>
+    <string name="edit_profile__country">ประเทศ</string>
+    <string name="verify_email">ตรวจสอบอีเมล์</string>
+
+
+    <string name="menu__home">บ้าน</string>
+    <string name="menu__profile">ข้อมูลส่วนตัว</string>
+    <string name="menu__like">ชอบ</string>
+    <string name="menu__favourite_items">ที่ชื่นชอบ</string>
+    <string name="menu__transaction">การซื้อขาย</string>
+    <string name="menu__user_history">ประวัติผู้ใช้</string>
+    <string name="menu__logout">ออกจากระบบ</string>
+    <string name="menu__about_app">เกี่ยวกับเรา</string>
+    <string name="menu__contact_us">ติดต่อเรา</string>
+    <string name="menu__notification_setting">การตั้งค่าการแจ้งเตือน</string>
+    <string name="menu__language">ภาษา</string>
+    <string name="menu__setting">การตั้งค่า</string>
+    <string name="menu__shop_profile">ร้านขายของ</string>
+    <string name="menu__me">ฉัน</string>
+    <string name="menu__basket">ตะกร้า</string>
+    <string name="menu__app_setting">App</string>
+    <string name="menu__user_info">ข้อมูลผู้ใช้</string>
+    <string name="menu__save">บันทึก</string>
+    <string name="menu__search">ค้นหา</string>
+    <string name="menu__side_bar_menu">มากกว่า</string>
+    <string name="menu__filter">กรอง</string>
+    <string name="menu__latest_product">ผลิตภัณฑ์ล่าสุด</string>
+    <string name="menu__discount">ผลิตภัณฑ์ลดราคา</string>
+    <string name="menu__category">ประเภท</string>
+    <string name="menu__featured_product">ผลิตภัณฑ์เด่น</string>
+    <string name="menu__subcategory">หมวดหมู่ย่อย</string>
+    <string name="menu__trending_products">ผลิตภัณฑ์ยอดนิยม</string>
+    <string name="menu__trending_category">หมวดหมู่แนวโน้ม</string>
+    <string name="menu__home_category_view_All_zg">ดูทั้งหมด</string>
+    <string name="menu__home_category_view_All_un">ดูทั้งหมด</string>
+    <string name="menu__home_category_textView">หมวดหมู่</string>
+    <string name="menu__collections">คอลเลกชัน</string>
+    <string name="menu__home_discount_view_all">ดูผลิตภัณฑ์ลดราคาทั้งหมด</string>
+    <string name="setting__clear_cache_confirm">คุณแน่ใจหรือไม่ว่าต้องการล้างแคชรูปภาพ</string>
+    <string name="setting__clear_image_cache">ล้างแคชรูปภาพ</string>
+    <string name="setting__image_cache_size">ขนาดแคชรูปภาพ</string>
+    <string name="setting__change_gdpr">เปลี่ยนการตั้งค่า GDPR</string>
+    <string name="setting__version_no">หมายเลขรุ่น:</string>
+    <string name="menu__rate">ให้คะแนนแอปนี้</string>
+    <string name="menu__privacy_policy">ข้อกำหนดและเงื่อนไข</string>
+
+
+    <string name="collection__list_title">รายการสะสม</string>
+
+
+    <string name="product_detail__isFeatured">สินค้าเด่น \ n</string>
+    <string name="product_detail__desc_title">รายละเอียดสินค้า</string>
+    <string name="product_detail__product_price"> %1$s</string>
+    <string name="product_detail__addidas">Addidas</string>
+    <string name="product_detail__detail_facts_un">ข้อมูลรายละเอียด</string>
+    <string name="product_detail__other_facts_un">ข้อมูลอื่น ๆ</string>
+    <string name="product_detail__size_un">ขนาด</string>
+    <string name="product_detail__select_size_un">เลือกขนาด</string>
+    <string name="product_detail__cloth_un">เสื้อผ้า</string>
+    <string name="product_detail__select_cloth_un">เลือกเสื้อผ้า</string>
+    <string name="product_detail__product_name_un">ชื่อผลิตภัณฑ์</string>
+    <string name="product_detail__can_get_colors_un">สีที่มีให้</string>
+    <string name="product_detail__choosing_un">คุณสมบัติของผลิตภัณฑ์</string>
+    <string name="product_detail__how_many_un">เท่าไหร่ ?</string>
+    <string name="product_detail__terms_and_policy_un">ข้อกำหนดและนโยบาย</string>
+    <string name="product_detail__re_change_un">เปลี่ยน ..</string>
+    <string name="product_detail__never_change_un">ไม่สามารถเปลี่ยนการซื้อเสื้อผ้า</string>
+    <string name="product_detail__terms_and_condition">ข้อกำหนดและเงื่อนไข</string>
+    <string name="product_detail__refund_policy">นโยบายการคืนเงิน</string>
+    <string name="product_detail__users_scene_un">ความคิดเห็นของผู้ใช้</string>
+    <string name="product_detail__no_scene_un">ไม่มีความคิดเห็น !</string>
+    <string name="product_detail__write_scene_un">เขียนความคิดเห็น</string>
+    <string name="product_detail__similar_products_un">สินค้าที่เกี่ยวข้อง</string>
+    <string name="product_detail__related_tags">แท็กที่เกี่ยวข้อง</string>
+    <string name="product_detail__related_product">สินค้าที่เกี่ยวข้อง</string>
+    <string name="product_detail__add_to_busket"> เพิ่มในตะกร้า</string>
+    <string name="product_detail__buy">ซื้อ</string>
+    <string name="product_detail__successfully_added">เพิ่มลงในตะกร้าสำเร็จแล้ว</string>
+    <string name="product_detail__like">ชอบ</string>
+    <string name="product_detail__comment">ความคิดเห็น</string>
+    <string name="product_detail__favourite">ที่ชื่นชอบ</string>
+    <string name="product_detail__wish_list">รายการที่ต้องการ</string>
+    <string name="product_detail__seen">เห็น</string>
+    <string name="product_detail__see_all_comment">ดูความคิดเห็นทั้งหมด</string>
+    <string name="product_detail__choose_un">เลือก%1$s</string>
+    <string name="product_detail__choose_zg">เลือก%1$s</string>
+    <string name="product_detail__original_price">%1$s%2$s</string>
+    <string name="product_detail__price">%1$s%2$s</string>
+    <string name="product_detail__rating">ไม่มีคะแนน</string>
+    <string name="product_detail__count_one">1</string>
+    <string name="product_detail__not_available">ผลิตภัณฑ์นี้ไม่สามารถใช้ได้ สินค้าหมด.</string>
+    <string name="product_detail__in_stock">มีสินค้าในสต๊อก</string>
+    <string name="product_detail__item_not_available">ไม่มีรายการ</string>
+    <string name="product_detail__install_messenger_app">กรุณาติดตั้งแอพ Messenger</string>
+    <string name="product_detail__install_whatsapp_app">กรุณาติดตั้งแอพ WhatsApp</string>
+    <string name="product_detail__warning_select_attr">กรุณาเลือกสี</string>
+    <string name="product_detail__messenger_text">ผู้สื่อสาร</string>
+    <string name="product_detail__whatsApp_text">WhatsApp</string>
+    <string name="product_detail__phone_text">โทร</string>
+    <string name="product_detail__min_order_error">สั่งซื้อขั้นต่ำคือ</string>
+    <string name="product_detail__shipping_cost">ค่าขนส่งต่อหน่วย</string>
+    <string name="product_detail__product_min_order">สั่งซื้อขั้นต่ำ</string>
+    <string name="product_detail__product_unit">หน่วยผลิตภัณฑ์</string>
+    <string name="product_detail__product_measurement">วัดสินค้า</string>
+
+    <string name="discount__rating5">%1$s เรตติ้ง (%2$s รีวิว)</string>
+
+
+
+    <string name="no_internet_error">ไม่มีการเชื่อมต่ออินเทอร์เน็ต.</string>
+
+
+
+    <string name="message_sent">ข้อความของคุณถูกส่งแล้ว.</string>
+
+
+
+    <string name="update_noti">โปรดรอ! กำลังอัปเดตการตั้งค่าการแจ้งเตือน</string>
+    <string name="copied_to_clipboard">คัดลอกไปที่คลิปบอร์ดแล้ว</string>
+    <string name="confirm_to_Buy">โปรดยืนยันเพื่อดำเนินการตามคำสั่งนี้</string>
+    <string name="delete_item_from_basket">คุณแน่ใจที่จะลบสิ่งนี้ออกจากตะกร้า :(</string>
+    <string name="add_to_basket_confirm_box">คุณแน่ใจที่จะเพิ่มลงในตะกร้า :)</string>
+
+    <string name="success">ความสำเร็จ</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="info">ข้อมูล</string>
+    <string name="error">ข้อผิดพลาด</string>
+    <string name="warning">คำเตือน</string>
+    <string name="version_update">อัพเดตเวอร์ชั่น</string>
+    <string name="update">ปรับปรุง</string>
+
+
+    <string name="category__list_title">รายการหมวดหมู่</string>
+
+
+    <string name="shop_category">หมวดหมู่ร้านค้า</string>
+    <string name="shop_new_shops">ร้านค้าใหม่</string>
+    <string name="shop_featured_shops">ร้านค้าแนะนำ</string>
+    <string name="shop_popular_shops">ร้านค้ายอดนิยม</string>
+    <string name="shop_blog">บล็อก</string>
+    <string name="rating_value">อันดับ</string>
+
+
+    <string name="first_name">ชื่อจริง</string>
+    <string name="last_name">นามสกุล</string>
+    <string name="email">อีเมล์</string>
+    <string name="phone">โทรศัพท์</string>
+    <string name="company">บริษัท</string>
+    <string name="address_1">ที่อยู่ 1</string>
+    <string name="address_2">ที่อยู่ 2</string>
+    <string name="country">ประเทศ</string>
+    <string name="state">สถานะ</string>
+    <string name="city">เมือง</string>
+    <string name="postal_code">รหัสไปรษณีย์</string>
+    <string name="next">ต่อไป</string>
+    <string name="shipping_address">ต่อไป</string>
+    <string name="billing_address">ที่อยู่เรียกเก็บเงิน</string>
+    <string name="same_with_shipping_address">เช่นเดียวกับที่อยู่จัดส่ง</string>
+    <string name="update_address">คุณต้องการอัพเดทที่อยู่สำหรับจัดส่ง / เรียกเก็บเงินของคุณหรือไม่</string>
+
+
+
+    <string name="shipping_method">วิธีการส่ง</string>
+    <string name="coupon_discount">ส่วนลดคูปอง</string>
+    <string name="coupon_discount_code">รหัสคูปอง</string>
+    <string name="coupon_discount_code_instruction">หากคุณมีรหัสที่สามารถแลกได้โปรดใช้ที่นี่ ดังนั้นคุณสามารถรับส่วนลดบางส่วนได้</string>
+    <string name="order_summary">สรุปคำสั่งซื้อ</string>
+
+    <string name="total_item_count">จำนวนรายการทั้งหมด:</string>
+    <string name="total">รวม:</string>
+    <string name="discount">ส่วนลด:</string>
+    <string name="coupon_discount_text">ส่วนลดคูปอง:</string>
+
+    <string name="sub_total">ผลรวมย่อย:</string>
+    <string name="tax">ภาษี (%1$s %%):</string>
+    <string name="shipping_cost">ค่าใช้จ่ายในการจัดส่งสินค้า:</string>
+    <string name="shipping_tax">ภาษีการจัดส่งสินค้า (%1$s %%):</string>
+    <string name="days">วัน</string>
+
+    <string name="error_coupon">รหัสคูปองไม่ถูกต้อง</string>
+    <string name="check_coupon">ตรวจสอบรหัสคูปอง</string>
+
+    <string name="confirm_checkout2">ยืนยัน</string>
+    <string name="back">กลับ</string>
+    <string name="checkout">เช็คเอาท์</string>
+    <string name="confirm_paypal">โปรดยืนยันบัญชี paypal ของคุณ โปรดทราบว่าจะไม่มีการทำธุรกรรมการสั่งซื้อจนกว่าคุณจะกดปุ่มชำระเงิน</string>
+
+
+    <string name="policy">ฉันได้อ่านและยอมรับข้อตกลงและเงื่อนไขนโยบายความเป็นส่วนตัวและนโยบายการคืนเงิน</string>
+    <string name="get_token">รับโทเค็น</string>
+    <string name="transaction_number">การทำธุรกรรมไม่มี:</string>
+    <string name="not_checked">กรุณายอมรับข้อตกลงและเงื่อนไขก่อนเช็คเอาท์</string>
+
+
+    <string name="status_billing_address">ที่อยู่เรียกเก็บเงิน</string>
+    <string name="shop__list">รายการร้านค้า</string>
+    <string name="checkout_status__thank_you">ขอบคุณ,</string>
+
+
+    <string name="blog_list__title">รายการบล็อก</string>
+
+
+    <string name="blog_detail__error_message">บล็อกที่มีรหัสนี้ไม่มีอยู่</string>
+    <string name="blog_detail__title">รายละเอียดบล็อก</string>
+
+
+    <string name="shop_category__title">รายการร้านค้า</string>
+
+
+    <string name="shop_menu__title">เมนูร้านค้า</string>
+    <string name="shop">ร้านขายของ</string>
+    <string name="copy_clipboard">คัดลอกไปที่คลิปบอร์ดแล้ว</string>
+
+
+    <string name="shop__sure_to_exit">คุณต้องการออกจากร้านนี้หรือไม่?</string>
+
+
+    <string name="product_list_title">รายการสินค้า</string>
+
+
+    <string name="force_update_true">มีการอัปเดต</string>
+    <string name="force_update__button_update"> ปรับปรุง</string>
+
+
+    <string name="hello">สวัสดี</string>
+    <string name="send_email">ส่งอีเมล์…</string>
+    <string name="invalid_url">URL ไม่ถูกต้อง</string>
+
+
+    <string name="verify_email__informateion">คุณเพิ่งได้รับอีเมลที่มีรหัสยืนยันบน</string>
+    <string name="verify_email__enter_code">ใส่รหัสยืนยัน</string>
+    <string name="verify_email__change_email">เปลี่ยนอีเมล</string>
+    <string name="verify_email__resent_code">รหัสไม่พอใจ</string>
+    <string name="verify_email__submit">เสนอ</string>
+
+
+</resources>

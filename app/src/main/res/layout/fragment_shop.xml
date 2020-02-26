@@ -1,0 +1,695 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.theodhor.runtimepermissions.MainActivity">
+
+    <data>
+
+        <variable
+            name="shop"
+            type="com.panaceasoft.psmultistore.viewobject.Shop" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="SMART_BANNER"
+                    app:adUnitId="@string/admob_banner_ads_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/aboutImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/menu__about_app"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{shop.defaultPhoto.imgPath}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/adView"
+                    tools:src="@drawable/placeholder_image" />
+
+                <ImageView
+                    android:id="@+id/aboutDefaultIcon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{shop.defaultIcon.imgPath}"
+                    app:layout_constraintBottom_toBottomOf="@+id/emailImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutImageView"
+                    tools:srcCompat="@drawable/placeholder_image" />
+
+                <ImageView
+                    android:id="@+id/emailImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+                    app:srcCompat="@drawable/mail" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/emailImage"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="teamps.is.cool@gmail.com" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutImageView"
+                    app:textSize='@{"font_title_size"}'
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/aboutDefaultIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                    tools:text="phone" />
+
+                <TextView
+                    android:id="@+id/descTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:lineSpacingExtra="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text__primary"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutDefaultIcon"
+                    tools:text="Description" />
+
+                <ImageView
+                    android:id="@+id/webImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/websiteTitleTextView"
+                    app:srcCompat="@drawable/web" />
+
+                <TextView
+                    android:id="@+id/websiteTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__visit_website"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/webImage"
+                    app:layout_constraintTop_toBottomOf="@+id/phone3TextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Visit Our Website" />
+
+                <TextView
+                    android:id="@+id/WebsiteTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/websiteTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="http://www.panacea-soft.com" />
+
+                <ImageView
+                    android:id="@+id/phoneImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/phoneTitleTextView"
+                    app:srcCompat="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/phoneTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:text="@string/about_us__phone"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/phoneImage"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Phone" />
+
+                <ImageView
+                    android:id="@+id/facebookImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/facebookTitleTextView"
+                    app:srcCompat="@drawable/facebook" />
+
+                <TextView
+                    android:id="@+id/facebookTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__facebook"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/facebookImage"
+                    app:layout_constraintTop_toBottomOf="@+id/WebsiteTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Facebook" />
+
+                <TextView
+                    android:id="@+id/facebookTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/facebookTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="FB1" />
+
+                <ImageView
+                    android:id="@+id/gplusImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/gplusTitleTextView"
+                    app:srcCompat="@drawable/gplus" />
+
+                <TextView
+                    android:id="@+id/gplusTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__gplus"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/gplusImage"
+                    app:layout_constraintTop_toBottomOf="@+id/facebookTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Google Plus" />
+
+                <TextView
+                    android:id="@+id/gplusTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gplusTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="GP1" />
+
+
+                <ImageView
+                    android:id="@+id/twitterImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/twitterTitleTextView"
+                    app:srcCompat="@drawable/twitter" />
+
+                <TextView
+                    android:id="@+id/twitterTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__twitter"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/twitterImage"
+                    app:layout_constraintTop_toBottomOf="@+id/gplusTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Twitter" />
+
+                <TextView
+                    android:id="@+id/twitterTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/twitterTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="T1" />
+
+
+                <ImageView
+                    android:id="@+id/instagramImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/instaTitleTextView"
+                    app:srcCompat="@drawable/instagram" />
+
+                <TextView
+                    android:id="@+id/instaTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__instagram"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/instagramImage"
+                    app:layout_constraintTop_toBottomOf="@+id/twitterTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Instagram" />
+
+                <TextView
+                    android:id="@+id/instaTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/instaTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Ins1" />
+
+                <ImageView
+                    android:id="@+id/youtubeImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/youTubeTitleTextView"
+                    app:srcCompat="@drawable/youtube" />
+
+                <TextView
+                    android:id="@+id/youTubeTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__youtube"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/youtubeImage"
+                    app:layout_constraintTop_toBottomOf="@+id/instaTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="YouTube" />
+
+                <TextView
+                    android:id="@+id/youtubeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/youTubeTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Y1" />
+
+                <ImageView
+                    android:id="@+id/pinterestImage"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pinterestTitleTextView"
+                    app:srcCompat="@drawable/pinterest" />
+
+                <TextView
+                    android:id="@+id/pinterestTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:text="@string/about_us__pinterest"
+                    android:textAlignment="viewStart"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/pinterestImage"
+                    app:layout_constraintTop_toBottomOf="@+id/youtubeTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="Pinterest" />
+
+                <TextView
+                    android:id="@+id/pinterestTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/holo_blue_dark"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pinterestTitleTextView"
+                    app:textSize='@{"font_body_size"}'
+                    tools:text="P1" />
+
+                <TextView
+                    android:id="@+id/phone1TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneTitleTextView" />
+
+                <TextView
+                    android:id="@+id/phone2TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone1TextView" />
+
+                <TextView
+                    android:id="@+id/phone3TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone2TextView" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/about_us__contact"
+                    android:textAlignment="viewStart"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descTextView" />
+
+                <TextView
+                    android:id="@+id/address1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView16"
+                    app:layout_constraintTop_toTopOf="@+id/imageView16"
+                    app:textSize='@{"font_body_size"}' />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:text="@string/about_us__source_address"
+                    android:textAlignment="viewStart"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pinterestTextView" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39"
+                    app:srcCompat="@drawable/baseline_pin_black_24" />
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView17"
+                    app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+                <TextView
+                    android:id="@+id/address3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="@dimen/space_16"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_body_size"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18"
+                    app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView16"
+                    app:srcCompat="@drawable/baseline_pin_black_24" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="@dimen/space_16"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="@string/image_default__image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView17"
+                    app:srcCompat="@drawable/baseline_pin_black_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shopPhoneNumber"
+            android:layout_marginEnd="@dimen/space_8"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:tint="@color/md_white_1000"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="@color/global__primary"
+            app:fabSize="normal"
+            app:rippleColor="@color/colorFabRipple"
+            app:srcCompat="@drawable/phone" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

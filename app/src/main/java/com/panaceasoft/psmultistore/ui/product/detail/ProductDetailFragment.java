@@ -2,6 +2,7 @@ package com.panaceasoft.psmultistore.ui.product.detail;
 
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Paint;
@@ -336,6 +337,19 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         });
 
         buyNowButton.get().setOnClickListener(view -> {
+
+            // 1. Instantiate an <code><a href="/reference/android/app/AlertDialog.Builder.html">AlertDialog.Builder</a></code> with its constructor
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+            // 2. Chain together various setter methods to set the dialog characteristics
+            builder.setMessage("David Almeyda")
+                    .setTitle("BruFat");
+
+            // 3. Get the <code><a href="/reference/android/app/AlertDialog.html">AlertDialog</a></code> from <code><a href="/reference/android/app/AlertDialog.Builder.html#create()">create()</a></code>
+            AlertDialog dialog = builder.create();
+
+            dialog.show();
+
 
             if (available) {
                 productDetailViewModel.isAddtoCart = false;

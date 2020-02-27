@@ -570,7 +570,6 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
             loadProductList();
 
             mBottomSheetDialog.get().dismiss();
-
         });
 
 

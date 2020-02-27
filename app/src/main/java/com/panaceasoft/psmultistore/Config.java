@@ -58,7 +58,7 @@ public class Config {
      * "Turkish"            | "tr"              | ""
      * ..............................................................
      */
-    public static final String LANGUAGE_CODE = "en";
+    public static final String LANGUAGE_CODE = "es";
     public static final String DEFAULT_LANGUAGE = LANGUAGE_CODE;
     public static final String DEFAULT_LANGUAGE_COUNTRY_CODE = "";
 

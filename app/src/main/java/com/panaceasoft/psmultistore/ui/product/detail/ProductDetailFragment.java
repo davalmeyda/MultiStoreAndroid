@@ -323,11 +323,12 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         addToCartButton.get().setOnClickListener(view -> {
 
             if (available) {
-                productDetailViewModel.isAddtoCart = true;
-
-                bottomBoxLayoutBinding.get().lowestButton.setText(getString(R.string.product_detail__add_to_busket));
-
-                mBottomSheetDialog.get().show();
+                // NOS PASAMOS DIRECTO A AGREGAR EL PRODUCTO
+                confirmBox();
+                // QUITANDO LOS ATRIBUTOS DEL PRODUCTO A ELEGIR
+                //productDetailViewModel.isAddtoCart = true;
+                //bottomBoxLayoutBinding.get().lowestButton.setText(getString(R.string.product_detail__add_to_busket));
+                //mBottomSheetDialog.get().show();
             } else {
                 psDialogMsg.showWarningDialog(getString(R.string.product_detail__not_available), getString(R.string.app__ok));
                 psDialogMsg.show();
@@ -349,7 +350,6 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
             AlertDialog dialog = builder.create();
 
             dialog.show();
-
 
             if (available) {
                 productDetailViewModel.isAddtoCart = false;
@@ -670,10 +670,10 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     } else {
 
                         if (getContext() != null) {
+                            // QUITANDO MENSAJE DE AGREGADO A LA CESTA
+                            /*psDialogMsg.showSuccessDialog(getString(R.string.product_detail__successfully_added), getString(R.string.app__ok));
 
-                            psDialogMsg.showSuccessDialog(getString(R.string.product_detail__successfully_added), getString(R.string.app__ok));
-
-                            psDialogMsg.show();
+                            psDialogMsg.show();*/
 
                         }
                     }
@@ -1247,7 +1247,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         bottomBoxLayoutBinding.get().priceCurrencyTextView.setText(product.currencySymbol);
         //endregion
 
-        //detail pop
+        //detail pop AGREGAR A CESTA Y COMPRA
         bottomBoxLayoutBinding.get().lowestButton.setOnClickListener(view -> {
             mBottomSheetDialog.get().setState(BottomSheetBehavior.STATE_EXPANDED);
             if (productDetailViewModel.isAddtoCart) {

@@ -75,6 +75,7 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
+        //  AQUI SE CREA LA LISTA DE PRODUCTOS EN PROMOCION
         if (viewType == 0) {
             ItemDiscountListAdapterBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_discount_list_adapter, parent, false, dataBindingComponent);
 
@@ -146,7 +147,12 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                 }
 
-                holder.itemView.setOnClickListener(view -> callback.onClick(product));
+                holder.itemView.setOnClickListener(view -> {
+
+                    //productDetailFragment = new ProductDetailFragment();
+                    //guardarCarrito(product.id, product.unitPrice, product.originalPrice, product.shopId);
+                    this.callback.onClick(product);
+                });
 
 //                ((MyViewHolder) holder).binding.heartButton.setOnLikeListener(new OnLikeListener() {
 //                    @Override
@@ -171,6 +177,23 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             }
         }
     }
+
+    /*public void guardarCarrito(String productId, float price, float originalPrice, String selectedShopId){
+
+        basketViewModel.setSaveToBasketListObj(
+                0,
+                productId,
+                1,
+                "{}",
+                "",
+                "",
+                null,
+                price,
+                originalPrice,
+                selectedShopId,
+                "{}"
+        );
+    }*/
 
     public interface NewsClickCallback {
         void onClick(Product product);

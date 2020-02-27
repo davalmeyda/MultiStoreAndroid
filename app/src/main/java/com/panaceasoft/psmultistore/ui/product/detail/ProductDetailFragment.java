@@ -584,7 +584,6 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
 
         this.relatedAdapter = new AutoClearedValue<>(this, homeScreenAdapter1);
         //binding.get().alsoBuyRecyclerView.setAdapter(homeScreenAdapter1);
-
     }
 
     @Override
@@ -757,7 +756,8 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         if (loginUserId != null) {
             productDetailViewModel.setProductDetailObj(productDetailViewModel.productId, selectedShopId, productDetailViewModel.historyFlag, loginUserId);
         }
-
+        ProductDetailFragment.this.setSaveToBasket();
+        getActivity().onBackPressed();
     }
 
     @Override

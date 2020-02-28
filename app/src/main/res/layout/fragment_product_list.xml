@@ -116,7 +116,7 @@
                     android:padding="@dimen/space_4"
                     android:paddingBottom="@dimen/space_16"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                    app:spanCount="2" />
+                    app:spanCount="3" />
 
 
             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

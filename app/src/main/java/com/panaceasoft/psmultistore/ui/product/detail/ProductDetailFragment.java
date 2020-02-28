@@ -80,6 +80,7 @@ import com.panaceasoft.psmultistore.viewobject.holder.TabObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by Panacea-Soft
@@ -756,8 +757,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         if (loginUserId != null) {
             productDetailViewModel.setProductDetailObj(productDetailViewModel.productId, selectedShopId, productDetailViewModel.historyFlag, loginUserId);
         }
-        ProductDetailFragment.this.setSaveToBasket();
-        getActivity().onBackPressed();
+
     }
 
     @Override
@@ -840,7 +840,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         productDetailViewModel.setProductDetailObj(productDetailViewModel.productId, selectedShopId, productDetailViewModel.historyFlag, loginUserId);
 
         setTouchCount();
-
+        AtomicBoolean cargo= new AtomicBoolean(false);
         LiveData<Resource<Product>> productDetail = productDetailViewModel.getProductDetailData();
         if (productDetail != null) {
             productDetail.observe(this, listResource -> {
@@ -874,6 +874,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                                 selectedShopId = listResource.data.shopId;
                                 // Load Related Data
                                 imageViewModel.setImageParentId(Constants.IMAGE_TYPE_PRODUCT, productDetailViewModel.productId);
+                                cargo.set(true);
                             }
 
                             break;
@@ -905,7 +906,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                                 bindProductDetailInfo(listResource.data);
 
                                 productRelatedViewModel.setProductRelatedListObj(productDetailViewModel.productId, listResource.data.catId, selectedShopId);
-
+                                cargo.set(true);
                             }
 
                             productDetailViewModel.setLoadingState(false);
@@ -926,6 +927,11 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     }
                     // productDetailViewModel.isProductDetailData=true;
 
+                    // AGREGAMOS AL CARRITO UNA VEZ QUE CARGO LA PAGINA Y SE CARGARON DATOS EN EL OBSERVADOR
+                   if(cargo.get()){
+                       ProductDetailFragment.this.setSaveToBasket();
+                       getActivity().onBackPressed();
+                   }
                 } else {
 
                     //productDetailViewModel.isProductDetailData=false;
@@ -1336,6 +1342,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     unFavFunction(product, likeButton);
                 }
             }
+
         });
 
         /*binding.get().seeCommentButton.setOnClickListener(view -> navigationController.navigateToCommentListActivity(getActivity(), product));

@@ -73,7 +73,7 @@ public class PSDialogMsg {
         titleTextView = dialog.findViewById(R.id.dialogTitleTextView);
         imageView = dialog.findViewById(R.id.dialogIconImageView);
         imageView.setImageResource(R.drawable.baseline_confirm_white_24);
-        view.setBackgroundColor(dialog.getContext().getResources().getColor(R.color.md_amber_800));
+        view.setBackgroundColor(dialog.getContext().getResources().getColor(R.color.md_brufat));
         cancelButton = dialog.findViewById(R.id.dialogCancelButton);
 
         msgTextView = dialog.findViewById(R.id.dialogMessageTextView);
@@ -97,7 +97,7 @@ public class PSDialogMsg {
         view = dialog.findViewById(R.id.dialogTitleView);
         titleTextView = dialog.findViewById(R.id.dialogTitleTextView);
         descriptionTextView = dialog.findViewById(R.id.descriptionTextView);
-        view.setBackgroundColor(dialog.getContext().getResources().getColor(R.color.md_amber_800));
+        view.setBackgroundColor(dialog.getContext().getResources().getColor(R.color.md_brufat));
         cancelButton = dialog.findViewById(R.id.dialogCancelButton);
 
         msgTextView = dialog.findViewById(R.id.titleTextView);

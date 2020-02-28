@@ -12,14 +12,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="190dp"
-        android:layout_height="320dp"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
         android:background="@drawable/recycler_item_bg">
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/newsHolderCardView"
-            android:layout_width="190dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
@@ -35,28 +35,31 @@
             app:layout_constraintVertical_bias="1.0">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="190dp"
+                android:layout_width="150dp"
                 android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="0dp"
+                    android:layout_width="150dp"
                     android:layout_height="0dp"
+                    android:background="#FF9800"
                     android:contentDescription="@string/image_default__image"
                     android:scaleType="fitXY"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/discount_cell_bg" />
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/background_grey_10" />
 
                 <TextView
                     android:id="@+id/textView26"
-                    android:layout_width="161dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="32dp"
+                    android:layout_marginBottom="16dp"
                     android:lineSpacingExtra="4sp"
                     android:text="@string/menu__home_discount_view_all"
                     android:textAlignment="viewStart"
@@ -65,7 +68,7 @@
                     app:font='@{"normal"}'
                     app:layout_constraintBottom_toBottomOf="@+id/imageView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

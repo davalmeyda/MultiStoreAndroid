@@ -103,11 +103,11 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             if (discountList != null && discountList.size() > 0) {
                 Product product = discountList.get(position - 1);
 
-                ((MyViewHolder) holder).binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
+                /*((MyViewHolder) holder).binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
 
                 ((MyViewHolder) holder).binding.ratingBarTextView.setText(((MyViewHolder) holder).binding.getRoot().getResources().getString(R.string.discount__rating5,
                         String.valueOf(product.ratingDetails.totalRatingValue),
-                        String.valueOf(product.ratingDetails.totalRatingCount)));
+                        String.valueOf(product.ratingDetails.totalRatingCount)));*/
 
                 ((MyViewHolder) holder).binding.priceTextView.setText(String.valueOf(Utils.format(product.unitPrice)));
 
@@ -149,8 +149,6 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                 holder.itemView.setOnClickListener(view -> {
 
-                    //productDetailFragment = new ProductDetailFragment();
-                    //guardarCarrito(product.id, product.unitPrice, product.originalPrice, product.shopId);
                     this.callback.onClick(product);
                 });
 
@@ -177,23 +175,6 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             }
         }
     }
-
-    /*public void guardarCarrito(String productId, float price, float originalPrice, String selectedShopId){
-
-        basketViewModel.setSaveToBasketListObj(
-                0,
-                productId,
-                1,
-                "{}",
-                "",
-                "",
-                null,
-                price,
-                originalPrice,
-                selectedShopId,
-                "{}"
-        );
-    }*/
 
     public interface NewsClickCallback {
         void onClick(Product product);

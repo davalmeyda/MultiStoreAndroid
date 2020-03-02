@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -66,7 +67,7 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
     private AutoClearedValue<BottomBoxLayoutBinding> bottomBoxLayoutBinding;
     private AutoClearedValue<BottomSheetDialog> mBottomSheetDialog;
     private AutoClearedValue<MenuItem> basketMenuItem;
-
+    private AutoClearedValue<MenuItem> basketText;
 
     //region Override Methods
     @Override
@@ -94,7 +95,9 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
         inflater.inflate(R.menu.basket_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
         basketMenuItem = new AutoClearedValue<>(this, menu.findItem(R.id.action_basket));
+        basketText = new AutoClearedValue<>(this,menu.findItem(R.id.boton_carrito));
 
+        
         if (basketViewModel != null) {
             if (basketViewModel.basketCount > 0) {
                 basketMenuItem.get().setVisible(true);

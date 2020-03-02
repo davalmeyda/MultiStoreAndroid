@@ -29,8 +29,8 @@ public class Config {
     public static final String APP_IMAGES_THUMB_URL = "http://demo.brufat.com/multi-store-admin/uploads/thumbnail/";
 
     /**
-     * API Key
      * If you change here, you need to update in server.
+     * API Key
      */
     public static final String API_KEY = "teampsisthebest"; // If you change here, you need to update in server.
 
@@ -65,7 +65,7 @@ public class Config {
     /**
      * Admob Setting
      */
-    public static final Boolean SHOW_ADMOB = true;
+    public static final Boolean SHOW_ADMOB = false;
 
     /**
      * Loading Limit Count Setting

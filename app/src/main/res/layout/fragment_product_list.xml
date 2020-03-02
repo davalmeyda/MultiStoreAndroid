@@ -35,55 +35,55 @@
                 app:layout_scrollFlags="scroll|enterAlways|snap">
 
 
-                    <Button
-                        android:id="@+id/typeButton"
-                        style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/baseline_list_orange_24"
-                        android:textColor="@color/md_grey_800"
-                        android:textSize="12sp"
-                        android:text="@string/Feature_UI_Type__Button"
-                        app:font='@{"normal"}'
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/tuneButton"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/typeButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/baseline_list_orange_24"
+                    android:text="@string/Feature_UI_Type__Button"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="12sp"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tuneButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <Button
-                        android:id="@+id/tuneButton"
-                        style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/baseline_tune_orange_24"
-                        android:text="@string/Feature_UI_Tune__Button"
-                        android:textColor="@color/md_grey_800"
-                        android:textSize="12sp"
-                        app:font='@{"normal"}'
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/sortButton"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/typeButton"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/tuneButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/baseline_tune_orange_24"
+                    android:text="@string/Feature_UI_Tune__Button"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="12sp"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/sortButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/typeButton"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <Button
-                        android:id="@+id/sortButton"
-                        style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/baseline_sort_with_check_orange_24"
-                        android:text="@string/Feature_UI_Sort__Button"
-                        android:textColor="@color/md_grey_800"
-                        android:textSize="12sp"
-                        app:font='@{"normal"}'
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/tuneButton"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/sortButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/baseline_sort_with_check_orange_24"
+                    android:text="@string/Feature_UI_Sort__Button"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="12sp"
+                    app:font='@{"normal"}'
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tuneButton"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -186,13 +186,40 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/space_9"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="338dp"
+            tools:layout_editor_absoluteY="403dp">
+
+
+            <Button
+                android:id="@+id/boton_carrito"
+                android:layout_width="392dp"
+                android:layout_height="58dp"
+                android:text="12 items = 224,00 PEN"
+                android:textColor="@color/text__white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <ProgressBar
             android:id="@+id/load_more_bar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:indeterminate="true"
             android:layout_gravity="bottom"
+            android:indeterminate="true"
             app:visibleGone="@{loadingMore}" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,6 +2,7 @@ package com.panaceasoft.psmultistore.ui.product.list;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,6 +27,7 @@ import com.panaceasoft.psmultistore.R;
 import com.panaceasoft.psmultistore.binding.FragmentDataBindingComponent;
 import com.panaceasoft.psmultistore.databinding.BottomBoxLayoutBinding;
 import com.panaceasoft.psmultistore.databinding.FragmentProductListBinding;
+import com.panaceasoft.psmultistore.ui.basket.BasketListFragment;
 import com.panaceasoft.psmultistore.ui.common.DataBoundListAdapter;
 import com.panaceasoft.psmultistore.ui.common.PSFragment;
 import com.panaceasoft.psmultistore.ui.product.adapter.ProductVerticalListAdapter;
@@ -37,6 +39,7 @@ import com.panaceasoft.psmultistore.viewmodel.homelist.HomeSearchProductViewMode
 import com.panaceasoft.psmultistore.viewmodel.product.BasketViewModel;
 import com.panaceasoft.psmultistore.viewmodel.product.FavouriteViewModel;
 import com.panaceasoft.psmultistore.viewmodel.product.TouchCountViewModel;
+import com.panaceasoft.psmultistore.viewobject.Basket;
 import com.panaceasoft.psmultistore.viewobject.Product;
 import com.panaceasoft.psmultistore.viewobject.common.Resource;
 import com.panaceasoft.psmultistore.viewobject.common.Status;
@@ -67,7 +70,7 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
     private AutoClearedValue<BottomBoxLayoutBinding> bottomBoxLayoutBinding;
     private AutoClearedValue<BottomSheetDialog> mBottomSheetDialog;
     private AutoClearedValue<MenuItem> basketMenuItem;
-    private AutoClearedValue<MenuItem> basketText;
+    private AutoClearedValue<Button> basketText;
 
     //region Override Methods
     @Override
@@ -77,9 +80,11 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
 
         // Inflate the layout for this fragment
         FragmentProductListBinding dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_product_list, container, false, dataBindingComponent);
-
         binding = new AutoClearedValue<>(this, dataBinding);
         setHasOptionsMenu(true);
+
+        View view =  inflater.inflate(R.layout.fragment_product_list, container, false);
+        Button carrito = (Button) view.findViewById(R.id.boton_carrito);
 
         return binding.get().getRoot();
     }
@@ -94,10 +99,12 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.basket_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
-        basketMenuItem = new AutoClearedValue<>(this, menu.findItem(R.id.action_basket));
-        basketText = new AutoClearedValue<>(this,menu.findItem(R.id.boton_carrito));
 
-        
+        basketMenuItem = new AutoClearedValue<>(this, menu.findItem(R.id.action_basket));
+
+
+        binding.get().botonCarrito.setOnClickListener(this::carrito);
+
         if (basketViewModel != null) {
             if (basketViewModel.basketCount > 0) {
                 basketMenuItem.get().setVisible(true);
@@ -106,6 +113,11 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
             }
         }
     }
+    // EVENTO DE IR AL CARRITO
+    private void carrito(View view) {
+        navigationController.navigateToBasketList(getActivity());
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -340,16 +352,36 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
     private void basketData() {
         //set and get basket list
         basketViewModel.setBasketListObj(selectedShopId);
-        basketViewModel.getAllBasketList().observe(this, resourse -> {
-            if (resourse != null) {
-                basketViewModel.basketCount = resourse.size();
-                if (resourse.size() > 0) {
-                    setBasketMenuItemVisible(true);
-                } else {
-                    setBasketMenuItemVisible(false);
+
+        BasketListFragment basketListFragment = new BasketListFragment();
+        basketViewModel.getAllBasketWithProductList().observe(this, listResource->{
+
+            if(listResource != null){
+                if (listResource.size() > 0) {
+
                 }
             }
         });
+
+
+        basketViewModel.getAllBasketList().observe(this, resourse -> {
+
+            // OBSERVADOR
+            Button btn = (Button) getActivity().findViewById(R.id.boton_carrito);
+            if (resourse != null) {
+                basketViewModel.basketCount = resourse.size();
+                if (resourse.size() > 0) {
+                     Log.i("hay data","data");
+                    List<String> resultado = basketListFragment.replaceProductSpecsData1(resourse, basketViewModel);
+                    btn.setText(resultado.get(1) + " ITEMS = " + resultado.get(0) + " PEN");
+                    setBasketMenuItemVisible(true);
+                } else {
+                    Log.i("No hay data", "no hay data");
+                    btn.setText("Carrito Vacio");
+                    setBasketMenuItemVisible(false);
+                }
+            }
+          });
     }
 
     //endregion

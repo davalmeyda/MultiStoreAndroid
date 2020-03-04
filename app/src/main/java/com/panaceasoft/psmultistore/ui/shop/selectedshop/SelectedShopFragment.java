@@ -294,7 +294,7 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
         /*CategoryIconList*/
 
         CategoryIconListAdapter categoryIconListAdapter1 = new CategoryIconListAdapter(dataBindingComponent, category -> {
-            categoryViewModel.productParameterHolder.catId = category.id;
+            categoryViewModel.productParameterHolder.catId = "catdc36568719db168c7fc15a39ac0bd044";
             navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, category.name);
         }, this);
 
@@ -427,6 +427,10 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
         basketData();
 
         loadProducts();
+
+        categoryViewModel.productParameterHolder.catId = "catdc36568719db168c7fc15a39ac0bd044";
+        navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, "Productos");
+
     }
 
     private void getIntentData() {
@@ -1250,5 +1254,7 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
     public void onResume() {
         loadLoginUserId();
         super.onResume();
+        // DAVID CERRAR ACTIVITY DE LA TIENDA
+        getActivity().finish();
     }
 }

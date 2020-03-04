@@ -106,6 +106,13 @@ public class VerifyEmailFragment extends PSFragment implements DataBoundListAdap
 
         LiveData<Resource<UserLogin>> itemList = userViewModel.getEmailVerificationUser();
 
+        // David este codigo activa el codigo del boton enviar codigo
+        binding.get().submitButton.setEnabled(false);
+        binding.get().submitButton.setText(getResources().getString(R.string.message__loading));
+        userViewModel.setEmailVerificationUser(Utils.checkUserId(userIdToVerify), "binding.get().enterCodeEditText.getText().toString()");
+
+
+
         if (itemList != null) {
 
             itemList.observe(this, listResource -> {

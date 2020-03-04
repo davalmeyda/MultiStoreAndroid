@@ -927,9 +927,10 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     }
                     // productDetailViewModel.isProductDetailData=true;
 
-                    // AGREGAMOS AL CARRITO UNA VEZ QUE CARGO LA PAGINA Y SE CARGARON DATOS EN EL OBSERVADOR
+                    // David AGREGAMOS AL CARRITO UNA VEZ QUE CARGO LA PAGINA Y SE CARGARON DATOS EN EL OBSERVADOR
                    if(cargo.get()){
                        ProductDetailFragment.this.setSaveToBasket();
+                       // David boton de retroceso
                        getActivity().onBackPressed();
                    }
                 } else {

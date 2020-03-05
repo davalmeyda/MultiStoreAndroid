@@ -525,7 +525,6 @@
     <string name="billing_address_one_error_message">Please Enter Billing Address1</string>
 
 
-
     <!--Checkout 2-->
     <string name="shipping_method">Shipping Method</string>
     <string name="coupon_discount">Coupon Discount</string>
@@ -601,7 +600,7 @@
     <string name="verify_email__submit">Submit</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
     <string name="error_message__youtube_not_valid">YouTube is not valid.</string>
     <string name="error_message__choose_country">Choose Country First</string>
     <string name="Feature_UI__search_alert_country_title">Choose Country</string>

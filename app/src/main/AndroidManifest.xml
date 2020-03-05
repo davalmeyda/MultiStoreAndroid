@@ -20,7 +20,6 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
-
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
@@ -34,7 +33,8 @@
         android:xlargeScreens="true" />
 
     <compatible-screens>
-        <!--no small size screens -->
+
+        <!-- no small size screens -->
         <screen
             android:screenDensity="ldpi"
             android:screenSize="small" /> <!-- approximately 120 dpi -->
@@ -67,7 +67,7 @@
             android:screenSize="small" /> <!-- Workaround -->
 
 
-        <!--all normal size screens -->
+        <!-- all normal size screens -->
         <screen
             android:screenDensity="ldpi"
             android:screenSize="normal" /> <!-- approximately 120 dpi -->
@@ -133,7 +133,7 @@
             android:screenDensity="213"
             android:screenSize="large" />
 
-        <!--xxhdpi-->
+        <!-- xxhdpi -->
 
         <screen
             android:screenDensity="480"
@@ -144,7 +144,6 @@
         <screen
             android:screenDensity="480"
             android:screenSize="xlarge" />
-
     </compatible-screens>
 
     <application
@@ -168,12 +167,10 @@
             android:name=".ui.blog.listbyshopid.BlogListByShopIdActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name=".ui.category.CategoryListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name=".ui.collection.productCollectionHeader.ProductCollectionHeaderListActivity"
             android:screenOrientation="portrait"
@@ -213,9 +210,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
+            android:windowSoftInputMode="adjustPan"></activity>
         <activity
             android:name=".ui.user.ProfileEditActivity"
             android:screenOrientation="portrait"
@@ -288,7 +283,6 @@
         <meta-data
             android:name=".utils.CustomCachingGlideModule"
             android:value="AppGlideModule" />
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -302,7 +296,8 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/global__accent" />
 
-        <service android:name=".utils.FirebaseMessagingService"
+        <service
+            android:name=".utils.FirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -316,8 +311,7 @@
         <activity
             android:name=".ui.comment.detail.CommentDetailActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.PSTheme"
-        />
+            android:theme="@style/Base.PSTheme" />
         <activity
             android:name=".ui.notification.list.NotificationListActivity"
             android:screenOrientation="portrait"
@@ -329,8 +323,7 @@
         <activity
             android:name=".ui.comment.list.CommentListActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.PSTheme"
-         />
+            android:theme="@style/Base.PSTheme" />
         <activity
             android:name=".ui.gallery.GalleryActivity"
             android:screenOrientation="portrait"
@@ -339,29 +332,24 @@
             android:name=".ui.terms.TermsAndConditionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name=".ui.gallery.detail.GalleryDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity android:name=".ui.basket.BasketListActivity" />
         <activity
             android:name=".ui.product.search.SearchByCategoryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name=".ui.product.history.UserHistoryListActivity"
             android:label="@string/title__activity_user_history_list"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name=".ui.stripe.StripeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <activity
             android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
             android:launchMode="singleTask">
@@ -374,7 +362,6 @@
                 <data android:scheme="${applicationId}.braintree" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.collection.CollectionActivity"
             android:screenOrientation="portrait"
@@ -411,8 +398,6 @@
             android:name=".ui.user.verifyemail.VerifyEmailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
-
     </application>
 
 </manifest>

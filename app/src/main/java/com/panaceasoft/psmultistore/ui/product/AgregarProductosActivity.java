@@ -1,6 +1,9 @@
 package com.panaceasoft.psmultistore.ui.product;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -14,6 +17,7 @@ import com.panaceasoft.psmultistore.R;
 import com.panaceasoft.psmultistore.utils.PSDialogMsg;
 import com.panaceasoft.psmultistore.viewmodel.category.CategoryViewModel;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.camera2.*;
@@ -22,6 +26,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
@@ -36,10 +41,11 @@ import java.util.Map;
 
 public class AgregarProductosActivity extends AppCompatActivity {
 
-    Button agregarProducto;
+    Button agregarProducto, botonCamara;
     ImageButton imagenBoton;
     TextInputEditText nomProduct,nomPrecio;
     private PSDialogMsg psDialogMsg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +55,7 @@ public class AgregarProductosActivity extends AppCompatActivity {
         imagenBoton = findViewById(R.id.imagenBoton);
         nomPrecio = findViewById(R.id.nomPrecio);
         nomProduct= findViewById(R.id.nomProduct);
+        botonCamara = findViewById(R.id.boton_camara);
 
         String shopId = getIntent().getStringExtra("shop_id");
 
@@ -65,11 +72,36 @@ public class AgregarProductosActivity extends AppCompatActivity {
             }
         });
 
+        botonCamara.setOnClickListener(new View.OnClickListener() {
+            private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
+
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+
+
+                if (ContextCompat.checkSelfPermission(AgregarProductosActivity.this,
+                        Manifest.permission.CAMERA)
+                        != PackageManager.PERMISSION_GRANTED) {
+
+                        // No explanation needed; request the permission
+                        ActivityCompat.requestPermissions(AgregarProductosActivity.this,
+                                new String[]{Manifest.permission.CAMERA},
+                                MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+
+                } else {
+                    // Permission has already been granted
+                    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(intent,0);
+                }
+
+            }
+        });
     }
 
     private int PICK_IMAGE_REQUEST = 1;
     private Bitmap bitmap;
-    private String URL = "http://192.168.1.12/multi-store-admin/sql/agregar_producto.php";
+    private String URL = "http://demo.brufat.com/multi-store-admin/sql/agregar_producto.php";
 
     private void AgregarProducto(String cat_id,String shop_id){
 
@@ -154,7 +186,11 @@ public class AgregarProductosActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        } else {
+            bitmap = (Bitmap)data.getExtras().get("data");
+            imagenBoton.setImageBitmap(bitmap);
         }
+
     }
 
 

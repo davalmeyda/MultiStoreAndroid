@@ -1,15 +1,25 @@
 package com.panaceasoft.psmultistore.ui.product;
 
-public enum single {
+public enum SingleDavid {
     INSTANCE;
 
-    int value;
+    float precio = 0;
+    String cod_id = "";
 
-    public int getValue() {
-        return value;
+
+    public float getPrecio() {
+        return precio;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setPrecio(float value) {
+        this.precio = value;
+    }
+
+    public String getCodigo() {
+        return cod_id;
+    }
+
+    public void setCodigo(String value) {
+        this.cod_id = value;
     }
 }

@@ -44,6 +44,7 @@ import com.panaceasoft.psmultistore.databinding.BottomBoxBasketAndBuyBinding;
 import com.panaceasoft.psmultistore.databinding.FragmentProductDetailBinding;
 import com.panaceasoft.psmultistore.ui.common.DataBoundListAdapter;
 import com.panaceasoft.psmultistore.ui.common.PSFragment;
+import com.panaceasoft.psmultistore.ui.product.SingleDavid;
 import com.panaceasoft.psmultistore.ui.product.adapter.ProductHorizontalListAdapter;
 import com.panaceasoft.psmultistore.ui.product.detail.adapter.ProductAttributeHeaderAdapter;
 import com.panaceasoft.psmultistore.ui.product.detail.adapter.ProductColorAdapter;
@@ -1506,6 +1507,8 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
 
             // save
             if (productAttributeHeaderViewModel.priceAfterAttribute == 0) {
+
+
                 basketViewModel.setSaveToBasketListObj(
                         productDetailViewModel.basketId,
                         productDetailViewModel.productId,
@@ -1519,6 +1522,19 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                         selectedShopId,
                         priceStr
                 );
+                /*basketViewModel.setSaveToBasketListObj(
+                        0,
+                        "000002",
+                        1,
+                        "{}",
+                        "",
+                        "",
+                        null,
+                        11,
+                        11,
+                        selectedShopId,
+                        "{}"
+                );*/
             } else {
                 basketViewModel.setSaveToBasketListObj(
                         productDetailViewModel.basketId,

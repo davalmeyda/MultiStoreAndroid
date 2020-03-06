@@ -19,6 +19,8 @@ import com.panaceasoft.psmultistore.ui.checkout.CheckoutActivity;
 import com.panaceasoft.psmultistore.ui.contactus.ContactUsFragment;
 import com.panaceasoft.psmultistore.ui.privacyandpolicy.PrivacyAndPolicyActivity;
 import com.panaceasoft.psmultistore.ui.product.AgregarProductosActivity;
+import com.panaceasoft.psmultistore.ui.product.detail.ProductDetailFragment;
+import com.panaceasoft.psmultistore.ui.product.list.ProductListFragment;
 import com.panaceasoft.psmultistore.ui.stripe.StripeActivity;
 import com.panaceasoft.psmultistore.ui.collection.CollectionActivity;
 import com.panaceasoft.psmultistore.ui.collection.productCollectionHeader.ProductCollectionHeaderListActivity;

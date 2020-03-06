@@ -24,9 +24,9 @@ public class Config {
      * API URL
      * Change your backend url
      */
-    public static final String APP_API_URL = "http://192.168.1.12/multi-store-admin/index.php/";
-    public static final String APP_IMAGES_URL = "http://192.168.1.12/multi-store-admin/uploads/";
-    public static final String APP_IMAGES_THUMB_URL = "http://192.168.1.12/multi-store-admin/uploads/thumbnail/";
+    public static final String APP_API_URL = "http://demo.brufat.com/multi-store-admin/index.php/";
+    public static final String APP_IMAGES_URL = "http://demo.brufat.com/multi-store-admin/uploads/";
+    public static final String APP_IMAGES_THUMB_URL = "http://demo.brufat.com/multi-store-admin/uploads/thumbnail/";
 
     /**
      * If you change here, you need to update in server.

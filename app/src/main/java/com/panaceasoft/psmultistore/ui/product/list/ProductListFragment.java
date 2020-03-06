@@ -70,7 +70,6 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
     private AutoClearedValue<BottomBoxLayoutBinding> bottomBoxLayoutBinding;
     private AutoClearedValue<BottomSheetDialog> mBottomSheetDialog;
     private AutoClearedValue<MenuItem> basketMenuItem;
-    private AutoClearedValue<Button> basketText;
 
     //region Override Methods
     @Override
@@ -113,7 +112,7 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
             }
         }
     }
-    // EVENTO DE IR AL CARRITO
+    // David EVENTO DE IR AL CARRITO
     private void carrito(View view) {
         navigationController.navigateToBasketList(getActivity());
     }
@@ -124,6 +123,23 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
 
         if (item.getItemId() == R.id.action_basket) {
             navigationController.navigateToBasketList(getActivity());
+            // David BOTON AGREGAR PRODUCTO Y RAYITO
+        }if (item.getItemId()==R.id.action_agregarProducto) {
+            navigationController.navigateToAgregarProductos(getActivity(),selectedShopId);
+        }if (item.getItemId()==R.id.action_rayito) {
+            basketViewModel.setSaveToBasketListObj(
+                    0,
+                    "000003",
+                    1,
+                    "{}",
+                    "",
+                    "",
+                    null,
+                    11,
+                    11,
+                    selectedShopId,
+                    "{}"
+            );
         }
         return super.onOptionsItemSelected(item);
     }

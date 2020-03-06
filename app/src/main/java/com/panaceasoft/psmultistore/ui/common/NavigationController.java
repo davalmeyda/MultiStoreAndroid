@@ -18,6 +18,7 @@ import com.panaceasoft.psmultistore.ui.category.CategoryListActivity;
 import com.panaceasoft.psmultistore.ui.checkout.CheckoutActivity;
 import com.panaceasoft.psmultistore.ui.contactus.ContactUsFragment;
 import com.panaceasoft.psmultistore.ui.privacyandpolicy.PrivacyAndPolicyActivity;
+import com.panaceasoft.psmultistore.ui.product.AgregarProductosActivity;
 import com.panaceasoft.psmultistore.ui.stripe.StripeActivity;
 import com.panaceasoft.psmultistore.ui.collection.CollectionActivity;
 import com.panaceasoft.psmultistore.ui.collection.productCollectionHeader.ProductCollectionHeaderListActivity;
@@ -111,6 +112,12 @@ public class NavigationController {
 
     public void navigateToMainActivity(Activity activity) {
         Intent intent = new Intent(activity, MainActivity.class);
+        activity.startActivity(intent);
+    }
+
+    public void navigateToAgregarProductos(Activity activity, String shop_id) {
+        Intent intent = new Intent(activity, AgregarProductosActivity.class);
+        intent.putExtra("shop_id",shop_id);
         activity.startActivity(intent);
     }
 

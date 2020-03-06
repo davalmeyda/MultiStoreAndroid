@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.panaceasoft.psmultistore">
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,17 +13,16 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- for card.io card scanning -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- for card.io card scanning -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
-
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
@@ -31,75 +30,89 @@
         android:resizeable="true"
         android:smallScreens="true"
         android:xlargeScreens="true" />
-
     <compatible-screens>
-
         <!-- no small size screens -->
         <screen
             android:screenDensity="ldpi"
-            android:screenSize="small" /> <!-- approximately 120 dpi -->
+            android:screenSize="small" />
+        <!-- approximately 120 dpi -->
         <screen
             android:screenDensity="mdpi"
-            android:screenSize="small" /> <!-- approximately 160 dpi -->
+            android:screenSize="small" />
+        <!-- approximately 160 dpi -->
         <screen
             android:screenDensity="hdpi"
-            android:screenSize="small" /> <!-- approximately 240 dpi -->
+            android:screenSize="small" />
+        <!-- approximately 240 dpi -->
         <screen
             android:screenDensity="280"
-            android:screenSize="small" /> <!-- Workaround -->
+            android:screenSize="small" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="xhdpi"
-            android:screenSize="small" /> <!-- approximately 320 dpi -->
+            android:screenSize="small" />
+        <!-- approximately 320 dpi -->
         <screen
             android:screenDensity="360"
-            android:screenSize="small" /> <!-- Workaround -->
+            android:screenSize="small" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="420"
-            android:screenSize="small" /> <!-- Workaround -->
+            android:screenSize="small" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="480"
-            android:screenSize="small" /> <!-- Workaround -->
+            android:screenSize="small" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="560"
-            android:screenSize="small" /> <!-- Workaround -->
+            android:screenSize="small" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="640"
-            android:screenSize="small" /> <!-- Workaround -->
-
-
+            android:screenSize="small" />
+        <!-- Workaround -->
         <!-- all normal size screens -->
         <screen
             android:screenDensity="ldpi"
-            android:screenSize="normal" /> <!-- approximately 120 dpi -->
+            android:screenSize="normal" />
+        <!-- approximately 120 dpi -->
         <screen
             android:screenDensity="mdpi"
-            android:screenSize="normal" /> <!-- approximately 160 dpi -->
+            android:screenSize="normal" />
+        <!-- approximately 160 dpi -->
         <screen
             android:screenDensity="hdpi"
-            android:screenSize="normal" /> <!-- approximately 240 dpi -->
+            android:screenSize="normal" />
+        <!-- approximately 240 dpi -->
         <screen
             android:screenDensity="280"
-            android:screenSize="normal" /> <!-- Workaround -->
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="xhdpi"
-            android:screenSize="normal" /> <!-- approximately 320 dpi -->
+            android:screenSize="normal" />
+        <!-- approximately 320 dpi -->
         <screen
             android:screenDensity="360"
-            android:screenSize="normal" /> <!-- Workaround -->
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="420"
-            android:screenSize="normal" /> <!-- Workaround -->
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="480"
-            android:screenSize="normal" /> <!-- Workaround -->
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="560"
-            android:screenSize="normal" /> <!-- Workaround -->
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <screen
             android:screenDensity="640"
-            android:screenSize="normal" /> <!-- Workaround -->
-
-
+            android:screenSize="normal" />
+        <!-- Workaround -->
         <!-- all large size screens -->
         <screen
             android:screenDensity="ldpi"
@@ -113,7 +126,6 @@
         <screen
             android:screenDensity="xhdpi"
             android:screenSize="large" />
-
         <!-- all xlarge size screens -->
         <screen
             android:screenDensity="ldpi"
@@ -127,14 +139,11 @@
         <screen
             android:screenDensity="xhdpi"
             android:screenSize="xlarge" />
-
         <!-- Special case for Nexus 7 -->
         <screen
             android:screenDensity="213"
             android:screenSize="large" />
-
         <!-- xxhdpi -->
-
         <screen
             android:screenDensity="480"
             android:screenSize="normal" />
@@ -145,7 +154,6 @@
             android:screenDensity="480"
             android:screenSize="xlarge" />
     </compatible-screens>
-
     <application
         android:name=".PSApp"
         android:allowBackup="false"
@@ -158,11 +166,13 @@
         android:theme="@style/Base.PSTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:label">
-
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />
-
+        <activity 
+            android:name=".ui.product.AgregarProductosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.PSTheme" />
         <activity
             android:name=".ui.blog.listbyshopid.BlogListByShopIdActivity"
             android:screenOrientation="portrait"
@@ -175,11 +185,9 @@
             android:name=".ui.collection.productCollectionHeader.ProductCollectionHeaderListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
         <activity
             android:name=".ui.rating.RatingListActivity"
             android:screenOrientation="portrait"
@@ -197,7 +205,6 @@
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -210,7 +217,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".ui.user.ProfileEditActivity"
             android:screenOrientation="portrait"
@@ -279,23 +286,19 @@
             android:name=".ui.product.productbycatId.ProductListByCatIdActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
-
         <meta-data
             android:name=".utils.CustomCachingGlideModule"
             android:value="AppGlideModule" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
-
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/global__accent" />
-
         <service
             android:name=".utils.FirebaseMessagingService"
             android:exported="false">
@@ -303,7 +306,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
         <activity
             android:name=".ui.product.detail.ProductActivity"
             android:screenOrientation="portrait"
@@ -355,10 +357,8 @@
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data android:scheme="${applicationId}.braintree" />
             </intent-filter>
         </activity>
@@ -399,5 +399,5 @@
             android:screenOrientation="portrait"
             android:theme="@style/Base.PSTheme" />
     </application>
-
+    
 </manifest>

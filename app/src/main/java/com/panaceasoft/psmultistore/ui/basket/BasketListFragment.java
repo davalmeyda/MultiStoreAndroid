@@ -29,6 +29,7 @@ import com.panaceasoft.psmultistore.viewmodel.product.BasketViewModel;
 import com.panaceasoft.psmultistore.viewobject.Basket;
 import com.panaceasoft.psmultistore.viewobject.common.Status;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -248,7 +249,7 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
 
     }
 
-    private void replaceProductSpecsData(List<Basket> basketList) {
+    public void replaceProductSpecsData(List<Basket> basketList) {
 
         basketAdapter.get().replace(basketList);
 
@@ -298,6 +299,64 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
 
             }
         }
+    }
+
+
+    public List<String> replaceProductSpecsData1(List<Basket> basketList, BasketViewModel bb) {
+
+
+
+        if (basketList != null) {
+
+
+            if (basketList.size() > 0) {
+                bb.totalPrice = 0;
+
+                for (int i = 0; i < basketList.size(); i++) {
+                    bb.totalPrice += basketList.get(i).basketPrice * basketList.get(i).count;
+                }
+
+                bb.basketCount = 0;
+
+                for (int i = 0; i < basketList.size(); i++) {
+                    bb.basketCount += basketList.get(i).count;
+                }
+
+
+
+                List<String> todo = Arrays.asList(String.valueOf(bb.totalPrice), String.valueOf(bb.basketCount));
+
+                return todo;
+            } else {
+
+                bb.totalPrice = 0;
+                bb.basketCount = 0;
+
+                if (basketList.size() > 0) {
+                    for (int i = 0; i < basketList.size(); i++) {
+                        bb.totalPrice += basketList.get(i).basketPrice * basketList.get(i).count;
+                    }
+                    for (int i = 0; i < basketList.size(); i++) {
+                        bb.basketCount += basketList.get(i).count;
+                    }
+
+                    List<String> todo = Arrays.asList(String.valueOf(bb.totalPrice), String.valueOf(bb.basketCount));
+
+                    return todo;
+                }
+                List<String> todo = Arrays.asList(Constants.ZERO, Constants.ZERO);
+
+                return todo;
+
+
+
+            }
+
+
+        }
+        List<String> todo = Arrays.asList(Constants.ZERO, Constants.ZERO);
+
+        return todo;
     }
 
 }

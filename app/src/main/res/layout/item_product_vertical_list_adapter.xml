@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="160dp"
         android:background="@drawable/recycler_item_bg">
 
 
@@ -54,23 +54,36 @@
                     tools:srcCompat="@drawable/placeholder_image" />
 
                 <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="403dp"
+                    android:layout_height="58dp"
+                    android:background="#283C57"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.858" />
+
+                <TextView
                     android:id="@+id/news_title_textView"
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="25dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="100dp"
                     android:layout_marginEnd="8dp"
                     android:ellipsize="end"
                     android:lines="2"
                     android:maxLines="2"
                     android:text="@{product.name}"
                     android:textAlignment="viewStart"
-                    android:textColor="@color/text__primary"
+                    android:textColor="@color/text__white"
                     android:textSize="@dimen/font_title_size"
                     app:font='@{"normal"}'
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
                     app:textSize='@{"text"}'
                     tools:text="Yigit BoyarYigit" />
 
@@ -118,7 +131,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:text="@{product.currencySymbol}"
                     android:textAlignment="viewStart"
                     android:textColor="@color/md_deep_orange_700"
@@ -155,30 +167,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="50%" />
-
-                <RatingBar
-                    android:id="@+id/ratingBar"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:theme="@style/RatingBar"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/currencyTextView" />
-
-                <TextView
-                    android:id="@+id/ratingBarTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@color/text__primary_light"
-                    android:textSize="@dimen/font_body_size"
-                    app:font='@{"normal"}'
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-                    tools:text="TextView" />
 
                 <!--<com.like.LikeButton-->
                 <!--android:id="@+id/heartButton"-->

@@ -98,11 +98,11 @@ public class ProductHorizontalListAdapter extends DataBoundListAdapter<Product, 
         String originalPriceStr = product.currencySymbol + Constants.SPACE_STRING + String.valueOf(Utils.format(product.originalPrice));
         binding.originalPriceTextView.setText(originalPriceStr);
 
-        binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
+//        binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
 
-        binding.ratingBarTextView.setText(binding.getRoot().getResources().getString(R.string.discount__rating5,
+        /*binding.ratingBarTextView.setText(binding.getRoot().getResources().getString(R.string.discount__rating5,
                 String.valueOf(product.ratingDetails.totalRatingValue),
-                String.valueOf(product.ratingDetails.totalRatingCount)));
+                String.valueOf(product.ratingDetails.totalRatingCount)));*/
 
         if (product.isDiscount.equals(Constants.ZERO)) {
             binding.originalPriceTextView.setVisibility(View.GONE);

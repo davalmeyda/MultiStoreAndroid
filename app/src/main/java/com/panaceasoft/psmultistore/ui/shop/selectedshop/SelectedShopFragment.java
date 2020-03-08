@@ -23,7 +23,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.ads.AdRequest;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.like.LikeButton;
 import com.panaceasoft.psmultistore.Config;
 import com.panaceasoft.psmultistore.R;
@@ -41,6 +50,7 @@ import com.panaceasoft.psmultistore.utils.AutoClearedValue;
 import com.panaceasoft.psmultistore.utils.Constants;
 import com.panaceasoft.psmultistore.utils.PSDialogMsg;
 import com.panaceasoft.psmultistore.utils.Utils;
+import com.panaceasoft.psmultistore.viewmodel.category.CategoryDavid;
 import com.panaceasoft.psmultistore.viewmodel.category.CategoryViewModel;
 import com.panaceasoft.psmultistore.viewmodel.collection.ProductCollectionViewModel;
 import com.panaceasoft.psmultistore.viewmodel.homelist.HomeFeaturedProductViewModel;
@@ -59,7 +69,10 @@ import com.panaceasoft.psmultistore.viewobject.common.Resource;
 import com.panaceasoft.psmultistore.viewobject.common.Status;
 import com.panaceasoft.psmultistore.viewobject.holder.ProductParameterHolder;
 
+import java.lang.reflect.Type;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -294,7 +307,7 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
         /*CategoryIconList*/
 
         CategoryIconListAdapter categoryIconListAdapter1 = new CategoryIconListAdapter(dataBindingComponent, category -> {
-            categoryViewModel.productParameterHolder.catId = category.id;
+            categoryViewModel.productParameterHolder.catId = "catdc36568719db168c7fc15a39ac0bd044";
             navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, category.name);
         }, this);
 
@@ -416,6 +429,47 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
         binding.get().executePendingBindings();
     }
 
+    private void aaa (String id){
+        categoryViewModel.productParameterHolder.catId = id;
+        navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, "Productos");
+    }
+
+    // David Traer datos del servidor
+    private void traerCategorias(String URL){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                if(!response.isEmpty()){
+
+
+                    Gson gson = new Gson();
+                    CategoryDavid categoryDavid = gson.fromJson(response, CategoryDavid.class);
+                    String id = categoryDavid.getId();
+
+//                    aaa(id);
+                    categoryViewModel.productParameterHolder.catId = id;
+
+                }else{
+
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                VolleyError e = error;
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> parametros = new HashMap<String, String>();
+                String idtienda = categoryViewModel.categoryParameterHolder.shopId;
+                parametros.put("idtienda",idtienda);
+                return parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
+        requestQueue.add(stringRequest);
+    }
 
     @Override
     protected void initData() {
@@ -427,6 +481,14 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
         basketData();
 
         loadProducts();
+
+//        categoryViewModel.productParameterHolder.catId = "catdc36568719db168c7fc15a39ac0bd044";
+//        navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, "Productos");
+
+
+//        traerCategorias("http://192.168.1.12/multi-store-admin/sql/validar_usuario.php");
+        // David traer todos los productos de todas las categorias
+        navigationController.navigateToHomeFilteringActivity(SelectedShopFragment.this.getActivity(), categoryViewModel.productParameterHolder, "Productos");
     }
 
     private void getIntentData() {
@@ -1250,5 +1312,7 @@ public class SelectedShopFragment extends PSFragment implements DataBoundListAda
     public void onResume() {
         loadLoginUserId();
         super.onResume();
+        // DAVID CERRAR ACTIVITY DE LA TIENDA
+        getActivity().finish();
     }
 }

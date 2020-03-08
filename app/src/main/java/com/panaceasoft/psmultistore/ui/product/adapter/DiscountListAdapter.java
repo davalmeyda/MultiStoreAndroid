@@ -75,6 +75,7 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
+        //  AQUI SE CREA LA LISTA DE PRODUCTOS EN PROMOCION
         if (viewType == 0) {
             ItemDiscountListAdapterBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_discount_list_adapter, parent, false, dataBindingComponent);
 
@@ -102,11 +103,11 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             if (discountList != null && discountList.size() > 0) {
                 Product product = discountList.get(position - 1);
 
-                ((MyViewHolder) holder).binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
+                /*((MyViewHolder) holder).binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
 
                 ((MyViewHolder) holder).binding.ratingBarTextView.setText(((MyViewHolder) holder).binding.getRoot().getResources().getString(R.string.discount__rating5,
                         String.valueOf(product.ratingDetails.totalRatingValue),
-                        String.valueOf(product.ratingDetails.totalRatingCount)));
+                        String.valueOf(product.ratingDetails.totalRatingCount)));*/
 
                 ((MyViewHolder) holder).binding.priceTextView.setText(String.valueOf(Utils.format(product.unitPrice)));
 
@@ -146,7 +147,10 @@ public class DiscountListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                 }
 
-                holder.itemView.setOnClickListener(view -> callback.onClick(product));
+                holder.itemView.setOnClickListener(view -> {
+
+                    this.callback.onClick(product);
+                });
 
 //                ((MyViewHolder) holder).binding.heartButton.setOnLikeListener(new OnLikeListener() {
 //                    @Override

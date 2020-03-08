@@ -8,11 +8,11 @@
     <!-- Line -->
     <color name="colorLine">#E0E0E0</color>
     //button
-    <color name="colorFabRipple">#ef9a9a</color>
+    <color name="colorFabRipple">#2DD1AC</color>
 
-    <color name="global__primary_light">#EFAD67</color>
-    <color name="global__primary">#EC8D2A</color>
-    <color name="global__primary_dark">#DC7D18</color>
+    <color name="global__primary_light">#2DD1AC</color>
+    <color name="global__primary">#2DD1AC</color>
+    <color name="global__primary_dark">#2DD1AC</color>
     <color name="global__accent">#90a4ae</color>
 
     <color name="layout__primary_background">@color/md_grey_50</color>
@@ -47,7 +47,7 @@
     <!--********************************************************************-->
     <!-- Color Platte (For Internal Use Only )                              -->
     <!--********************************************************************-->
-
+    <color name="md_brufat">#2DD1AC</color>
 
     <!--grey-->
     <color name="md_grey_50">#fafafa</color>

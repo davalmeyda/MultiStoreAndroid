@@ -2,6 +2,7 @@ package com.panaceasoft.psmultistore.ui.product.detail;
 
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Paint;
@@ -79,6 +80,7 @@ import com.panaceasoft.psmultistore.viewobject.holder.TabObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by Panacea-Soft
@@ -322,11 +324,12 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         addToCartButton.get().setOnClickListener(view -> {
 
             if (available) {
-                productDetailViewModel.isAddtoCart = true;
-
-                bottomBoxLayoutBinding.get().lowestButton.setText(getString(R.string.product_detail__add_to_busket));
-
-                mBottomSheetDialog.get().show();
+                // NOS PASAMOS DIRECTO A AGREGAR EL PRODUCTO
+                confirmBox();
+                // QUITANDO LOS ATRIBUTOS DEL PRODUCTO A ELEGIR
+                //productDetailViewModel.isAddtoCart = true;
+                //bottomBoxLayoutBinding.get().lowestButton.setText(getString(R.string.product_detail__add_to_busket));
+                //mBottomSheetDialog.get().show();
             } else {
                 psDialogMsg.showWarningDialog(getString(R.string.product_detail__not_available), getString(R.string.app__ok));
                 psDialogMsg.show();
@@ -336,6 +339,18 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         });
 
         buyNowButton.get().setOnClickListener(view -> {
+
+            // 1. Instantiate an <code><a href="/reference/android/app/AlertDialog.Builder.html">AlertDialog.Builder</a></code> with its constructor
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+            // 2. Chain together various setter methods to set the dialog characteristics
+            builder.setMessage("David Almeyda")
+                    .setTitle("BruFat");
+
+            // 3. Get the <code><a href="/reference/android/app/AlertDialog.html">AlertDialog</a></code> from <code><a href="/reference/android/app/AlertDialog.Builder.html#create()">create()</a></code>
+            AlertDialog dialog = builder.create();
+
+            dialog.show();
 
             if (available) {
                 productDetailViewModel.isAddtoCart = false;
@@ -351,9 +366,9 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         });
 
 
-        binding.get().seeAllFactButton.setOnClickListener(view -> navigationController.navigateToTermsAndConditionsActivity(getActivity(), Constants.SHOP_TERMS));
+        /*binding.get().seeAllFactButton.setOnClickListener(view -> navigationController.navigateToTermsAndConditionsActivity(getActivity(), Constants.SHOP_TERMS));
 
-        binding.get().refundPolicyButton.setOnClickListener(view -> navigationController.navigateToTermsAndConditionsActivity(getActivity(), Constants.SHOP_REFUND));
+        binding.get().refundPolicyButton.setOnClickListener(view -> navigationController.navigateToTermsAndConditionsActivity(getActivity(), Constants.SHOP_REFUND));*/
 
     }
 
@@ -496,7 +511,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     }
                 });
         this.tabAdapter = new AutoClearedValue<>(this, tabAdapter);
-        binding.get().tabRecyclerView.setAdapter(tabAdapter);
+        //binding.get().tabRecyclerView.setAdapter(tabAdapter);
 
         //specs
         ProductDetailSpecsAdapter specsAdapter = new ProductDetailSpecsAdapter(dataBindingComponent, productSpecs -> {
@@ -569,8 +584,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         });
 
         this.relatedAdapter = new AutoClearedValue<>(this, homeScreenAdapter1);
-        binding.get().alsoBuyRecyclerView.setAdapter(homeScreenAdapter1);
-
+        //binding.get().alsoBuyRecyclerView.setAdapter(homeScreenAdapter1);
     }
 
     @Override
@@ -656,10 +670,10 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     } else {
 
                         if (getContext() != null) {
+                            // QUITANDO MENSAJE DE AGREGADO A LA CESTA
+                            /*psDialogMsg.showSuccessDialog(getString(R.string.product_detail__successfully_added), getString(R.string.app__ok));
 
-                            psDialogMsg.showSuccessDialog(getString(R.string.product_detail__successfully_added), getString(R.string.app__ok));
-
-                            psDialogMsg.show();
+                            psDialogMsg.show();*/
 
                         }
                     }
@@ -826,7 +840,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         productDetailViewModel.setProductDetailObj(productDetailViewModel.productId, selectedShopId, productDetailViewModel.historyFlag, loginUserId);
 
         setTouchCount();
-
+        AtomicBoolean cargo= new AtomicBoolean(false);
         LiveData<Resource<Product>> productDetail = productDetailViewModel.getProductDetailData();
         if (productDetail != null) {
             productDetail.observe(this, listResource -> {
@@ -860,6 +874,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                                 selectedShopId = listResource.data.shopId;
                                 // Load Related Data
                                 imageViewModel.setImageParentId(Constants.IMAGE_TYPE_PRODUCT, productDetailViewModel.productId);
+                                cargo.set(true);
                             }
 
                             break;
@@ -891,7 +906,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                                 bindProductDetailInfo(listResource.data);
 
                                 productRelatedViewModel.setProductRelatedListObj(productDetailViewModel.productId, listResource.data.catId, selectedShopId);
-
+                                cargo.set(true);
                             }
 
                             productDetailViewModel.setLoadingState(false);
@@ -912,6 +927,12 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     }
                     // productDetailViewModel.isProductDetailData=true;
 
+                    // David AGREGAMOS AL CARRITO UNA VEZ QUE CARGO LA PAGINA Y SE CARGARON DATOS EN EL OBSERVADOR
+                   if(cargo.get()){
+                       ProductDetailFragment.this.setSaveToBasket();
+                       // David boton de retroceso
+                       getActivity().onBackPressed();
+                   }
                 } else {
 
                     //productDetailViewModel.isProductDetailData=false;
@@ -1233,7 +1254,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         bottomBoxLayoutBinding.get().priceCurrencyTextView.setText(product.currencySymbol);
         //endregion
 
-        //detail pop
+        //detail pop AGREGAR A CESTA Y COMPRA
         bottomBoxLayoutBinding.get().lowestButton.setOnClickListener(view -> {
             mBottomSheetDialog.get().setState(BottomSheetBehavior.STATE_EXPANDED);
             if (productDetailViewModel.isAddtoCart) {
@@ -1322,10 +1343,11 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
                     unFavFunction(product, likeButton);
                 }
             }
+
         });
 
-        binding.get().seeCommentButton.setOnClickListener(view -> navigationController.navigateToCommentListActivity(getActivity(), product));
-        binding.get().writeCommentButton.setOnClickListener(view -> navigationController.navigateToCommentListActivity(getActivity(), product));
+        /*binding.get().seeCommentButton.setOnClickListener(view -> navigationController.navigateToCommentListActivity(getActivity(), product));
+        binding.get().writeCommentButton.setOnClickListener(view -> navigationController.navigateToCommentListActivity(getActivity(), product));*/
 
 //        binding.get().likeImageView.setOnClickListener(view -> sendLikePostData());
 //        binding.get().likeTextView.setOnClickListener(view -> sendLikePostData());
@@ -1394,7 +1416,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
             }
         });
 
-        binding.get().tabUpDownImageView.setOnClickListener((View v) -> {
+        /*binding.get().tabUpDownImageView.setOnClickListener((View v) -> {
             boolean show = Utils.toggleUpDownWithAnimation(v);
             if (show) {
                 expandTabFunction();
@@ -1410,7 +1432,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
             } else {
                 collapseTabFunction();
             }
-        });
+        });*/
 
 
         binding.get().detailUpDownImageView.setOnClickListener((View v) -> {
@@ -1431,7 +1453,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         });
 
 
-        binding.get().strictUpDownImageView.setOnClickListener((View v) -> {
+        /*binding.get().strictUpDownImageView.setOnClickListener((View v) -> {
             boolean show = Utils.toggleUpDownWithAnimation(v);
             if (show) {
                 expandStrictFunction();
@@ -1446,10 +1468,10 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
             } else {
                 collapseStrictFunction();
             }
-        });
+        });*/
 
 
-        binding.get().seeMoreImageView.setOnClickListener((View v) -> {
+        /*binding.get().seeMoreImageView.setOnClickListener((View v) -> {
             boolean show = Utils.toggleUpDownWithAnimation(v);
             if (show) {
                 expandSenceFunction(product);
@@ -1464,7 +1486,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
             } else {
                 collapseSenceFunction();
             }
-        });
+        });*/
 
         //endregion
 
@@ -1604,7 +1626,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         binding.get().attributeHeaderRecycler.setVisibility(View.GONE);
     }
 
-    private void expandTabFunction() {
+    /*private void expandTabFunction() {
         ViewAnimationUtil.expand(binding.get().findBySimilarFactTextView);
         binding.get().tabRecyclerView.setVisibility(View.VISIBLE);
         ViewAnimationUtil.expand(binding.get().alsoBuyTextView);
@@ -1620,7 +1642,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
 
         binding.get().alsoBuyRecyclerView.setVisibility(View.GONE);
         ViewAnimationUtil.collapse(binding.get().alsoBuyTextView);
-    }
+    }*/
 
     private void expandDetailFunction() {
         ViewAnimationUtil.expand(binding.get().productNameTextView);
@@ -1677,7 +1699,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
 
     }
 
-    private void expandStrictFunction() {
+    /*private void expandStrictFunction() {
 
         ViewAnimationUtil.expand(binding.get().seeAllFactButton);
         ViewAnimationUtil.expand(binding.get().refundPolicyButton);
@@ -1688,9 +1710,9 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         ViewAnimationUtil.collapse(binding.get().seeAllFactButton);
         ViewAnimationUtil.collapse(binding.get().refundPolicyButton);
 
-    }
+    }*/
 
-    private void expandSenceFunction(Product product) {
+   /* private void expandSenceFunction(Product product) {
         binding.get().noScenceTextview.setVisibility(View.GONE);
 
         ViewAnimationUtil.expand(binding.get().seeCommentButton);
@@ -1704,7 +1726,7 @@ public class ProductDetailFragment extends PSFragment implements DataBoundListAd
         ViewAnimationUtil.collapse(binding.get().noScenceTextview);
         ViewAnimationUtil.collapse(binding.get().writeCommentButton);
         ViewAnimationUtil.collapse(binding.get().seeCommentButton);
-    }
+    }*/
 
 
     private void setTagData(Product listResource) {

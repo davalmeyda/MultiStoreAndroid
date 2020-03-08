@@ -24,13 +24,13 @@ public class Config {
      * API URL
      * Change your backend url
      */
-    public static final String APP_API_URL = "http://www.panacea-soft.com/multi-store-admin/index.php/";
-    public static final String APP_IMAGES_URL = "http://www.panacea-soft.com/multi-store-admin/uploads/";
-    public static final String APP_IMAGES_THUMB_URL = "http://www.panacea-soft.com/multi-store-admin/uploads/thumbnail/";
+    public static final String APP_API_URL = "http://192.168.1.12/multi-store-admin/index.php/";
+    public static final String APP_IMAGES_URL = "http://192.168.1.12/multi-store-admin/uploads/";
+    public static final String APP_IMAGES_THUMB_URL = "http://192.168.1.12/multi-store-admin/uploads/thumbnail/";
 
     /**
-     * API Key
      * If you change here, you need to update in server.
+     * API Key
      */
     public static final String API_KEY = "teampsisthebest"; // If you change here, you need to update in server.
 
@@ -58,14 +58,14 @@ public class Config {
      * "Turkish"            | "tr"              | ""
      * ..............................................................
      */
-    public static final String LANGUAGE_CODE = "en";
+    public static final String LANGUAGE_CODE = "es";
     public static final String DEFAULT_LANGUAGE = LANGUAGE_CODE;
     public static final String DEFAULT_LANGUAGE_COUNTRY_CODE = "";
 
     /**
      * Admob Setting
      */
-    public static final Boolean SHOW_ADMOB = true;
+    public static final Boolean SHOW_ADMOB = false;
 
     /**
      * Loading Limit Count Setting
@@ -144,12 +144,12 @@ public class Config {
     /**
      * Facebook login Config
      */
-    public static boolean ENABLE_FACEBOOK_LOGIN = true;
+    public static boolean ENABLE_FACEBOOK_LOGIN = false;
 
     /**
      * Google login Config
      */
-    public static boolean ENABLE_GOOGLE_LOGIN = true;
+    public static boolean ENABLE_GOOGLE_LOGIN = false;
 
 
 }

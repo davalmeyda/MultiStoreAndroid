@@ -94,9 +94,9 @@ public class ProductVerticalListAdapter extends DataBoundListAdapter<Product, It
     protected void bind(ItemProductVerticalListAdapterBinding binding, Product product) {
         binding.setProduct(product);
 
-        binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
+        /*binding.ratingBar.setRating(product.ratingDetails.totalRatingValue);
 
-        binding.ratingBarTextView.setText((binding.getRoot().getResources().getString(R.string.discount__rating5, String.valueOf(product.ratingDetails.totalRatingValue), String.valueOf(product.ratingDetails.totalRatingCount))));
+        binding.ratingBarTextView.setText((binding.getRoot().getResources().getString(R.string.discount__rating5, String.valueOf(product.ratingDetails.totalRatingValue), String.valueOf(product.ratingDetails.totalRatingCount))));*/
 
         binding.priceTextView.setText(String.valueOf(Utils.format(product.unitPrice)));
         String originalPriceStr = product.currencySymbol + Constants.SPACE_STRING + Utils.format(product.originalPrice);

@@ -1,5 +1,6 @@
 package com.panaceasoft.psmultistore.ui.product.list;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -21,6 +23,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.textfield.TextInputEditText;
 import com.like.LikeButton;
 import com.panaceasoft.psmultistore.Config;
 import com.panaceasoft.psmultistore.R;
@@ -30,6 +33,7 @@ import com.panaceasoft.psmultistore.databinding.FragmentProductListBinding;
 import com.panaceasoft.psmultistore.ui.basket.BasketListFragment;
 import com.panaceasoft.psmultistore.ui.common.DataBoundListAdapter;
 import com.panaceasoft.psmultistore.ui.common.PSFragment;
+import com.panaceasoft.psmultistore.ui.product.SingleDavid;
 import com.panaceasoft.psmultistore.ui.product.adapter.ProductVerticalListAdapter;
 import com.panaceasoft.psmultistore.utils.AutoClearedValue;
 import com.panaceasoft.psmultistore.utils.Constants;
@@ -127,22 +131,43 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
         }if (item.getItemId()==R.id.action_agregarProducto) {
             navigationController.navigateToAgregarProductos(getActivity(),selectedShopId);
         }if (item.getItemId()==R.id.action_rayito) {
-            basketViewModel.setSaveToBasketListObj(
-                    0,
-                    "000003",
-                    1,
-                    "{}",
-                    "",
-                    "",
-                    null,
-                    11,
-                    11,
-                    selectedShopId,
-                    "{}"
-            );
+
+            // AGREGAR EL EXTRA
+            createLoginDialogo().show();
+
+//            navigationController.navigateBackToProductDetailFragmentExtra(getActivity(), "000002",11);
         }
         return super.onOptionsItemSelected(item);
     }
+    // DAVID ALERTDIALOG MENSAJE EXTRA
+    public AlertDialog createLoginDialogo() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+
+        View v = inflater.inflate(R.layout.agregar_extra, null);
+
+        builder.setView(v);
+
+        Button bbb = (Button) v.findViewById(R.id.boton_agregar_extra);
+        EditText ttt = (EditText) v.findViewById(R.id.editText_extra);
+
+        bbb.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        SingleDavid single = SingleDavid.INSTANCE;
+                        single.setPrecio(Float.parseFloat(ttt.getText().toString()));
+                        onDispatched();
+                    }
+                }
+        );
+
+
+        return builder.create();
+    }
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -389,7 +414,13 @@ public class ProductListFragment extends PSFragment implements DataBoundListAdap
                 if (resourse.size() > 0) {
                      Log.i("hay data","data");
                     List<String> resultado = basketListFragment.replaceProductSpecsData1(resourse, basketViewModel);
-                    btn.setText(resultado.get(1) + " ITEMS = " + resultado.get(0) + " PEN");
+
+                    // DAVID RAYITO MODIFICADO
+                    SingleDavid single = SingleDavid.INSTANCE;
+                    float a = single.getPrecio();
+                    float b = basketViewModel.totalPrice;
+                    basketViewModel.totalPrice = a + b;
+                    btn.setText(basketViewModel.basketCount + " ITEMS = " + basketViewModel.totalPrice + " PEN");
                     setBasketMenuItemVisible(true);
                 } else {
                     Log.i("No hay data", "no hay data");

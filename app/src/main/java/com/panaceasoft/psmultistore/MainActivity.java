@@ -482,7 +482,7 @@ public class MainActivity extends PSAppCompactActivity {
                 hideBottomNavigation();
                 break;
 
-            case R.id.nav_language:
+            /*case R.id.nav_language:
             case R.id.nav_language_login:
 
                 setToolbarText(binding.toolbar, getString(R.string.menu__language));
@@ -490,16 +490,16 @@ public class MainActivity extends PSAppCompactActivity {
                 Utils.psLog("nav_language");
                 hideBottomNavigation();
 
-                break;
+                break;*/
 
-            case R.id.nav_rate_this_app:
+            /*case R.id.nav_rate_this_app:
             case R.id.nav_rate_this_app_login:
 
                 setToolbarText(binding.toolbar, getString(R.string.menu__rate));
                 navigationController.navigateToPlayStore(this);
                 hideBottomNavigation();
 
-                break;
+                break;*/
 
             case R.id.nav_contact_us:
             case R.id.nav_contact_us_login:
@@ -509,15 +509,15 @@ public class MainActivity extends PSAppCompactActivity {
                 hideBottomNavigation();
 
                 break;
-
-            case R.id.nav_privacy_policy:
+            // DAVID QUITANDO EL MENU
+           /* case R.id.nav_privacy_policy:
             case R.id.nav_privacy_policy_login:
 
                 setToolbarText(binding.toolbar, getString(R.string.menu__privacy_policy));
                 navigationController.navigateToPrivacyPolicyActivity(this);
                 hideBottomNavigation();
 
-                break;
+                break;*/
         }
 
     }

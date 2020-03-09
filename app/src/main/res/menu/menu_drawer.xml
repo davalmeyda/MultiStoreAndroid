@@ -56,20 +56,20 @@
                         <!--android:icon="@drawable/baseline_noti_white_24"-->
                         <!--android:title="@string/menu__notification_setting" />-->
 
-                    <item
+                    <!--<item
                         android:id="@+id/nav_language"
                         android:icon="@drawable/baseline_language_24"
-                        android:title="@string/menu__language" />
+                        android:title="@string/menu__language" />-->
 
                     <item
                         android:id="@+id/nav_contact_us"
                         android:icon="@drawable/baseline_mail"
                         android:title="@string/menu__contact_us" />
 
-                    <item
+                    <!--<item
                         android:id="@+id/nav_privacy_policy"
                         android:icon="@drawable/baseline_info_white_24"
-                        android:title="@string/menu__privacy_policy" />
+                        android:title="@string/menu__privacy_policy" />-->
 
 
                     <item
@@ -77,10 +77,10 @@
                         android:icon="@drawable/ic_setting"
                         android:title="@string/menu__setting" />
 
-                    <item
+                    <!--<item
                         android:id="@+id/nav_rate_this_app"
                         android:icon="@drawable/baseline_rating_grey_24"
-                        android:title="@string/menu__rate" />
+                        android:title="@string/menu__rate" />-->
 
                 </group>
             </menu>
@@ -165,30 +165,30 @@
                         <!--android:icon="@drawable/baseline_noti_white_24"-->
                         <!--android:title="@string/menu__notification_setting" />-->
 
-                    <item
+                    <!--<item
                         android:id="@+id/nav_language_login"
                         android:icon="@drawable/baseline_language_24"
-                        android:title="@string/menu__language" />
+                        android:title="@string/menu__language" />-->
 
                     <item
                         android:id="@+id/nav_contact_us_login"
                         android:icon="@drawable/baseline_mail"
                         android:title="@string/menu__contact_us" />
 
-                    <item
+                   <!-- <item
                         android:id="@+id/nav_privacy_policy_login"
                         android:icon="@drawable/baseline_info_white_24"
-                        android:title="@string/menu__privacy_policy" />
+                        android:title="@string/menu__privacy_policy" />-->
 
                     <item
                         android:id="@+id/nav_setting_login"
                         android:icon="@drawable/ic_setting"
                         android:title="@string/menu__setting" />
 
-                    <item
+                    <!--<item
                         android:id="@+id/nav_rate_this_app_login"
                         android:icon="@drawable/baseline_rating_grey_24"
-                        android:title="@string/menu__rate" />
+                        android:title="@string/menu__rate" />-->
 
                 </group>
             </menu>

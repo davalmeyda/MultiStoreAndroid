@@ -21,6 +21,7 @@ import com.panaceasoft.psmultistore.databinding.FragmentBasketListBinding;
 import com.panaceasoft.psmultistore.ui.basket.adapter.BasketAdapter;
 import com.panaceasoft.psmultistore.ui.common.DataBoundListAdapter;
 import com.panaceasoft.psmultistore.ui.common.PSFragment;
+import com.panaceasoft.psmultistore.ui.product.SingleDavid;
 import com.panaceasoft.psmultistore.utils.AutoClearedValue;
 import com.panaceasoft.psmultistore.utils.Constants;
 import com.panaceasoft.psmultistore.utils.PSDialogMsg;
@@ -262,6 +263,9 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
                 for (int i = 0; i < basketList.size(); i++) {
                     basketViewModel.totalPrice += basketList.get(i).basketPrice * basketList.get(i).count;
                 }
+                // DAVID RAYITO AGREGADO
+                SingleDavid single = SingleDavid.INSTANCE;
+                basketViewModel.totalPrice = single.getPrecio() + basketViewModel.totalPrice;
 
                 basketViewModel.basketCount = 0;
 
@@ -284,6 +288,9 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
                     for (int i = 0; i < basketList.size(); i++) {
                         basketViewModel.totalPrice += basketList.get(i).basketPrice * basketList.get(i).count;
                     }
+                    // DAVID RAYITO AGREGADO
+                    SingleDavid single = SingleDavid.INSTANCE;
+                    basketViewModel.totalPrice = single.getPrecio() + basketViewModel.totalPrice;
                     for (int i = 0; i < basketList.size(); i++) {
                         basketViewModel.basketCount += basketList.get(i).count;
                     }
@@ -304,10 +311,7 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
 
     public List<String> replaceProductSpecsData1(List<Basket> basketList, BasketViewModel bb) {
 
-
-
         if (basketList != null) {
-
 
             if (basketList.size() > 0) {
                 bb.totalPrice = 0;
@@ -321,8 +325,6 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
                 for (int i = 0; i < basketList.size(); i++) {
                     bb.basketCount += basketList.get(i).count;
                 }
-
-
 
                 List<String> todo = Arrays.asList(String.valueOf(bb.totalPrice), String.valueOf(bb.basketCount));
 
@@ -347,8 +349,6 @@ public class BasketListFragment extends PSFragment implements DataBoundListAdapt
                 List<String> todo = Arrays.asList(Constants.ZERO, Constants.ZERO);
 
                 return todo;
-
-
 
             }
 

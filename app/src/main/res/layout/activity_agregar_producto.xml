@@ -36,6 +36,15 @@
                     app:layout_constraintHorizontal_bias="0.185"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/boton_camara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="camara"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="5dp" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.appbar.AppBarLayout>
